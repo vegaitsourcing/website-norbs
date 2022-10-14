@@ -1,0 +1,6 @@
+﻿{
+    "IIS-Site-Name": "norbs.website",
+    "App-Pool-Name": "norbs.website",
+    "IIS-App-Pool-Dot-Net-Version": "v4.0",
+    "bindings": ["norbs-website.local"]
+}
