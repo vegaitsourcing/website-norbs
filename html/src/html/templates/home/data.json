@@ -1,6 +1,5 @@
 {
-	"template": "services",
-	"title": "Services",
+	"template": "home",
 	"data": {
 		">>": "shared/master/data.json",
 		"header": {
@@ -9,11 +8,6 @@
 		"footer": {
 			">>": "shared/footer/data.json"
 		},
-		"section": [
-			{
-				"moduleAlias": "team-list",
-				">>": "modules/team-list/data.json"
-			}
-		]
+		"sections": []
 	}
 }
