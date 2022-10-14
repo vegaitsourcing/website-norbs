@@ -1,0 +1,28 @@
+{{#> master this }}
+
+{{> header data.header}}
+
+	{{#each data.sections1}}
+		{{> (lookup this 'moduleAlias') this}}
+	{{/each}}
+
+	<div class="wrap">
+		<span class="font-ico-chevron-down"></span>
+		<span class="font-ico-dog"></span>
+		<span class="font-ico-download"></span>
+		<span class="font-ico-share"></span>
+	</div>
+
+	<div class="wrap">
+		<div class="rte">
+			{{{data.content}}}
+		</div>
+	</div>
+
+	{{#each data.sections2}}
+		{{> (lookup this 'moduleAlias') this}}
+	{{/each}}
+
+{{> footer data.footer}}
+
+{{/master}}

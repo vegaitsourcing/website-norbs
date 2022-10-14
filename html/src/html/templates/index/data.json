@@ -1,0 +1,61 @@
+{
+	"template": "index",
+	"data": {
+		">>": "shared/master/data.json",
+		"header": {
+			">>": "shared/header/data.json"
+		},
+		"footer": {
+			">>": "shared/footer/data.json"
+		},
+
+		"content": "templates/index/text.content.html",
+
+		"sections1": [
+			{
+				"moduleAlias":"banner",
+				">>": "modules/banner/data.json"
+			},
+			{
+				"moduleAlias":"banner",
+				">>": "modules/banner/data.json",
+				"title": "Banner title on the right",
+				"textPosition": "right"
+			},
+			{
+				"moduleAlias": "swiper",
+				">>": "modules/swiper/data.json"
+			}
+		],
+
+		"sections2": [
+			{
+				"moduleAlias": "team-list",
+				"title": "Team List Title",
+				"people": [
+					{
+						"name": "Joshuad",
+						"surname": "Tippie"
+					},
+					{
+						"name": "Marivel",
+						"surname": "Feliz"
+					},
+					{
+						"name": "Lisa",
+						"surname": "Flora"
+					}
+				]
+			},
+			{
+				"moduleAlias": "basic-block",
+				">>": "modules/basic-block/data.json"
+			},
+			{
+				"moduleAlias": "basic-block",
+				">>": "modules/basic-block/data.json",
+				"title": "This is changed Title"
+			}
+		]
+	}
+}
