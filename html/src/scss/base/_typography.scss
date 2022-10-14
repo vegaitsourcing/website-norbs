@@ -20,17 +20,28 @@
 
 .rte h1,
 .h1 {
-	font-size: 48px;
+	font-size: 64px;
+	line-height: 72px;
+	font-weight: 600;
+	font-family: $font-default;
 }
 
 .rte h2,
 .h2 {
-	font-size: 36px;
+	font-size: 48px;
+	line-height: 72px;
+	font-family: $font-default;
+	color: $grey;
+	font-weight: 600;
 }
 
 .rte h3,
 .h3 {
-	font-size: 30px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+	font-family: $font-default;
+	color: $grey;
 }
 
 .rte h4,
@@ -50,7 +61,10 @@
 
 .rte {
 	p {
-		margin-bottom: 15px;
+		font-size: 18px;
+		line-height: 32px;
+		color: $grey2;
+		font-family: $font-secondary;
 		a {
 			@include hover {
 				text-decoration: underline;
@@ -78,4 +92,19 @@
 
 img {
 	max-width: 100%;
+}
+
+.title-page {
+	margin-bottom: 71px;
+}
+
+.title-page-small {
+	margin-bottom: 38px;
+}
+
+.numbers-big {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	font-family: $font-secondary;
 }

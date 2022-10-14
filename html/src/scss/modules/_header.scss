@@ -17,6 +17,7 @@
 }
 .nav__item {
 	border-left: 1px solid $black;
+
 	&:first-child {
 		border-left: 0;
 	}
@@ -25,6 +26,8 @@
 	padding: 0 10px;
 	color: $black;
 	display: block;
+	font-family: $font-default;
+	// font-family: $font-secondary;
 	@include hover {
 		text-decoration: underline;
 	}

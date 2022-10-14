@@ -22,17 +22,30 @@ button {
 }
 
 .btn {
-	background-color: $black;
+	background-color: $orange;
 	color: $white;
-	display: inline-block;
-	font-size: 0;
-	font-weight: bold;
-	height: 40px;
+	max-width: 360px;
+	height: 60px;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 60px;
+	font-family: $font-default;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.link {
+	color: $orange;
+	font-weight: 500;
 	line-height: 40px;
-	padding: 0 20px;
-	transition: 0.4s ease-out;
-	@include hover {
-		background-color: lighten($black, 30%);
-		border-radius: 20px;
-	}
+	font-family: $font-default;
+}
+
+.link-main {
+	font-size: 24px;
+}
+
+.link-small {
+	font-size: 18px;
 }

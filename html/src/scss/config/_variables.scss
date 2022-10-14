@@ -1,12 +1,18 @@
 // ----------  variables
 // ------------------------------------------------------------------------------
 
-$font-default: arial, sans-serif;
+$font-default: popins, sans-serif;
+$font-secondary: roboto, sans-serif;
 
 // Colors
 $white: #fff;
+$blue: #4393b4;
+$grey: #333;
+$grey2: #575757;
 $black: #000;
-$orange: #f1592a;
+$orange: #f19a20;
+$green: #b5c128;
+$pink: #e882a2;
 $grey: #5b6770;
 $site-colors: (
 	'black': $black,
@@ -45,3 +51,4 @@ $container-max-widths: (
 
 $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
+$transition: 0.4s ease;
