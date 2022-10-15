@@ -410,6 +410,9 @@
     <Reference Include="Umbraco.ModelsBuilder, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Umbraco.ModelsBuilder.8.1.6\lib\net472\Umbraco.ModelsBuilder.dll</HintPath>
     </Reference>
+    <Reference Include="Umbraco.ModelsBuilder.Api, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Umbraco.ModelsBuilder.Api.8.1.6\lib\net472\Umbraco.ModelsBuilder.Api.dll</HintPath>
+    </Reference>
     <Reference Include="Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Web.8.18.5\lib\net472\Umbraco.ModelsBuilder.Embedded.dll</HintPath>
     </Reference>
@@ -485,6 +488,7 @@
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="connections.config" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -502,6 +506,7 @@
     <Content Include="Views\Partials\Modules\ReadMoreModule.cshtml" />
     <Content Include="Views\Partials\Modules\ShareStoryModule.cshtml" />
     <Content Include="Views\Partials\Modules\FindMoreModule.cshtml" />
+    <Content Include="Views\Article.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
