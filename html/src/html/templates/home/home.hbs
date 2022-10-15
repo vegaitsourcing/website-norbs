@@ -2,11 +2,12 @@
 
 {{> header data.header}}
 
-Page - home
-
-{{#each data.sections}}
-	{{> (lookup this 'moduleAlias') this}}
-{{/each}}
+<main class="main">
+	{{#each data.sections}}
+		{{> (lookup this 'moduleAlias') this}}
+		{{!-- {{> banner data.banner}} --}}
+	{{/each}}
+</main>
 
 {{> footer data.footer}}
 

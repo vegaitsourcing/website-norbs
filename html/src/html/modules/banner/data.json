@@ -1,5 +1,19 @@
 {
-	"title": "Banner Title",
-	"image": "assets/images/banner-img.jpg",
-	"textPosition": "left"
+	"image" : {
+		"src" : "assets/images/banner-img.jpg",
+		"alt" : "banner image"
+	},
+	"heading" : "Mi smo NORBS i postojimo da bismo vam pomogli.",
+	"paragraph" : "Nacionalna organizacija za retke bolesti Srbije – NORBS je savez udruženja koja se bave pitanjima osoba sa retkim bolestima i članova njihovih porodica, osnovan 23. jula 2010. godine.",
+	"buttons" : true,
+		"bannerButtons" : [
+			{
+				"href": "a",
+				"buttonText" : "zovite nas"
+			},
+			{
+				"href": "a",
+				"buttonText" : "pišite nam"
+			}
+		]
 }

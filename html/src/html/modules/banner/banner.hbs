@@ -1,13 +1,24 @@
 <div class="banner">
+	{{#if image}}
 	<div class="banner__img">
-		<img src="{{image}}" alt="" class="banner__img-item">
+		<img src="{{image.src}}" alt="{{image.alt}}" class="banner__img-item">
 	</div>
-	<div class="wrap">
-		<div class="banner__holder">
-			<div class="banner__content{{#ifEquals textPosition "right"}} banner__content--right{{/ifEquals}}">
-				<h2 class="banner__title">{{title}}</h2>
+	{{/if}}
+	<div class="banner__content">
+		<div class="wrap">
+			{{#if heading}}
+				<h1 class="h1 banner__heading">{{heading}}</h1>
+			{{/if}}
+			{{#if paragraph}}
+				<p class="banner__paragraph">{{paragraph}}</p>
+			{{/if}}
+			{{#if buttons}}
+			<div class="banner__buttons">
+				{{#each bannerButtons}}
+					<a href={{this.href}} class="btn banner__button">{{this.buttonText}}</a>
+				{{/each}}
 			</div>
-			<img src="{{image}}" alt="">
+			{{/if}}
 		</div>
 	</div>
 </div>

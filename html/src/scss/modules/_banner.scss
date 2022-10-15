@@ -1,22 +1,80 @@
 // ----------  banner
 // ------------------------------------------------------------------------------
 .banner {
-	margin-bottom: 20px;
+	width: 100%;
+	min-height: 899px;
+	position: relative;
+
+	@include media-breakpoint-down(md) {
+		min-height: 799px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		min-height: 699px;
+	}
 }
+
+.banner__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.banner__img-item {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .banner__content {
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 20px;
-	background-color: rgba($white, 0.5);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	color: $white;
+	width: 100%;
 }
-.banner__content--right {
-	left: auto;
-	right: 0;
+
+.banner__heading {
+	margin-bottom: 37px;
 }
-.banner__title {
+
+.banner__paragraph {
+	margin-bottom: 60px;
 	font-size: 24px;
+	line-height: 28px;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 20px;
+		line-height: 26px;
+	}
 }
-.banner__holder {
-	position: relative;
+
+.banner__buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+	}
+}
+
+.banner__button {
+
+	&:first-child {
+		margin-right: 9.9%;
+	}
+
+	@include media-breakpoint-down(sm) {
+		&:first-child {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+	}
 }
