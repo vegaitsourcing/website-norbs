@@ -20,79 +20,79 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	// Mixin Content Type with alias "header"
-	/// <summary>Header</summary>
-	public partial interface IHeader : IPublishedElement
+	// Mixin Content Type with alias "navBar"
+	/// <summary>NavBar</summary>
+	public partial interface INavBar : IPublishedElement
 	{
-		/// <summary>Header Phone Number</summary>
+		/// <summary>DropDowns</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string HeaderPhoneNumber { get; }
+		IEnumerable<string> DropDowns { get; }
 
-		/// <summary>Header Social Links</summary>
+		/// <summary>LogoNorbs</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks { get; }
+		Image LogoNorbs { get; }
 
-		/// <summary>Header Title</summary>
+		/// <summary>NavItems</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string HeaderTitle { get; }
+		IEnumerable<Umbraco.Web.Models.Link> NavItems { get; }
 	}
 
-	/// <summary>Header</summary>
-	[PublishedModel("header")]
-	public partial class Header : PublishedElementModel, IHeader
+	/// <summary>NavBar</summary>
+	[PublishedModel("navBar")]
+	public partial class NavBar : PublishedElementModel, INavBar
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "header";
+		public new const string ModelTypeAlias = "navBar";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Header, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NavBar, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public Header(IPublishedElement content)
+		public NavBar(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Header Phone Number
+		/// DropDowns
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("headerPhoneNumber")]
-		public string HeaderPhoneNumber => GetHeaderPhoneNumber(this);
+		[ImplementPropertyType("dropDowns")]
+		public IEnumerable<string> DropDowns => GetDropDowns(this);
 
-		/// <summary>Static getter for Header Phone Number</summary>
+		/// <summary>Static getter for DropDowns</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetHeaderPhoneNumber(IHeader that) => that.Value<string>("headerPhoneNumber");
+		public static IEnumerable<string> GetDropDowns(INavBar that) => that.Value<IEnumerable<string>>("dropDowns");
 
 		///<summary>
-		/// Header Social Links
+		/// LogoNorbs
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("headerSocialLinks")]
-		public IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks => GetHeaderSocialLinks(this);
+		[ImplementPropertyType("logoNorbs")]
+		public Image LogoNorbs => GetLogoNorbs(this);
 
-		/// <summary>Static getter for Header Social Links</summary>
+		/// <summary>Static getter for LogoNorbs</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IEnumerable<Umbraco.Web.Models.Link> GetHeaderSocialLinks(IHeader that) => that.Value<IEnumerable<Umbraco.Web.Models.Link>>("headerSocialLinks");
+		public static Image GetLogoNorbs(INavBar that) => that.Value<Image>("logoNorbs");
 
 		///<summary>
-		/// Header Title
+		/// NavItems
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("headerTitle")]
-		public string HeaderTitle => GetHeaderTitle(this);
+		[ImplementPropertyType("navItems")]
+		public IEnumerable<Umbraco.Web.Models.Link> NavItems => GetNavItems(this);
 
-		/// <summary>Static getter for Header Title</summary>
+		/// <summary>Static getter for NavItems</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetHeaderTitle(IHeader that) => that.Value<string>("headerTitle");
+		public static IEnumerable<Umbraco.Web.Models.Link> GetNavItems(INavBar that) => that.Value<IEnumerable<Umbraco.Web.Models.Link>>("navItems");
 	}
 }

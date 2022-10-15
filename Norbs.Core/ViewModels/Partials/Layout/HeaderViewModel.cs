@@ -14,12 +14,12 @@ namespace Norbs.Core.ViewModels.Partials.Layout
 		{
 			if (header == null) throw new ArgumentNullException(nameof(header));
 
-			Logo = header.Logo.ToViewModel();
+			/*Logo = header.Logo.ToViewModel();
 			LogoUrl = header.AncestorOrSelf<Home>().Url();
 			NavigationItems = header.Children.OfType<IPage>()
 				.Where(x => !x.UmbracoNaviHide)
 				.Select(x => new NavigationPageViewModel(x))
-				.ToList();
+				.ToList();*/
 
         }
 
