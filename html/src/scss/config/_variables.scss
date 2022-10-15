@@ -1,0 +1,56 @@
+// ----------  variables
+// ------------------------------------------------------------------------------
+
+$font-default: popins, sans-serif;
+$font-secondary: roboto, sans-serif;
+
+// Colors
+$white: #fff;
+$blue: #4393b4;
+$grey: #333;
+$grey2: #575757;
+$black: #000;
+$orange: #f19a20;
+$green: #b5c128;
+$pink: #e882a2;
+$site-colors: (
+	'black': $black,
+	'white': $white,
+	'orange': $orange,
+	'green': $green,
+	'blue' : $blue,
+	'pink' : $pink
+) !default;
+
+// ----------  Bootstrap grid
+// ------------------------------------------------------------------------------
+
+$enable-grid-classes: true !default;
+
+// ----------  Media queries breakpoints - Grid breakpoint
+// ------------------------------------------------------------------------------
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+// ----------  Grid containers
+// ------------------------------------------------------------------------------
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+) !default;
+
+// ----------  Grid columns
+// ------------------------------------------------------------------------------
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+$transition: 0.4s ease;

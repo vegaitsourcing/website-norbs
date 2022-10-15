@@ -1,0 +1,57 @@
+// ----------  button
+// ------------------------------------------------------------------------------
+
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+a,
+button {
+	appearance: none;
+	outline: none;
+
+	&:focus {
+		outline: 1px dashed rgba($orange, 0.2);
+	}
+}
+
+.btn {
+	background-color: $orange;
+	color: $white;
+	max-width: 360px;
+	height: 60px;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 60px;
+	font-family: $font-default;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+.link {
+	color: $orange;
+	font-weight: 500;
+	line-height: 30px;
+	font-family: $font-default;
+	text-decoration: underline;
+	@include hover {
+		color: $grey;
+	}
+}
+
+.link-main {
+	font-size: 24px;
+}
+
+.link-small {
+	font-size: 18px;
+}

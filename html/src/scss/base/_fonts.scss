@@ -1,0 +1,10 @@
+// ----------  fonts
+// ------------------------------------------------------------------------------
+
+@include webFont(Roboto, Roboto-Regular, 400,);
+@include webFont(Roboto, Roboto-Medium, 500,);
+@include webFont(Roboto, Roboto-Bold, 600,);
+
+@include webFont(Poppins, Poppins-Regular, 400,);
+@include webFont(Roboto, Poppins-Medium, 500,);
+@include webFont(Roboto, Poppins-Bold, 600,);
