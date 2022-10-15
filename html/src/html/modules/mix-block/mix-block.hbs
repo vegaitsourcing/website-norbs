@@ -1,0 +1,22 @@
+<div class="mix-block">
+	<div class="wrap">
+		<div class="mix-block__wrap">
+			<div class="mix-block__text">
+				{{#if heading}}
+					<h2 class="h2 mb40 mix-block__heading">{{heading}}</h2>
+				{{/if}}
+				{{#if desc}}
+					<p class="text mix-block__desc mb40">{{desc}}</p>
+				{{/if}}
+				{{#if link}}
+					<a href="{{link.href}}" class="btn mix-block__link">{{link.text}}</a>
+				{{/if}}
+			</div>
+			{{#if img}}
+				<div class="mix-block__img">
+					<img src="{{img.src}}" alt="{{img.alt}}" class="mix-block__img-item">
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</div>
