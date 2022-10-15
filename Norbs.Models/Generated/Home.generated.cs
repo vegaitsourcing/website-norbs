@@ -50,7 +50,7 @@ namespace Norbs.Models.Generated
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("modules")]
-		public IEnumerable<HomeBannerModule> Modules => this.Value<IEnumerable<HomeBannerModule>>("modules");
+		public IEnumerable<IPublishedElement> Modules => this.Value<IEnumerable<IPublishedElement>>("modules");
 
 		///<summary>
 		/// Copyright Text: The site copyright text.
@@ -60,11 +60,25 @@ namespace Norbs.Models.Generated
 		public string CopyrightText => Footer.GetCopyrightText(this);
 
 		///<summary>
-		/// Logo: The site logo image.
+		/// Header Phone Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("logo")]
-		public Image Logo => Header.GetLogo(this);
+		[ImplementPropertyType("headerPhoneNumber")]
+		public string HeaderPhoneNumber => Header.GetHeaderPhoneNumber(this);
+
+		///<summary>
+		/// Header Social Links
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("headerSocialLinks")]
+		public IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks => Header.GetHeaderSocialLinks(this);
+
+		///<summary>
+		/// Header Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("headerTitle")]
+		public string HeaderTitle => Header.GetHeaderTitle(this);
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).

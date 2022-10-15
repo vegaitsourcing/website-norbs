@@ -1,6 +1,6 @@
 ﻿@inherits UmbracoViewPage<HomeViewModel>
 
 @foreach(var module in Model.Modules)
-            {
-                Html.RenderPartial("Modules/" + module.GetType().Name, module);
-            }
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}

@@ -410,13 +410,18 @@
     <Compile Include="Extensions\PublishedContentPropertyExtensions.cs" />
     <Compile Include="Extensions\PublishedElementPropertyExtensions.cs" />
     <Compile Include="Extensions\SeoExtensions.cs" />
+    <Compile Include="Generated\AboutUs.generated.cs" />
+    <Compile Include="Generated\AboutUsModule.generated.cs" />
     <Compile Include="Generated\File.cs" />
+    <Compile Include="Generated\HelpLineModule.generated.cs" />
     <Compile Include="Generated\Home.cs" />
     <Compile Include="Generated\HomeBannerModule.generated.cs" />
     <Compile Include="Generated\Image.cs" />
     <Compile Include="Generated\INestedContent.generated.cs" />
     <Compile Include="Generated\IPage.cs" />
     <Compile Include="Generated\Member.generated.cs" />
+    <Compile Include="Generated\NeedHelpModule.generated.cs" />
+    <Compile Include="Generated\OurActivitiesModule.generated.cs" />
     <Compile Include="Generated\UmbracoMediaArticle.generated.cs" />
     <Compile Include="Generated\UmbracoMediaAudio.generated.cs" />
     <Compile Include="Generated\UmbracoMediaVectorGraphics.generated.cs" />
@@ -460,6 +465,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="App_Plugins\ModelsBuilder\package.manifest" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -467,6 +473,11 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.html" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
