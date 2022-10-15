@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>Links Module</summary>
 	[PublishedModel("linksModule")]
-	public partial class LinksModule : PublishedElementModel
+	public partial class LinksModule : PublishedElementModel, IINestedContent
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -44,6 +44,13 @@ namespace Norbs.Models.Generated
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Test
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("test")]
+		public string Test => this.Value<string>("test");
 
 		///<summary>
 		/// Title
