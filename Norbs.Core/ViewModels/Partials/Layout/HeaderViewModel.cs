@@ -5,7 +5,6 @@ using Norbs.Core.ViewModels.Shared;
 using Norbs.Models.Generated;
 using System.Linq;
 using System.Collections.Generic;
-using Umbraco.Web.Models;
 
 namespace Norbs.Core.ViewModels.Partials.Layout
 {
@@ -17,8 +16,9 @@ namespace Norbs.Core.ViewModels.Partials.Layout
 
 			HeaderTitle = header.HeaderTitle;
 			HeaderPhoneNumber = header.HeaderPhoneNumber;
-			HeaderSocialLinks = header.HeaderSocialLinks.OfType<Link>()
-				          .ToList();
+			Facebookurl = header.FacebookUrl;
+			TwitterUrl = header.TwitterUrl;
+			YoutubeUrl = header.YoutubeUrl;
 
 			Logo = header.Logo.TryCreateImageViewModel();
             NavigationItems = header.Children.OfType<IPage>()
@@ -29,19 +29,20 @@ namespace Norbs.Core.ViewModels.Partials.Layout
 		}
 
 		public ImageViewModel Logo { get; }
-		public string LogoUrl { get; }
 		public List<NavigationPageViewModel> NavigationItems { get; }
 		public string HeaderTitle { get; }
 
         public string HeaderPhoneNumber { get; }
-        public List<Link> HeaderSocialLinks { get; }
+		public string Facebookurl { get; }
+		public string TwitterUrl { get; }
+		public string YoutubeUrl { get; }
     }
 
 	public class NavigationPageViewModel
 	{
 		public NavigationPageViewModel(IPage x)
 		{
-			this.Title = x.NavigationTitle;
+			this.Title = x.Name;
 			this.Url = x.Url();
 			this.IsActive = true; //TODO: CHECK INDIAN TUTORIAL;
 			this.Children = x.Children

@@ -24,13 +24,13 @@ namespace Norbs.Models.Generated
 	/// <summary>Header</summary>
 	public partial interface IHeader : IPublishedContent
 	{
+		/// <summary>FacebookUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		string FacebookUrl { get; }
+
 		/// <summary>Header Phone Number</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		string HeaderPhoneNumber { get; }
-
-		/// <summary>Header Social Links</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks { get; }
 
 		/// <summary>Header Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -39,6 +39,14 @@ namespace Norbs.Models.Generated
 		/// <summary>Logo</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		Image Logo { get; }
+
+		/// <summary>TwitterUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		string TwitterUrl { get; }
+
+		/// <summary>YoutubeUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		string YoutubeUrl { get; }
 	}
 
 	/// <summary>Header</summary>
@@ -67,6 +75,17 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
+		/// FacebookUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("facebookUrl")]
+		public string FacebookUrl => GetFacebookUrl(this);
+
+		/// <summary>Static getter for FacebookUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static string GetFacebookUrl(IHeader that) => that.Value<string>("facebookUrl");
+
+		///<summary>
 		/// Header Phone Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -76,17 +95,6 @@ namespace Norbs.Models.Generated
 		/// <summary>Static getter for Header Phone Number</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public static string GetHeaderPhoneNumber(IHeader that) => that.Value<string>("headerPhoneNumber");
-
-		///<summary>
-		/// Header Social Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("headerSocialLinks")]
-		public IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks => GetHeaderSocialLinks(this);
-
-		/// <summary>Static getter for Header Social Links</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IEnumerable<Umbraco.Web.Models.Link> GetHeaderSocialLinks(IHeader that) => that.Value<IEnumerable<Umbraco.Web.Models.Link>>("headerSocialLinks");
 
 		///<summary>
 		/// Header Title
@@ -109,5 +117,27 @@ namespace Norbs.Models.Generated
 		/// <summary>Static getter for Logo</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public static Image GetLogo(IHeader that) => that.Value<Image>("logo");
+
+		///<summary>
+		/// TwitterUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("twitterUrl")]
+		public string TwitterUrl => GetTwitterUrl(this);
+
+		/// <summary>Static getter for TwitterUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static string GetTwitterUrl(IHeader that) => that.Value<string>("twitterUrl");
+
+		///<summary>
+		/// YoutubeUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("youtubeUrl")]
+		public string YoutubeUrl => GetYoutubeUrl(this);
+
+		/// <summary>Static getter for YoutubeUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static string GetYoutubeUrl(IHeader that) => that.Value<string>("youtubeUrl");
 	}
 }
