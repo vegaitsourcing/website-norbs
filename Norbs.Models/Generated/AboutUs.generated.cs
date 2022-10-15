@@ -60,6 +60,13 @@ namespace Norbs.Models.Generated
 		public string CopyrightText => Footer.GetCopyrightText(this);
 
 		///<summary>
+		/// FacebookUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("facebookUrl")]
+		public string FacebookUrl => Header.GetFacebookUrl(this);
+
+		///<summary>
 		/// Header Phone Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -67,18 +74,32 @@ namespace Norbs.Models.Generated
 		public string HeaderPhoneNumber => Header.GetHeaderPhoneNumber(this);
 
 		///<summary>
-		/// Header Social Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("headerSocialLinks")]
-		public IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks => Header.GetHeaderSocialLinks(this);
-
-		///<summary>
 		/// Header Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("headerTitle")]
 		public string HeaderTitle => Header.GetHeaderTitle(this);
+
+		///<summary>
+		/// Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("logo")]
+		public Image Logo => Header.GetLogo(this);
+
+		///<summary>
+		/// TwitterUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("twitterUrl")]
+		public string TwitterUrl => Header.GetTwitterUrl(this);
+
+		///<summary>
+		/// YoutubeUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("youtubeUrl")]
+		public string YoutubeUrl => Header.GetYoutubeUrl(this);
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).

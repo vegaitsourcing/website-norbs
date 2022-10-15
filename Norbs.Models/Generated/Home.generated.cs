@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, IFooter, IHeader, INavBar, IPage, ISiteSettings
+	public partial class Home : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -60,18 +60,18 @@ namespace Norbs.Models.Generated
 		public string CopyrightText => Footer.GetCopyrightText(this);
 
 		///<summary>
+		/// FacebookUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("facebookUrl")]
+		public string FacebookUrl => Header.GetFacebookUrl(this);
+
+		///<summary>
 		/// Header Phone Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("headerPhoneNumber")]
 		public string HeaderPhoneNumber => Header.GetHeaderPhoneNumber(this);
-
-		///<summary>
-		/// Header Social Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("headerSocialLinks")]
-		public IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks => Header.GetHeaderSocialLinks(this);
 
 		///<summary>
 		/// Header Title
@@ -81,25 +81,25 @@ namespace Norbs.Models.Generated
 		public string HeaderTitle => Header.GetHeaderTitle(this);
 
 		///<summary>
-		/// DropDowns
+		/// Logo
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("dropDowns")]
-		public IEnumerable<string> DropDowns => NavBar.GetDropDowns(this);
+		[ImplementPropertyType("logo")]
+		public Image Logo => Header.GetLogo(this);
 
 		///<summary>
-		/// LogoNorbs
+		/// TwitterUrl
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("logoNorbs")]
-		public Image LogoNorbs => NavBar.GetLogoNorbs(this);
+		[ImplementPropertyType("twitterUrl")]
+		public string TwitterUrl => Header.GetTwitterUrl(this);
 
 		///<summary>
-		/// NavItems
+		/// YoutubeUrl
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("navItems")]
-		public IEnumerable<Umbraco.Web.Models.Link> NavItems => NavBar.GetNavItems(this);
+		[ImplementPropertyType("youtubeUrl")]
+		public string YoutubeUrl => Header.GetYoutubeUrl(this);
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).
