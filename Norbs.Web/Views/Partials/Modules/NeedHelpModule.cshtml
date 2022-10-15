@@ -1,6 +1,47 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.NeedHelpModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
+<div class="help-block">
+    <div class="wrap">
+        <div class="help-block__wrapper">
+            @if (!string.IsNullOrWhiteSpace(Model.Title))
+            {
+                <h2 class="h2 help-block__heading mb40">@Model.Title</h2>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Pretext))
+            {
+                <p class="text help-block__desc mb40">@Model.Pretext</p>
+
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Subtitle))
+            {
+                <h3 class="h3 help-block__title">@Model.Subtitle</h3>
+            }
+            <ul class="help-block__list">
+                <li class="help-block__item bg-orange">
+                    <img src="assets/images/flower-white.png" alt="Zdravstvena zaštita" class="help-block__img">
+                    <a href="javascript:;" class="help-block__link">
+                        <span class="help-block__link-text">Zdravstvena<br>zaštita</span>
+                    </a>
+                </li>
+                <li class="help-block__item bg-green">
+                    <img src="assets/images/flower-white.png" alt="Socijalna zaštita" class="help-block__img">
+                    <a href="javascript:;" class="help-block__link">
+                        <span class="help-block__link-text">Socijalna<br>zaštita</span>
+                    </a>
+                </li>
+                <li class="help-block__item bg-blue">
+                    <img src="assets/images/flower-white.png" alt="Pravna Pomoć" class="help-block__img">
+                    <a href="javascript:;" class="help-block__link">
+                        <span class="help-block__link-text">Pravna<br>Pomoć</span>
+                    </a>
+                </li>
+                <li class="help-block__item bg-pink">
+                    <img src="assets/images/flower-white.png" alt="Psihološka podrška" class="help-block__img">
+                    <a href="javascript:;" class="help-block__link">
+                        <span class="help-block__link-text">Psihološka<br>podrška</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

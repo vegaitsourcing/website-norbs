@@ -1,6 +1,27 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.ShareStoryModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
+<div class="cta-block has-cover" @(Model.BackgroundImage != null ? $"style=background-image:url({Model.BackgroundImage.Url()})" : String.Empty)>
+    <div class="wrap">
+        <div class="cta-block__wrap">
+            <div class="cta-block__content">
+                @if (!string.IsNullOrWhiteSpace(Model.Title))
+                {
+                    <h2 class="h2 mb40 cta-block__heading">@Model.Title</h2>
+                }
+                @if (!string.IsNullOrWhiteSpace(Model.Text))
+                {
+                    <p class="text cta-block__desc mb40">@Model.Text</p>
+                }
+                @if (Model.Link != null && Model.Link.Any())
+                {
+                    <div class="banner__buttons">
+                        @foreach (var button in Model.Link)
+                        {
+                            <a href="javascript:;" class="btn cta-block__link">@button.Name</a>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

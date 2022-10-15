@@ -1,6 +1,33 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.HelpLineModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
+
+<div class="call-block has-cover" @(Model.BackgroundImage != null ? $"style=background-image:url({Model.BackgroundImage.Url()})" : String.Empty)>
+    <div class="wrap">
+        <div class="call-block__wrap">
+            @if (!string.IsNullOrWhiteSpace(Model.Title))
+            {
+                <h2 class="h2 call-block__heading mb40">@Model.Title</h2>
+
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.PhoneNumber))
+            {
+                <span class="call-block__number">@Model.PhoneNumber</span>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Text))
+            {
+                <div class="call-block__paragraphs mb40">
+                    <p class="text call-block__paragraph">@Model.Text</p>
+                </div>
+            }
+            @if (Model.Links != null && Model.Links.Any())
+            {
+                <div class="banner__buttons">
+                    @foreach (var button in Model.Links)
+                    {
+                        <a href="@button.Url" target="@button.Target" class="btn banner__button">@button.Name</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,6 +1,32 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.OurActivitiesModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
+<div class="activity-block">
+    <div class="wrap">
+        <div class="activity-block__wrap">
+            @if (!string.IsNullOrWhiteSpace(Model.Title)){
+            <h2 class="h2 activity-block__heading mb40">@Model.Title</h2>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Pretext))
+            {
+                <p class="text activity-block__desc mb40">@Model.Pretext</p>
+
+            }
+
+            @if (Model.Image != null && !string.IsNullOrWhiteSpace(Model.Image.Url()))
+            {
+                <div class="activity-block__img">
+                    <img src="@Model.Image.Url()" alt="Slika Aktivnosti" class="activity-block__img-item">
+                </div>
+            }
+            @if (Model.Links != null && Model.Links.Any())
+            {
+                <div class="banner__buttons">
+                    @foreach (var button in Model.Links)
+                    {
+                        <a href="@button.Url" target="@button.Target" class="btn banner__button">@button.Name</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
