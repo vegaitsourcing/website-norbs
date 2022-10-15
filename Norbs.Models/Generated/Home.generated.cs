@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
+	public partial class Home : PublishedContentModel, IFooter, IHeader, INavBar, IPage, ISiteSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -79,6 +79,34 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("headerTitle")]
 		public string HeaderTitle => Header.GetHeaderTitle(this);
+
+		///<summary>
+		/// Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("logo")]
+		public Image Logo => Header.GetLogo(this);
+
+		///<summary>
+		/// DropDowns
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("dropDowns")]
+		public IEnumerable<string> DropDowns => NavBar.GetDropDowns(this);
+
+		///<summary>
+		/// LogoNorbs
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("logoNorbs")]
+		public Image LogoNorbs => NavBar.GetLogoNorbs(this);
+
+		///<summary>
+		/// NavItems
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("navItems")]
+		public IEnumerable<Umbraco.Web.Models.Link> NavItems => NavBar.GetNavItems(this);
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).

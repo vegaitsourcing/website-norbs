@@ -20,36 +20,36 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Content Page</summary>
-	[PublishedModel("contentPage")]
-	public partial class ContentPage : PublishedContentModel
+	/// <summary>Links Module</summary>
+	[PublishedModel("linksModule")]
+	public partial class LinksModule : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "contentPage";
+		public new const string ModelTypeAlias = "linksModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ContentPage, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<LinksModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public ContentPage(IPublishedContent content)
+		public LinksModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Body Text
+		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText => this.Value<IHtmlString>("bodyText");
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
 	}
 }

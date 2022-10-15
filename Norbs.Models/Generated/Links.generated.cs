@@ -20,50 +20,36 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Blog</summary>
-	[PublishedModel("blog")]
-	public partial class Blog : PublishedContentModel, ITitleBox
+	/// <summary>Links</summary>
+	[PublishedModel("links")]
+	public partial class Links : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "blog";
+		public new const string ModelTypeAlias = "links";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Blog, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Links, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public Blog(IPublishedContent content)
+		public Links(IPublishedContent content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Featured Story
+		/// Module
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("featuredStory")]
-		public IPublishedContent FeaturedStory => this.Value<IPublishedContent>("featuredStory");
-
-		///<summary>
-		/// Subtitle
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("subtitle")]
-		public string Subtitle => TitleBox.GetSubtitle(this);
-
-		///<summary>
-		/// Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("title")]
-		public string Title => TitleBox.GetTitle(this);
+		[ImplementPropertyType("module")]
+		public IEnumerable<LinksModule> Module => this.Value<IEnumerable<LinksModule>>("module");
 	}
 }

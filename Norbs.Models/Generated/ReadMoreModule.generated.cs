@@ -20,37 +20,51 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Title Box</summary>
-	[PublishedModel("titleBox")]
-	public partial class TitleBox : PublishedElementModel
+	/// <summary>Read More Module</summary>
+	[PublishedModel("readMoreModule")]
+	public partial class ReadMoreModule : PublishedElementModel, IINestedContent
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "titleBox";
+		public new const string ModelTypeAlias = "readMoreModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TitleBox, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ReadMoreModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public TitleBox(IPublishedElement content)
+		public ReadMoreModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Subtitle
+		/// Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("subtitle")]
-		public string Subtitle => this.Value<string>("subtitle");
+		[ImplementPropertyType("image")]
+		public Image Image => this.Value<Image>("image");
+
+		///<summary>
+		/// Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("link")]
+		public IEnumerable<Umbraco.Web.Models.Link> Link => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("link");
+
+		///<summary>
+		/// Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("text")]
+		public string Text => this.Value<string>("text");
 
 		///<summary>
 		/// Title
