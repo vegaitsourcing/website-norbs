@@ -4,9 +4,9 @@ using Norbs.Models.Generated;
 
 namespace Norbs.Core.Controllers.RenderMvc
 {
-	public class HomeController : BasePageController<Home>
+	public class AboutUsController : BasePageController<AboutUs>
 	{
-		public ActionResult Index(Home model) 
-			=> CurrentTemplate(new HomeViewModel(CreatePageContext(model)));
+		public ActionResult Index(AboutUs model) 
+			=> CurrentTemplate(new AboutUsViewModel(CreatePageContext(model)));
 	}
 }
