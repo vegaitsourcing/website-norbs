@@ -42,7 +42,7 @@
 .rte h2,
 .h2 {
 	font-family: $font-default;
-	color: $grey;
+	// color: $grey;
 	font-weight: 600;
 
 	@include media-breakpoint-up(lg) {
@@ -65,7 +65,7 @@
 .h3 {
 	font-weight: 600;
 	font-family: $font-default;
-	color: $grey;
+	// color: $grey;
 
 	@include media-breakpoint-up(lg) {
 		font-size: 24px;
@@ -104,6 +104,16 @@
 .rte h6,
 .h6 {
 	font-size: 16px;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 21px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 16px;
+		line-height: 18px;
+	}
 }
 
 .rte {
@@ -147,6 +157,18 @@ img {
 
 .title-page-small {
 	margin-bottom: 38px;
+}
+
+.home-title {
+	margin-bottom: 42px;
+}
+
+.mb40 {
+	margin-bottom: 44px;
+}
+
+.mb-lg {
+	margin-bottom: 71px;
 }
 
 .numbers-big {

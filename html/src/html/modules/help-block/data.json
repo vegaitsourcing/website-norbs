@@ -1,3 +1,51 @@
 {
-	"title": "This is Title"
+	"heading" : "Treba vam pomoć?",
+	"desc" : "Potrudili smo se da damo precizne odgovore na veliki broj često postavljanih pitanja iz domena zdravstvene i socijalne zaštite, obrazovanja i zapošljavanja. Baza odgovora na česta pitanja je započeta krajem 2015. godine i u planu je da raste i razvija se u skladu sa Vašim potrebama.",
+	"title" : "Možete pokušati da pronađete odgovor na Vaše pitanje iz neke od sledećih oblasti:",
+	"helpItem": [
+		{	
+			"background" : "orange",
+			"image" : {
+				"src": "assets/images/flower-white.png",
+				"alt" : "Zdravstvena zaštita"
+			},
+			"link" : {
+				"href" : "javascript:;",
+				"text" : "Zdravstvena zaštita"
+			}
+		},
+		{	
+			"background" : "green",
+			"image" : {
+				"src": "assets/images/flower-white.png",
+				"alt" : "Socijalna zaštita"
+			},
+			"link" : {
+				"href" : "javascript:;",
+				"text" : "Socijalna zaštita"
+			}
+		},
+		{	
+			"background" : "blue",
+			"image" : {
+				"src": "assets/images/flower-white.png",
+				"alt" : "Pravna Pomoć"
+			},
+			"link" : {
+				"href" : "javascript:;",
+				"text" : "Pravna Pomoć"
+			}
+		},
+		{	
+			"background" : "pink",
+			"image" : {
+				"src": "assets/images/flower-white.png",
+				"alt" : "Psihološka podrška"
+			},
+			"link" : {
+				"href" : "javascript:;",
+				"text" : "Psihološka podrška"
+			}
+		}
+	]
 }
