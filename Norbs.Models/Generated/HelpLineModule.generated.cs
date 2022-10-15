@@ -46,6 +46,13 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
+		/// Background image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("backgroundImage")]
+		public IPublishedContent BackgroundImage => this.Value<IPublishedContent>("backgroundImage");
+
+		///<summary>
 		/// Links
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]

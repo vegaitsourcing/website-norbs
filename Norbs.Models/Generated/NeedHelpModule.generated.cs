@@ -50,7 +50,7 @@ namespace Norbs.Models.Generated
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("links")]
-		public IEnumerable<Umbraco.Web.Models.Link> Links => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("links");
+		public IEnumerable<NeedMoreLinkModule> Links => this.Value<IEnumerable<NeedMoreLinkModule>>("links");
 
 		///<summary>
 		/// Pretext
