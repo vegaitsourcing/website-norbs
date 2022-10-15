@@ -1,0 +1,20 @@
+<div class="activity-block">
+	<div class="wrap">
+		<div class="activity-block__wrap">
+			{{#if heading}}
+				<h2 class="h2 activity-block__heading mb40">{{heading}}</h2>
+			{{/if}}
+			{{#if desc}}
+				<p class="text activity-block__desc mb40">{{desc}}</p>
+			{{/if}}
+			{{#if img}}
+				<div class="activity-block__img">
+					<img src="{{img.src}}" alt="{{img.alt}}" class="activity-block__img-item">
+				</div>
+			{{/if}}
+			{{#if link}}
+				<a href="{{link.href}}" class="btn activity-block__link">{{link.text}}</a>
+			{{/if}}
+		</div>
+	</div>
+</div>

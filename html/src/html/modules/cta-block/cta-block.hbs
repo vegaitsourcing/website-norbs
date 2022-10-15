@@ -1,0 +1,17 @@
+<div class="cta-block has-cover" style="background-image: url({{backgroundImg}});">
+	<div class="wrap">
+		<div class="cta-block__wrap">
+			<div class="cta-block__content">
+				{{#if heading}}
+					<h2 class="h2 mb40 cta-block__heading">{{heading}}</h2>
+				{{/if}}
+				{{#if desc}}
+					<p class="text cta-block__desc mb40">{{desc}}</p>
+				{{/if}}
+				{{#if link}}
+					<a href="{{link.href}}" class="btn cta-block__link">{{link.text}}</a>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+{
+	"url" : "assets/images/call-img.jpg",
+	"heading": "Linija pomoći",
+	"number" : "0800 333 103",
+	"paragraph" : [
+		{
+			"text" : "Radno vreme: radnim danima od 9h do 13h"
+		},
+		{
+			"text" : "Predlažemo da prethodno pogledate da li se odgovor na Vaše pitanje nalazi u našoj bazi znanja."
+		}
+	],
+	"link" : {
+		"href" : "javascript:;",
+		"linkText" : "pišite nam"
+	}
+}
