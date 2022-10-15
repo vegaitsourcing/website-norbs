@@ -1,0 +1,36 @@
+// ---------- activity-block
+// ------------------------------------------------------------------------------
+
+.activity-block {
+	width: 100%;
+	padding: 100px 0;
+
+	@include media-breakpoint-down(md) {
+		padding: 80px 0;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 60px 0;
+	}
+}
+
+.activity-block__wrap {
+	text-align: center;
+}
+
+.activity-block__img {
+	width: 100%;
+	margin-bottom: 50px;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	}
+}
+
+.activity-block__img-item {
+	width: 100%;
+}
+
+.activity-block__link {
+	margin: 0 auto;
+}

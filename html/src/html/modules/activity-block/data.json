@@ -1,0 +1,12 @@
+{
+	"heading" : "Naše aktivnosti",
+	"desc" : "Kako bi podigli svest javnosti o retkim bolestima, organizujemo okrugle stolove, konferencije, savetovanja i različite druge događaje. Takođe sarađujemo sa različitim udruženjima na nekoliko velikih projekata. Zajedno smo jači, pridružite nam se!",
+	"img" : {
+		"src" : "assets/images/activity-img.jpg",
+		"alt" : "Slika Aktivnosti"
+	},
+	"link" : {
+		"href" : "javascript:;",
+		"text" : "Pročitaj više"
+	}
+}

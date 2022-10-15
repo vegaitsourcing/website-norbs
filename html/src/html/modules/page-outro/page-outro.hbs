@@ -1,0 +1,18 @@
+<div class="page-outro">
+	<div class="wrap wrap--inner">
+		<div class="page-outro__container">
+			{{#if title}}
+			<h2 class="page-outro__title h2">{{title}}</h2>
+			{{/if}}
+			<ul class="page-outro__list">
+				{{#each item}}
+				<li class="page-outro__item">
+					{{#if this.link}}
+					<a href="{{this.link.href}}" class="page-outro__link link link-main">{{this.link.text}}</a>
+					{{/if}}
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>

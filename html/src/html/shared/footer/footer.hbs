@@ -1,0 +1,80 @@
+<footer class="footer">
+	<div class="footer__top">
+		<div class="wrap">
+			<div class="footer__top-container">
+				<div class="footer__holder">
+					{{#if footerLogo}}
+					<a href="{{footerLogo.href}}" class="footer__logo">
+						{{#if footerLogo.footerImg}}
+						<img src="{{footerLogo.footerImg.img}}" alt="{{footerLogo.footerImg.alt}}" class="footer__logo-img">
+						{{/if}}
+					</a>
+					{{/if}}
+					{{#if text}}
+					<p class="footer__text">{{text}}</p>
+					{{/if}}
+					{{#if numbersText}}
+					<span class="footer__numbers-text">{{numberText}}</span>
+					{{/if}}
+					{{#if numbers}}
+					<a href="{{numbers.href}}" class="footer__numbers numbers-big">{{numbers.text}}</a>
+					{{/if}}
+					<div class="footer__socials">
+						{{#if socialsText}}
+						<span class="footer__socials-text">{{socialsText}}</span>
+						{{/if}}
+						<ul class="footer__socials-list">
+							{{#each social}}
+							<li class="footer__socials-item">
+								{{#if this.socialLink}}
+								<a href="{{this.socialLink.href}}" class="footer__socials-link socials-link"
+								{{#ifEquals this.socialLink.target "_blank"}}
+								target="_blank" rel="noopener noreferrer"{{/ifEquals}}>
+								<span class="footer__socials-icon socials-icon font-ico-{{this.socialLink.icon}}"></span>
+								</a>
+								{{/if}}
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+				<div class="footer__list-container">
+					{{#each list}}
+					<div class="footer__list-holder">
+						{{#if this.title}}
+						<h3 class="footer__list-title">{{this.title}}</h3>
+						{{/if}}
+						<ul class="footer__list">
+							{{#if this.item}}
+								{{#each this.item}}
+								<li class="footer__item">
+									{{#if this.link}}
+									<a href="{{this.link.href}}" class="footer__link">{{this.link.text}}</a>
+									{{/if}}
+								</li>
+								{{/each}}
+							{{/if}}
+						</ul>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="wrap">
+			<div class="footer__bottom-container">
+				{{#each bottomHolder}}
+				<div class="footer__bottom-holder">
+					{{#if this.bottomTitle}}
+						<h4 class="footer__bottom-title">{{bottomTitle}}</h4>
+					{{/if}}
+					{{#if this.bottomImg}}
+						<img src="{{bottomImg.img}}" alt="{{bottomImg.alt}}" class="footer__bottom-img">
+					{{/if}}
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</footer>
