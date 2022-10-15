@@ -1,15 +1,22 @@
+import helpers from './helpers';
+
 const header = {
 	items: document.querySelectorAll('.js-dropdown-item'),
 	btns: document.querySelectorAll('.js-dropdown-btn'),
+	menu: document.querySelector('.js-header-menu'),
 	dropdowns: document.querySelectorAll('.js-dropdown'),
 	dropdownsInner: document.querySelector('.js-dropdown-list'),
+	navigation: document.querySelector('.js-navigation'),
 	itemActive: 'header__item--active',
 	dropdownActive: 'header__dropdown--active',
 	btnActive: 'header__btn--active',
+	navigationActive: 'header__navigation--active',
+	menuActive: 'header__menu--active',
 	desktopScreen: 1200,
 
 	init: function() {
 		this.openDropdown();
+		this.openNavigation();
 	},
 
 	openDropdown: function() {
@@ -69,6 +76,18 @@ const header = {
 				});
 			});
 		}
+	},
+
+	openNavigation: function() {
+		this.menu.addEventListener('click', () => {
+			this.menu.classList.toggle(this.menuActive);
+			this.navigation.classList.toggle(this.navigationActive);
+			if (this.menu.classList.contains(this.menuActive)) {
+				helpers.disableScroll();
+			} else {
+				helpers.enableScroll();
+			}
+		});
 	}
 };
 
