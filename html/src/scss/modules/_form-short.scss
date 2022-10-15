@@ -1,0 +1,66 @@
+// ---------- form-short
+// ------------------------------------------------------------------------------
+
+.form-short {
+	width: 100%;
+	padding: 105px 0;
+}
+.form-short__title {
+	color: $grey;
+	margin-bottom: 26px;
+}
+.form-short__subtitle {
+	display: block;
+	margin-bottom: 50px;
+}
+.form-short__input-container {
+	display: flex;
+	flex-direction: column;
+	width: 48.4%;
+	&:nth-of-type(odd) {
+		margin: 0 30px 40px 0;
+	}
+	@include media-breakpoint-down(md) {
+		margin-bottom: 40px;
+		width: 100%;
+		&:nth-of-type(odd) {
+			margin-bottom: 40px;
+			margin-right: 0;
+		}
+	}
+}
+.form-short__input-label {
+	font-family: $font-secondary;
+	margin-bottom: 15px;
+	width: fit-content;
+}
+.form-short__form-inner-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include media-breakpoint-down(md) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.form-short__input {
+	padding: 10px;
+	height: 50px;
+	border: 1px solid $grey;
+	border-radius: 5px;
+}
+.form-short__textarea-label {
+	display: block;
+	font-family: $font-secondary;
+	margin-bottom: 15px;
+}
+.form-short__textarea {
+	resize: none;
+	width: 100%;
+	min-height: 159px;
+	border: 1px solid $grey;
+	border-radius: 5px;
+}
+.form-short__btn {
+	margin: 0 auto;
+}

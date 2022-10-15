@@ -4,53 +4,8 @@
 			<div class="rte">
 				{{{content}}}
 			</div>
-			{{#if image}}
-				<div class="contact-info__img-container">
-					<img src="{{image.img}}" alt="{{image.alt}}" class="contact-info__logo">
-				</div>
-			{{/if}}
-		</div>
-		<div class="contact-info__form-container">
-			{{#if title}}
-				<h2 class="contact-info__form-title h2">{{title}}</h2>
-			{{/if}}
-			{{#if form}}
-				<form action="javascript:void(0);" class="contact-info__form">
-					{{#if form.title}}
-						<h4 class="contact-info__form-title">{{form.title}}</h4>
-					{{/if}}
-					{{#if form.subtitle}}
-						<span class="contact-info__subtitle">{{form.subtitle}}</span>
-					{{/if}}
-					{{#if form.text}}
-						<p class="contact-info__form-text">{{form.text}}</p>
-					{{/if}}
-					{{#if checkbox}}
-						<ul class="contact-info__form-checkbox-list">
-							{{#each checkbox}}
-							<li class="contact-info__form-checkbox-list-item">
-								<input class="contact-info__form-checkbox-input" type="checkbox" id="{{this.name}}" name="{{this.name}}">
-								<label class="contact-info__form-checkbox-label form-label" for="{{this.name}}" name="{{this.name}}">{{this.text}}
-								<span class="sr-only">{{this.srOnly}}</span>
-								</label>
-							</li>
-							{{/each}}
-						</ul>
-					{{/if}}
-					<div class="contact-info__form-name">
-					{{#if inputName}}
-						{{#each inputName}}
-						<div class="contact-info__form-name-inner-container">
-							<input class="contact-info__form-name-input" type="text" id="{{this.name}}" name="{{this.name}}">
-							<label class="contact-info__form-name-label form-label" for="{{this.name}}" name="{{this.name}}">{{this.text}}
-							<span class="sr-only">{{this.srOnly}}</span>
-							</label>
-						</div>
-						{{/each}}
-					{{/if}}
-					</div>
-				</form>
-			{{/if}}
-		</div>
 	</div>
 </div>
+
+
+

@@ -1,0 +1,49 @@
+{
+	"title": "Podeli svoju priču",
+	"subtitle": "Kontakt podaci",
+	"form": {
+		"input": [
+			{
+				"label": "name",
+				"labelText": "Ime",
+				"labelSrOnly": "Ime",
+				"type": "text",
+				"Id":"name",
+				"name": "name"
+			},
+			{
+				"label": "prename",
+				"labelText": "Prezime",
+				"labelSrOnly": "Prezime",
+				"type": "text",
+				"Id":"prename",
+				"name": "prename"
+			},
+			{
+				"label": "telephone",
+				"labelText": "Broj telefona",
+				"labelSrOnly": "Broj telefona",
+				"type": "tel",
+				"Id":"telephone",
+				"name": "telephone"
+			},
+			{
+				"label": "email",
+				"labelText": "Email adresa",
+				"labelSrOnly": "Broj telefona",
+				"type": "email",
+				"Id":"email",
+				"name": "email",
+				"mandatory": true
+			}
+		],
+		"textArea": {
+			"label": "textarea",
+			"labelText": "Vaša priča",
+			"srOnly": "Vaša priča",
+			"name": "textarea",
+			"id": "textarea"
+		},
+		"bnt": "Pošalji"
+	}
+}
