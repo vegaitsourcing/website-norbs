@@ -20,6 +20,18 @@
 			"srOnly": "Za sebe, checkboks",
 			"name": "check2"
 		}
+	],
+	"inputName": [
+		{
+			"name": "name1",
+			"text": "Ime",
+			"srOnly": "Ime"
+		},
+		{
+			"name": "name2",
+			"text": "Prezime",
+			"srOnly": "Prezime"
+		}
 	]
 
 }

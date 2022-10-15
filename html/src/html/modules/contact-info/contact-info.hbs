@@ -26,17 +26,29 @@
 						<p class="contact-info__form-text">{{form.text}}</p>
 					{{/if}}
 					{{#if checkbox}}
-					<ul class="contact-info__form-checkbox-list">
-						{{#each checkbox}}
-						<li class="contact-info__form-checkbox-list-item">
-							<input class="contact-info__form-checkbox-input" type="checkbox" id="{{this.name}}" name="{{this.name}}">
-							<label class="contact-info__form-checkbox-label" for="{{this.name}}" name="{{this.name}}">{{this.text}}
+						<ul class="contact-info__form-checkbox-list">
+							{{#each checkbox}}
+							<li class="contact-info__form-checkbox-list-item">
+								<input class="contact-info__form-checkbox-input" type="checkbox" id="{{this.name}}" name="{{this.name}}">
+								<label class="contact-info__form-checkbox-label form-label" for="{{this.name}}" name="{{this.name}}">{{this.text}}
+								<span class="sr-only">{{this.srOnly}}</span>
+								</label>
+							</li>
+							{{/each}}
+						</ul>
+					{{/if}}
+					<div class="contact-info__form-name">
+					{{#if inputName}}
+						{{#each inputName}}
+						<div class="contact-info__form-name-inner-container">
+							<input class="contact-info__form-name-input" type="text" id="{{this.name}}" name="{{this.name}}">
+							<label class="contact-info__form-name-label form-label" for="{{this.name}}" name="{{this.name}}">{{this.text}}
 							<span class="sr-only">{{this.srOnly}}</span>
 							</label>
-						</li>
+						</div>
 						{{/each}}
-					</ul>
 					{{/if}}
+					</div>
 				</form>
 			{{/if}}
 		</div>

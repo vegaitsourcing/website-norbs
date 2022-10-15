@@ -50,6 +50,7 @@
 }
 .contact-info__form-checkbox-list {
 	display: flex;
+	margin-bottom: 32px;
 }
 .contact-info__form-checkbox-list-item {
 	display: flex;
@@ -85,4 +86,12 @@
 		background-color: $orange;
 		border-radius: 50%;
 	}
+}
+.contact-info__form-name {
+	margin-top: 20px;
+	display: flex;
+}
+.contact-info__form-name-inner-container {
+	display: flex;
+	flex-direction: column-reverse;
 }

@@ -1,11 +1,11 @@
 {{#> master this}}
 
 {{> header data.header}}
-
-{{#each data.sections}}
-	{{> (lookup this 'moduleAlias') this}}
-{{/each}}
-
+<main class="main">
+	{{#each data.sections}}
+		{{> (lookup this 'moduleAlias') this}}
+	{{/each}}
+</main>
 {{> footer data.footer}}
 
 {{/master}}
