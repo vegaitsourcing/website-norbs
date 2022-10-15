@@ -1,22 +1,17 @@
 {
-	"template": "home",
+	"template": "form-template",
 	"data": {
 		">>": "shared/master/data.json",
 		"header": {
 			">>": "shared/header/data.json"
 		},
-	
 		"footer": {
 			">>": "shared/footer/data.json"
 		},
 		"sections": [
 			{
-				"moduleAlias" : "banner",
-				">>" : "modules/banner/data.json"
-			},
-			{
-				"moduleAlias": "help-block",
-				">>" : "modules/help-block/data.json"
+				"moduleAlias": "contact-info",
+				">>": "modules/contact-info/data.json"
 			}
 		]
 	}

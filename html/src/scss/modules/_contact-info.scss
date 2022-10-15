@@ -1,0 +1,88 @@
+// ---------- contact-info
+// ------------------------------------------------------------------------------
+
+.contact-info {
+	width: 100%;
+	padding: 105px 0;
+}
+.contact-info__inner-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.rte {
+		max-width: 436px;
+		margin-right: 20px;
+		@include media-breakpoint-down(md) {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		flex-direction: column-reverse;
+	}
+}
+.contact-info__img-container {
+	max-width: 450px;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	}
+}
+.contact-info__logo {
+	width: 100%;
+	height: 100%;
+}
+.contact-info__form-container {
+	padding: 91px 0;
+}
+.contact-info__form-title {
+	margin-bottom: 26px;
+}
+.contact-info__form-text {
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 500;
+	font-family: $font-secondary;
+	color: $grey;
+}
+.contact-info__form-checkbox {
+	margin-right: 12px;
+}
+.contact-info__form-checkbox-list {
+	display: flex;
+}
+.contact-info__form-checkbox-list-item {
+	display: flex;
+	align-items: center;
+	margin-right: 41px;
+}
+.contact-info__form-checkbox-label {
+	font-family: $font-secondary;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	color: $grey;
+	cursor: pointer;
+}
+.contact-info__form-checkbox-input {
+	opacity: 0;
+	position: absolute;
+	& + .contact-info__form-checkbox-label::before {
+		content: '';
+		border: 1px solid $orange;
+		border-radius: 50%;
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px 3px 0;
+	}
+	&:checked + .contact-info__form-checkbox-label::before {
+		content: '';
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: $orange;
+		border-radius: 50%;
+	}
+}
