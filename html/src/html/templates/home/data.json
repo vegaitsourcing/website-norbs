@@ -17,6 +17,22 @@
 			{
 				"moduleAlias": "help-block",
 				">>" : "modules/help-block/data.json"
+			},
+			{
+				"moduleAlias" : "call-block",
+				">>" : "modules/call-block/data.json"
+			},
+			{
+				"moduleAlias": "activity-block",
+				">>" : "modules/activity-block/data.json"
+			},
+			{
+				"moduleAlias": "cta-block",
+				">>" : "modules/cta-block/data.json"
+			},
+			{
+				"moduleAlias": "mix-block",
+				">>" : "modules/mix-block/data.json"
 			}
 		]
 	}

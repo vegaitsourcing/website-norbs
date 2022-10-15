@@ -185,6 +185,10 @@ img {
 
 .mb40 {
 	margin-bottom: 44px;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	}
 }
 
 .mb-lg {

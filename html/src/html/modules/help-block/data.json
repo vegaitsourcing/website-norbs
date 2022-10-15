@@ -11,7 +11,7 @@
 			},
 			"link" : {
 				"href" : "javascript:;",
-				"text" : "Zdravstvena zaštita"
+				"text" : "Zdravstvena<br>zaštita"
 			}
 		},
 		{	
@@ -22,7 +22,7 @@
 			},
 			"link" : {
 				"href" : "javascript:;",
-				"text" : "Socijalna zaštita"
+				"text" : "Socijalna<br>zaštita"
 			}
 		},
 		{	
@@ -33,7 +33,7 @@
 			},
 			"link" : {
 				"href" : "javascript:;",
-				"text" : "Pravna Pomoć"
+				"text" : "Pravna<br>Pomoć"
 			}
 		},
 		{	
@@ -44,7 +44,7 @@
 			},
 			"link" : {
 				"href" : "javascript:;",
-				"text" : "Psihološka podrška"
+				"text" : "Psihološka<br>podrška"
 			}
 		}
 	]

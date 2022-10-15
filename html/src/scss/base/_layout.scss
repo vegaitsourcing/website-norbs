@@ -23,6 +23,18 @@ body {
 	}
 }
 
+.asterix {
+	position: relative;
+	&::after {
+		content: '*';
+		position: absolute;
+		right: -8px;
+		top: 1px;
+		font-size: 14px;
+		color: $black;
+	}
+}
+
 .wrap {
 	margin: 0 auto;
 	max-width: 1180px;

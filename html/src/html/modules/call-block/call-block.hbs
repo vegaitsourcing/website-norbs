@@ -1,0 +1,22 @@
+<div class="call-block has-cover" style="background-image: url({{url}})";>
+	<div class="wrap">
+		<div class="call-block__wrap">
+			{{#if heading}}
+				<h2 class="h2 call-block__heading mb40">{{heading}}</h2>
+			{{/if}}
+			{{#if number}}
+				<span class="call-block__number">{{number}}</span>
+			{{/if}}
+			{{#if paragraph}}
+				<div class="call-block__paragraphs mb40">
+					{{#each paragraph}}
+						<p class="text call-block__paragraph">{{this.text}}</p>
+					{{/each}}
+				</div>
+			{{/if}}
+			{{#if link}}
+				<a href="{{link.href}}" class="btn call-block__cta">{{link.linkText}}</a>
+			{{/if}}
+		</div>
+	</div>
+</div>

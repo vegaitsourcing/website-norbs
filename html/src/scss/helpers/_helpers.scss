@@ -23,6 +23,14 @@
 	background-position: center center;
 }
 
+.form-label {
+	font-size: 18px;
+	line-height: 21px;
+	color: $grey;
+	font-weight: 400;
+	font-family: $font-secondary;
+}
+
 // Theming and colors iterator
 @each $colors-name in $site-colors {
 	$name: nth($colors-name, 1);

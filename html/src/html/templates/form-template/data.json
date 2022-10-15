@@ -12,6 +12,10 @@
 			{
 				"moduleAlias": "contact-info",
 				">>": "modules/contact-info/data.json"
+			},
+			{
+				"moduleAlias": "iframe-form",
+				">>": "modules/iframe-form/data.json"
 			}
 		]
 	}

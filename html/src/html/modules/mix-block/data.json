@@ -1,0 +1,12 @@
+{
+	"heading" : "Želite da znate više o retkim bolestima?",
+	"desc": "Potrudili smo se da damo precizne odgovore na veliki broj često postavljanih pitanja iz domena zdravstvene i socijalne zaštite, obrazovanja i zapošljavanja. Baza odgovora na česta pitanja je započeta krajem 2015. godine i u planu je da raste i razvija se u skladu sa Vašim potrebama.",
+	"link" : {
+		"href" : "javascript:;",
+		"text" : "Pročitaj više"
+	},
+	"img" : {
+		"src" : "assets/images/quote-img.jpg",
+		"alt": "Quote img"
+	}
+}
