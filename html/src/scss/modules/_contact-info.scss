@@ -1,0 +1,29 @@
+// ---------- contact-info
+// ------------------------------------------------------------------------------
+
+.contact-info {
+	width: 100%;
+	padding: 105px 0;
+}
+.contact-info__inner-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.rte {
+		max-width: 436px;
+		margin-right: 20px;
+		@include media-breakpoint-down(md) {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		flex-direction: column-reverse;
+	}
+}
+.contact-info__img-container {
+	max-width: 450px;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	}
+}

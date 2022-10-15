@@ -1,0 +1,258 @@
+// ----------  typography
+// ------------------------------------------------------------------------------
+
+.rte h1,
+.rte h2,
+.rte h3,
+.rte h4,
+.rte h5,
+.rte h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $font-default;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+.rte h1,
+.h1 {
+	font-weight: 600;
+	font-family: $font-default;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 64px;
+		line-height: 72px;
+	}
+
+	@include media-breakpoint-only(md) {
+		font-size: 52px;
+		line-height: 56px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 38px;
+		line-height: 40px;
+	}
+}
+
+.rte h2,
+.h2 {
+	font-family: $font-default;
+	// color: $grey;
+	font-weight: 600;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 48px;
+		line-height: 56px;
+	}
+
+	@include media-breakpoint-only(md) {
+		font-size: 40px;
+		line-height: 42px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 32px;
+		line-height: 34px;
+	}
+}
+
+.rte h3,
+.h3 {
+	font-weight: 600;
+	font-family: $font-default;
+	// color: $grey;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	@include media-breakpoint-only(md) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+.rte h4,
+.h4 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	font-family: $font-default;
+
+	@include media-breakpoint-only(md) {
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+
+.rte h5,
+.h5 {
+	font-size: 20px;
+}
+
+.rte h6,
+.h6 {
+	font-size: 16px;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 21px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+
+.rte {
+	p {
+		font-size: 18px;
+		line-height: 32px;
+		color: $grey2;
+		font-family: $font-secondary;
+		a {
+			@include hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	blockquote {
+		border-top: 1px solid $black;
+		border-bottom: 1px solid $black;
+		padding: 30px 0;
+	}
+	ol {
+		padding-left: 20px;
+	}
+	ol li {
+		list-style-type: decimal-leading-zero;
+	}
+	span {
+		font-size: 18px;
+		line-height: 32px;
+		font-weight: 400;
+		color: $black;
+	}
+	a {
+		font-size: 18px;
+		line-height: 32px;
+		font-weight: 600;
+		color: $black;
+		text-decoration: none;
+		@include hover {
+			opacity: 0.7;
+		}
+	}
+	.bold {
+		font-weight: 600;
+	}
+	.indent {
+		text-indent: 65px;
+		display: inline-block;
+		@include media-breakpoint-down(md) {
+			text-indent: 0;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.title-page {
+	margin-bottom: 71px;
+}
+
+.title-page-small {
+	margin-bottom: 38px;
+}
+
+.home-title {
+	margin-bottom: 42px;
+}
+
+.mb40 {
+	margin-bottom: 44px;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	}
+}
+
+.mb-lg {
+	margin-bottom: 71px;
+}
+
+.numbers-big {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	font-family: $font-secondary;
+	color: $white;
+	@include hover {
+		color: $orange;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
+
+.socials-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include hover {
+		opacity: 0.7;
+	}
+}
+
+.socials-icon {
+	font-size: 25px;
+	color: $white;
+}
+
+.tab-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.tab-item {
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.tab {
+	border: 1px solid $orange;
+	font-size: 18px;
+	line-height: 24px;
+	color: $orange;
+	padding: 8px 17px;
+	border-radius: 5px;
+	background-color: $white;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.tab--active {
+	color: $white;
+	background-color: $orange;
+}

@@ -312,6 +312,7 @@
     <Compile Include="Controllers\RenderMvc\BasePageController.cs" />
     <Compile Include="Controllers\RenderMvc\Error404Controller.cs" />
     <Compile Include="Controllers\RenderMvc\ArticleController.cs" />
+    <Compile Include="Controllers\RenderMvc\AboutUsController.cs" />
     <Compile Include="Controllers\RenderMvc\HomeController.cs" />
     <Compile Include="Controllers\RenderMvc\SearchResultsController.cs" />
     <Compile Include="Controllers\RenderMvc\XMLSitemapController.cs" />
@@ -340,6 +341,7 @@
     <Compile Include="ViewEngines\PartialViewEngine.cs" />
     <Compile Include="ViewModels\Pages\Error404ViewModel.cs" />
     <Compile Include="ViewModels\Pages\ArticleViewModel.cs" />
+    <Compile Include="ViewModels\Pages\AboutUsViewModel.cs" />
     <Compile Include="ViewModels\Pages\HomeViewModel.cs" />
     <Compile Include="ViewModels\Pages\PageViewModel.cs" />
     <Compile Include="ViewModels\Pages\SearchResultsViewModel.cs" />

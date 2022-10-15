@@ -1,0 +1,251 @@
+// ----------  header
+// ------------------------------------------------------------------------------
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.header__top {
+	background-color: $blue;
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
+
+.header__top-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 7px 0;
+}
+
+.header__bottom {
+	background-color: $white;
+	box-shadow: 0 2px 2px rgba($black, 0.15);
+	@include media-breakpoint-down(lg) {
+		padding: 15px 0;
+	}
+}
+
+.header__bottom-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__top-text {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	color: $white;
+	font-family: $font-secondary;
+	margin-right: 13px;
+	display: block;
+}
+
+.header__top-numbers {
+	color: $white;
+	margin-right: 14px;
+}
+
+.header__socials {
+	padding-left: 20px;
+	border-left: 1px solid $white;
+	display: flex;
+	align-items: center;
+}
+
+.header__socials-item {
+	&:not(:last-child) {
+		margin-right: 13px;
+	}
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+	@include media-breakpoint-down(lg) {
+		flex-direction: column;
+	}
+}
+
+.header__item {
+	margin-left: 16px;
+	position: relative;
+	height: 100%;
+	min-height: 80px;
+	padding: 15px 0;
+	display: flex;
+	align-items: flex-end;
+	@include media-breakpoint-down(lg) {
+		flex-direction: column;
+		min-height: auto;
+		margin-left: 0;
+	}
+}
+
+
+.header__dropdown {
+	background-color: $white;
+	opacity: 0;
+	visibility: hidden;
+	@include animation {
+		transition: $transition;
+		transition-property: opacity, visibility, height;
+	}
+	@include media-breakpoint-up(xl) {
+		position: absolute;
+		left: -40px;
+		bottom: 0;
+		transform: translateY(100%);
+		width: 464px;
+		padding: 24px 27px 24px 36px;
+		box-shadow: 0 2px 2px rgba($black, 0.15);
+	}
+	@include media-breakpoint-down(lg) {
+		height: 0;
+	}
+}
+
+.header__dropdown--active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.header__dropdown-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.header__dropdown-item {
+	width: calc(100% / 2 - 24px);
+	margin-right: 48px;
+	margin-bottom: 10px;
+	&:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	@include media-breakpoint-down(lg) {
+		text-align: center;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.header__link {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: $font-default;
+	font-weight: 600;
+	color: $grey;
+	text-transform: uppercase;
+	@include hover {
+		color: $blue;
+	}
+}
+
+.header__btn {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: $font-default;
+	font-weight: 600;
+	color: $grey;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+.header__btn-icon {
+	margin-left: 3px;
+	color: $black;
+	font-size: 12px;
+	@include animation {
+		transition: transform $transition;
+	}
+}
+
+.header__btn--active {
+	color: $blue;
+	.header__btn-icon {
+		transform: rotate(-180deg);
+	}
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 20px;
+	}
+}
+
+.header__link--active {
+	color: $blue;
+}
+
+.header__menu {
+	display: none;
+	@include media-breakpoint-down(lg) {
+		display: block;
+		width: 24px;
+	}
+}
+
+.header__menu--active {
+	.header__menu-line {
+		&:nth-of-type(1) {
+			transform: translate(0, 5px) rotate(-45deg);
+		}
+		&:nth-of-type(2) {
+			transform: translate(0, 0) rotate(45deg);
+		}
+		&:nth-of-type(3) {
+			opacity: 0;
+		}
+	}
+}
+
+.header__menu-line {
+	width: 100%;
+	background-color: $black;
+	height: 2px;
+	display: block;
+	margin-bottom: 4px;
+	@include animation {
+		transition: $transition;
+		transition-property: opacity, transform;
+	}
+}
+
+.header__navigation {
+	@include media-breakpoint-down(lg) {
+		position: absolute;
+		right: 0;
+		top: 124px;
+		width: 100%;
+		height: calc(100vh - 124px);
+		padding: 40px 20px;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		background-color: $white;
+		@include animation {
+			transition: $transition;
+			transition-property: opacity, visibility;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		top: 80px;
+		height: calc(100vh - 80px);
+	}
+}
+
+.header__navigation--active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}

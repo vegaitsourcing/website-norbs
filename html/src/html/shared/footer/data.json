@@ -1,0 +1,204 @@
+{
+	"footerLogo": {
+		"href": "javascript:;",
+		"footerImg": {
+			"img": "assets/images/footer-logo.png",
+			"alt": "Alt text"
+		}
+	},
+	"text": "Nacionalna organizacija za retke bolesti Srbije – NORBS osnovana je 23. jula 2010. godine, kao savez udruženja koja se bave pitanjima osoba sa retkim bolestima i članova njihovih porodica.",
+	"numbersText": "Besplatna linija pomoći",
+	"numbers": {
+		"text": "0800 333 103",
+		"href": "javascript:;"
+	},
+	"socialsText": "Pratite nas",
+	"social": [
+		{
+			"socialLink": {
+				"href": "javascript:;",
+				"target": "_blank",
+				"icon": "facebook"
+			}
+		},
+		{
+			"socialLink": {
+				"href": "javascript:;",
+				"target": "_blank",
+				"icon": "twitter"
+			}
+		},
+		{
+			"socialLink": {
+				"href": "javascript:;",
+				"target": "_blank",
+				"icon": "facebook"
+			}
+		}
+	],
+	"list": [
+		{
+			"title": "O retkim bolestima",
+			"item": [
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Šta su retke bolesti?"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Prava osoba sa retkim bolestima"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Registar obolelih od retkih bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Nasleđivanje retkih bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Genetičko testiranje"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Pravo na rad osoba sa retkim bolestima"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Diskriminacija osoba sa retkim bolestima"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "VREME JE DA IH PRIMETIMO"
+					}
+				}
+			]
+		},
+		{
+			"title": "Tražite pomoć?",
+			"item": [
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Šta su retke bolesti?"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Prava osoba sa retkim bolestima"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Registar obolelih od retkih bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				}
+			]
+		},
+		{
+			"title": "Ko smo mi?",
+			"item": [
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Šta su retke bolesti?"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Prava osoba sa retkim bolestima"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Registar obolelih od retkih bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				},
+				{
+					"link": {
+						"href": "javascript:;",
+						"text": "Centri za retke bolesti"
+					}
+				}
+			]
+		}
+	],
+	"bottomHolder": [
+		{
+			"bottomTitle": "NORBS je član",
+			"bottomImg": {
+				"img": "assets/images/footer-bottom-1.png",
+				"alt": "Alt text"
+			}
+		},
+		{
+			"bottomTitle": "Uz podršku",
+			"bottomImg": {
+				"img": "assets/images/footer-bottom-2.png",
+				"alt": "Alt text"
+			}
+		}
+	]
+}

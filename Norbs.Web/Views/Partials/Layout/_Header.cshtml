@@ -1,14 +1,25 @@
 ﻿@model Norbs.Core.ViewModels.Partials.Layout.HeaderViewModel
 
-<h1>@Model.HeaderTitle</h1>
+<p>@Model.HeaderTitle</p> <p>@Model.HeaderPhoneNumber</p>
+
+@if (Model.HeaderSocialLinks != null && Model.HeaderSocialLinks.Count > 0)
+{
+<ul>
+    @foreach (var link in Model.HeaderSocialLinks)
+        {
+    <a href="@link.Url" target="@link.Target">@link.Name</a>
+        }
+</ul>
+}
+
 
 @if (Model.NavigationItems != null && Model.NavigationItems.Count > 0)
 {
-    <ul>
-        @foreach (var navigationItem in Model.NavigationItems)
+<ul>
+    @foreach (var navigationItem in Model.NavigationItems)
         {
-            <li>@navigationItem.Title</li>
+    <li>@navigationItem.Title</li>
         }
-    </ul>
+</ul>
 
 }

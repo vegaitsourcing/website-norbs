@@ -1,0 +1,31 @@
+<div class="help-block">
+	<div class="wrap">
+		<div class="help-block__wrapper">
+			{{#if heading}}
+				<h2 class="h2 help-block__heading mb40">{{heading}}</h2>
+			{{/if}}
+			{{#if desc}}
+				<p class="text help-block__desc mb40">{{desc}}</p>
+			{{/if}}
+			{{#if title}}
+				<h3 class="h3 help-block__title">{{title}}</h3>
+			{{/if}}
+			{{#if helpItem}}
+			<ul class="help-block__list">
+				{{#each helpItem}}
+					<li class="help-block__item bg-{{background}}">
+						{{#if this.image}}
+							<img src="{{this.image.src}}" alt="{{this.image.alt}}" class="help-block__img">
+						{{/if}}
+						{{#if this.link}}
+							<a href="{{this.link.href}}" class="help-block__link">
+								<span class="help-block__link-text">{{{this.link.text}}}</span>
+							</a>
+						{{/if}}
+					</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+	</div>
+</div>
