@@ -5,9 +5,15 @@
 		"header": {
 			">>": "shared/header/data.json"
 		},
+	
 		"footer": {
 			">>": "shared/footer/data.json"
 		},
-		"sections": []
+		"sections": [
+			{
+				"moduleAlias" : "banner",
+				">>" : "modules/banner/data.json"
+			}
+		]
 	}
 }
