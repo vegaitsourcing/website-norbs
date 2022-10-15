@@ -488,6 +488,7 @@
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="connections.config" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -504,6 +505,7 @@
     <Content Include="Views\Partials\Modules\OurActivitiesModule.cshtml" />
     <Content Include="Views\Partials\Modules\ReadMoreModule.cshtml" />
     <Content Include="Views\Partials\Modules\ShareStoryModule.cshtml" />
+    <Content Include="Views\Article.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
