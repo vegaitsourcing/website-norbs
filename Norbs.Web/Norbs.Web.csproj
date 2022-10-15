@@ -501,6 +501,7 @@
     <Content Include="Views\Partials\Modules\OurActivitiesModule.cshtml" />
     <Content Include="Views\Partials\Modules\ReadMoreModule.cshtml" />
     <Content Include="Views\Partials\Modules\ShareStoryModule.cshtml" />
+    <Content Include="Views\Partials\Modules\FindMoreModule.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
