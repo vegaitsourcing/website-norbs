@@ -4,3 +4,35 @@
 {
     @Model.Title
 }
+
+<div class="banner">
+    @if (Model.BackgroundImage != null && !string.IsNullOrWhiteSpace(Model.BackgroundImage.Url()))
+    {
+        <div class="banner__img">
+            <img src="@Model.BackgroundImage.Url()" alt="@Model.BackgroundImage.Url" class="banner__img-item">
+        </div>
+    }
+
+    <div class="banner__content">
+        <div class="wrap">
+            @if (!string.IsNullOrWhiteSpace(Model.Title))
+            {
+                <h1 class="h1 banner__heading">@Model.Title</h1>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Pretext))
+            {
+                <p class="banner__paragraph">@Model.Pretext</p>
+            }
+
+            @if (Model.Buttons != null && Model.Buttons.Any())
+            {
+                <div class="banner__buttons">
+                    @foreach (var button in Model.Buttons)
+                    {
+                        <a href="@button.Url" target="@button.Target" class="btn banner__button">@button.Name</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>

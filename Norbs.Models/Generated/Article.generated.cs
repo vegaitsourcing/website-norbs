@@ -20,58 +20,37 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Blog Item</summary>
-	[PublishedModel("blogItem")]
-	public partial class BlogItem : PublishedContentModel, ITitleBox
+	/// <summary>Article</summary>
+	[PublishedModel("article")]
+	public partial class Article : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "blogItem";
+		public new const string ModelTypeAlias = "article";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlogItem, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Article, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public BlogItem(IPublishedContent content)
+		public Article(IPublishedContent content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Author Name
+		/// Body
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("authorName")]
-		public string AuthorName => this.Value<string>("authorName");
-
-		///<summary>
-		/// Body Text
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText => this.Value<IHtmlString>("bodyText");
-
-		///<summary>
-		/// Categories
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("categories")]
-		public IEnumerable<string> Categories => this.Value<IEnumerable<string>>("categories");
-
-		///<summary>
-		/// Intro Text
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("introText")]
-		public string IntroText => this.Value<string>("introText");
+		[ImplementPropertyType("body")]
+		public string Body => this.Value<string>("body");
 
 		///<summary>
 		/// Published On
@@ -81,24 +60,10 @@ namespace Norbs.Models.Generated
 		public DateTime PublishedOn => this.Value<DateTime>("publishedOn");
 
 		///<summary>
-		/// Thumbnail Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("thumbnailImage")]
-		public Image ThumbnailImage => this.Value<Image>("thumbnailImage");
-
-		///<summary>
-		/// Subtitle
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("subtitle")]
-		public string Subtitle => TitleBox.GetSubtitle(this);
-
-		///<summary>
 		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("title")]
-		public string Title => TitleBox.GetTitle(this);
+		public string Title => this.Value<string>("title");
 	}
 }

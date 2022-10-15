@@ -20,51 +20,51 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Home Banner Module</summary>
-	[PublishedModel("homeBannerModule")]
-	public partial class HomeBannerModule : PublishedElementModel, IINestedContent
+	/// <summary>Read More Module</summary>
+	[PublishedModel("readMoreModule")]
+	public partial class ReadMoreModule : PublishedElementModel, IINestedContent
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "homeBannerModule";
+		public new const string ModelTypeAlias = "readMoreModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HomeBannerModule, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ReadMoreModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public HomeBannerModule(IPublishedElement content)
+		public ReadMoreModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Background Image
+		/// Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("backgroundImage")]
-		public IPublishedContent BackgroundImage => this.Value<IPublishedContent>("backgroundImage");
+		[ImplementPropertyType("image")]
+		public Image Image => this.Value<Image>("image");
 
 		///<summary>
-		/// Buttons
+		/// Link
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("buttons")]
-		public IEnumerable<Umbraco.Web.Models.Link> Buttons => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("buttons");
+		[ImplementPropertyType("link")]
+		public IEnumerable<Umbraco.Web.Models.Link> Link => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("link");
 
 		///<summary>
-		/// Pretext
+		/// Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("pretext")]
-		public string Pretext => this.Value<string>("pretext");
+		[ImplementPropertyType("text")]
+		public string Text => this.Value<string>("text");
 
 		///<summary>
 		/// Title
