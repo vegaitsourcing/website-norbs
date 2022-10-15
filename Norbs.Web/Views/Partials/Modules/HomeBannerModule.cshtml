@@ -1,10 +1,5 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.HomeBannerModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
-
 <div class="banner">
     @if (Model.BackgroundImage != null && !string.IsNullOrWhiteSpace(Model.BackgroundImage.Url()))
     {
