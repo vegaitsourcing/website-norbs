@@ -1,0 +1,26 @@
+// ---------- page-intro
+// ------------------------------------------------------------------------------
+
+.page-intro {
+	width: 100%;
+	min-height: 290px;
+	height: 100%;
+	background-position: right;
+	background-repeat: no-repeat;
+	padding: 109px 0 40px;
+	margin-bottom: 100px;
+	@include media-breakpoint-down(md) {
+		min-height: 200px;
+		padding: 40px 0 20px;
+		margin-bottom: 60px;
+	}
+	@include media-breakpoint-down(sm) {
+		min-height: 120px;
+		padding: 20px 0;
+		margin-bottom: 40px;
+	}
+}
+
+.page-intro__title {
+	color: $white;
+}

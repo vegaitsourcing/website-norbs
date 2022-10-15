@@ -64,17 +64,6 @@
 	}
 }
 
-.header__socials-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.header__socials-icon {
-	font-size: 25px;
-	color: $white;
-}
-
 .header__list {
 	display: flex;
 	align-items: center;
@@ -236,9 +225,9 @@
 	@include media-breakpoint-down(lg) {
 		position: absolute;
 		right: 0;
-		top: 130px;
+		top: 124px;
 		width: 100%;
-		height: calc(100vh - 130px);
+		height: calc(100vh - 124px);
 		padding: 40px 20px;
 		opacity: 0;
 		visibility: hidden;

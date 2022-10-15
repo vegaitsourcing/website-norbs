@@ -7,11 +7,11 @@ polyfills.objectFit();
 import helpers from './_project/helpers';
 helpers.init();
 
-import slider from './_project/slider';
-slider.init();
+// import slider from './_project/slider';
+// slider.init();
 
-import cookieModal from './_project/cookie-modal';
-cookieModal.init();
+// import cookieModal from './_project/cookie-modal';
+// cookieModal.init();
 
 import header from './_project/header';
 header.init();

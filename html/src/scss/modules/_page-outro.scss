@@ -1,0 +1,38 @@
+// ---------- page-outro
+// ------------------------------------------------------------------------------
+
+.page-outro {
+	width: 100%;
+}
+
+.page-outro__container {
+	padding: 72px 0;
+	border-top: 1px solid $grey-light;
+	@include media-breakpoint-down(md) {
+		padding: 35px 0;
+	}
+}
+
+.page-outro__title {
+	margin-bottom: 38px;
+	color: $grey;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 20px;
+	}
+}
+
+.page-outro__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page-outro__item {
+	margin-right: 70px;
+	margin-bottom: 15px;
+	&:last-child {
+		margin-right: 0;
+	}
+	@include media-breakpoint-down(md) {
+		margin-right: 30px;
+	}
+}

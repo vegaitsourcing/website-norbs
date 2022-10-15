@@ -1,0 +1,20 @@
+// ---------- tabs-block
+// ------------------------------------------------------------------------------
+
+.tabs-block {
+	width: 100%;
+	margin-bottom: 120px;
+}
+
+.tabs-block__list {
+	margin-bottom: 50px;
+}
+
+.tabs-block__title {
+	margin-bottom: 38px;
+}
+
+.tabs-block__holder-cards {
+	display: flex;
+	flex-wrap: wrap;
+}
