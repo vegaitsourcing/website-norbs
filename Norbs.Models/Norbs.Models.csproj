@@ -412,7 +412,9 @@
     <Compile Include="Extensions\SeoExtensions.cs" />
     <Compile Include="Generated\AboutUs.generated.cs" />
     <Compile Include="Generated\AboutUsModule.generated.cs" />
+    <Compile Include="Generated\Article.generated.cs" />
     <Compile Include="Generated\File.cs" />
+    <Compile Include="Generated\FindMoreModule.generated.cs" />
     <Compile Include="Generated\HelpLineModule.generated.cs" />
     <Compile Include="Generated\Home.cs" />
     <Compile Include="Generated\HomeBannerModule.generated.cs" />
