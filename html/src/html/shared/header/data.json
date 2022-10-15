@@ -1,8 +1,147 @@
 {
-	"logo": "assets/images/logo.png",
-	"menu": [
-		"Home",
-		"About us",
-		"Contacts us"
+	"topText": "Besplatna linija pomoći",
+	"numbers": {
+		"href": "javascript:;",
+		"text": "0800 333 103"
+	},
+	"icon": [
+		{
+			"link": {
+				"href": "javascript:;",
+				"target": "_blank",
+				"svg": "facebook"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"target": "_blank",
+				"svg": "twitter"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"target": "_blank",
+				"svg": "facebook"
+			}
+		}
+	],
+	"logo": {
+		"img": "assets/images/logo.png",
+		"alt": "Alt text",
+		"href": "javascript:;"
+	},
+	"item": [
+		{
+			"dropdown": {
+				"btn": "O nama",
+				"dropdownItem": [
+					{
+						"dropdownLink": {
+							"text": "O NORBS-u",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "Postanite član",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "Linkovi",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "RareConnect u Srbiji",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "NORBS u medijima",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "Prijatelji i donatori",
+							"href": "javascript:;"
+						}
+					}
+				]
+			}
+		},
+		{
+			"dropdown": {
+				"btn": "Tražite pomoć",
+				"dropdownItem": [
+					{
+						"dropdownLink": {
+							"text": "Zdravstvena zaštita",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "Socijalna zaštita",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "Psihološka podrška",
+							"href": "javascript:;"
+						}
+					},
+					{
+						"dropdownLink": {
+							"text": "Pravna pomoć",
+							"href": "javascript:;"
+						}
+					}
+				]
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"text": "O retkim bolestima"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"text": "aktivnosti"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"text": "NORBS+"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"text": "Resurs centar"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"text": "Vesti"
+			}
+		},
+		{
+			"link": {
+				"href": "javascript:;",
+				"text": "Kontakt"
+			}
+		}
 	]
 }

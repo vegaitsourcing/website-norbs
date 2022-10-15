@@ -38,8 +38,12 @@ button {
 .link {
 	color: $orange;
 	font-weight: 500;
-	line-height: 40px;
+	line-height: 30px;
 	font-family: $font-default;
+	text-decoration: underline;
+	@include hover {
+		color: $grey;
+	}
 }
 
 .link-main {

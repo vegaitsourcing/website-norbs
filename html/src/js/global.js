@@ -12,3 +12,6 @@ slider.init();
 
 import cookieModal from './_project/cookie-modal';
 cookieModal.init();
+
+import header from './_project/header';
+header.init();
