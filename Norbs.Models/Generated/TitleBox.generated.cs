@@ -20,22 +20,9 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	// Mixin Content Type with alias "titleBox"
-	/// <summary>Title Box</summary>
-	public partial interface ITitleBox : IPublishedElement
-	{
-		/// <summary>Subtitle</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string Subtitle { get; }
-
-		/// <summary>Title</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string Title { get; }
-	}
-
 	/// <summary>Title Box</summary>
 	[PublishedModel("titleBox")]
-	public partial class TitleBox : PublishedElementModel, ITitleBox
+	public partial class TitleBox : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -63,21 +50,13 @@ namespace Norbs.Models.Generated
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("subtitle")]
-		public string Subtitle => GetSubtitle(this);
-
-		/// <summary>Static getter for Subtitle</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetSubtitle(ITitleBox that) => that.Value<string>("subtitle");
+		public string Subtitle => this.Value<string>("subtitle");
 
 		///<summary>
 		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("title")]
-		public string Title => GetTitle(this);
-
-		/// <summary>Static getter for Title</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetTitle(ITitleBox that) => that.Value<string>("title");
+		public string Title => this.Value<string>("title");
 	}
 }

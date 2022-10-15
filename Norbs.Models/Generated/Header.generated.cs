@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	// Mixin Content Type with alias "header"
 	/// <summary>Header</summary>
-	public partial interface IHeader : IPublishedElement
+	public partial interface IHeader : IPublishedContent
 	{
 		/// <summary>Header Phone Number</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -35,11 +35,15 @@ namespace Norbs.Models.Generated
 		/// <summary>Header Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		string HeaderTitle { get; }
+
+		/// <summary>Logo</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		Image Logo { get; }
 	}
 
 	/// <summary>Header</summary>
 	[PublishedModel("header")]
-	public partial class Header : PublishedElementModel, IHeader
+	public partial class Header : PublishedContentModel, IHeader
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -56,7 +60,7 @@ namespace Norbs.Models.Generated
 #pragma warning restore 0109
 
 		// ctor
-		public Header(IPublishedElement content)
+		public Header(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -94,5 +98,16 @@ namespace Norbs.Models.Generated
 		/// <summary>Static getter for Header Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public static string GetHeaderTitle(IHeader that) => that.Value<string>("headerTitle");
+
+		///<summary>
+		/// Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("logo")]
+		public Image Logo => GetLogo(this);
+
+		/// <summary>Static getter for Logo</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static Image GetLogo(IHeader that) => that.Value<Image>("logo");
 	}
 }
