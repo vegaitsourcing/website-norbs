@@ -20,49 +20,64 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	// Mixin Content Type with alias "footer"
-	/// <summary>Footer</summary>
-	public partial interface IFooter : IPublishedElement
+	// Mixin Content Type with alias "titleBox"
+	/// <summary>Title Box</summary>
+	public partial interface ITitleBox : IPublishedElement
 	{
-		/// <summary>Copyright Text</summary>
+		/// <summary>Subtitle</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string CopyrightText { get; }
+		string Subtitle { get; }
+
+		/// <summary>Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		string Title { get; }
 	}
 
-	/// <summary>Footer</summary>
-	[PublishedModel("footer")]
-	public partial class Footer : PublishedElementModel, IFooter
+	/// <summary>Title Box</summary>
+	[PublishedModel("titleBox")]
+	public partial class TitleBox : PublishedElementModel, ITitleBox
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "footer";
+		public new const string ModelTypeAlias = "titleBox";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Footer, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TitleBox, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public Footer(IPublishedElement content)
+		public TitleBox(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Copyright Text: The site copyright text.
+		/// Subtitle
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("copyrightText")]
-		public string CopyrightText => GetCopyrightText(this);
+		[ImplementPropertyType("subtitle")]
+		public string Subtitle => GetSubtitle(this);
 
-		/// <summary>Static getter for Copyright Text</summary>
+		/// <summary>Static getter for Subtitle</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetCopyrightText(IFooter that) => that.Value<string>("copyrightText");
+		public static string GetSubtitle(ITitleBox that) => that.Value<string>("subtitle");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("title")]
+		public string Title => GetTitle(this);
+
+		/// <summary>Static getter for Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static string GetTitle(ITitleBox that) => that.Value<string>("title");
 	}
 }

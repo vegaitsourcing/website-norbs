@@ -20,49 +20,57 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	// Mixin Content Type with alias "footer"
-	/// <summary>Footer</summary>
-	public partial interface IFooter : IPublishedElement
-	{
-		/// <summary>Copyright Text</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string CopyrightText { get; }
-	}
-
-	/// <summary>Footer</summary>
-	[PublishedModel("footer")]
-	public partial class Footer : PublishedElementModel, IFooter
+	/// <summary>Our Activities Module</summary>
+	[PublishedModel("ourActivitiesModule")]
+	public partial class OurActivitiesModule : PublishedElementModel, IINestedContent
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "footer";
+		public new const string ModelTypeAlias = "ourActivitiesModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Footer, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<OurActivitiesModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public Footer(IPublishedElement content)
+		public OurActivitiesModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Copyright Text: The site copyright text.
+		/// Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("copyrightText")]
-		public string CopyrightText => GetCopyrightText(this);
+		[ImplementPropertyType("image")]
+		public Image Image => this.Value<Image>("image");
 
-		/// <summary>Static getter for Copyright Text</summary>
+		///<summary>
+		/// Links
+		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetCopyrightText(IFooter that) => that.Value<string>("copyrightText");
+		[ImplementPropertyType("links")]
+		public IEnumerable<Umbraco.Web.Models.Link> Links => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("links");
+
+		///<summary>
+		/// Pretext
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("pretext")]
+		public string Pretext => this.Value<string>("pretext");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
 	}
 }

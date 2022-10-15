@@ -22,16 +22,24 @@ namespace Norbs.Models.Generated
 {
 	// Mixin Content Type with alias "header"
 	/// <summary>Header</summary>
-	public partial interface IHeader : IPublishedContent
+	public partial interface IHeader : IPublishedElement
 	{
-		/// <summary>Logo</summary>
+		/// <summary>Header Phone Number</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		Image Logo { get; }
+		string HeaderPhoneNumber { get; }
+
+		/// <summary>Header Social Links</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks { get; }
+
+		/// <summary>Header Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		string HeaderTitle { get; }
 	}
 
 	/// <summary>Header</summary>
 	[PublishedModel("header")]
-	public partial class Header : PublishedContentModel, IHeader
+	public partial class Header : PublishedElementModel, IHeader
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -48,21 +56,43 @@ namespace Norbs.Models.Generated
 #pragma warning restore 0109
 
 		// ctor
-		public Header(IPublishedContent content)
+		public Header(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Logo: The site logo image.
+		/// Header Phone Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("logo")]
-		public Image Logo => GetLogo(this);
+		[ImplementPropertyType("headerPhoneNumber")]
+		public string HeaderPhoneNumber => GetHeaderPhoneNumber(this);
 
-		/// <summary>Static getter for Logo</summary>
+		/// <summary>Static getter for Header Phone Number</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static Image GetLogo(IHeader that) => that.Value<Image>("logo");
+		public static string GetHeaderPhoneNumber(IHeader that) => that.Value<string>("headerPhoneNumber");
+
+		///<summary>
+		/// Header Social Links
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("headerSocialLinks")]
+		public IEnumerable<Umbraco.Web.Models.Link> HeaderSocialLinks => GetHeaderSocialLinks(this);
+
+		/// <summary>Static getter for Header Social Links</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static IEnumerable<Umbraco.Web.Models.Link> GetHeaderSocialLinks(IHeader that) => that.Value<IEnumerable<Umbraco.Web.Models.Link>>("headerSocialLinks");
+
+		///<summary>
+		/// Header Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("headerTitle")]
+		public string HeaderTitle => GetHeaderTitle(this);
+
+		/// <summary>Static getter for Header Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static string GetHeaderTitle(IHeader that) => that.Value<string>("headerTitle");
 	}
 }
