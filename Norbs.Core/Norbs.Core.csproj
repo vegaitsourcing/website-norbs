@@ -347,7 +347,6 @@
     <Compile Include="ViewModels\Partials\Layout\FooterViewModel.cs" />
     <Compile Include="ViewModels\Partials\Layout\HeaderViewModel.cs" />
     <Compile Include="ViewModels\Partials\Layout\MetaTagsViewModel.cs" />
-    <Compile Include="ViewModels\Partials\Layout\NavBarViewModel.cs" />
     <Compile Include="ViewModels\Partials\Layout\OpenGraphViewModel.cs" />
     <Compile Include="ViewModels\Partials\Listing\ListingViewModel.cs" />
     <Compile Include="ViewModels\Partials\Listing\PaginationViewModel.cs" />
