@@ -1,0 +1,25 @@
+{
+	"content": "modules/contact-info/text.content.html",
+	"image": {
+		"img": "assets/images/contact-logo.png",
+		"alt": "Norbs logo"
+	},
+	"title": "Linija pomoći - Prijavna forma",
+	"form": {
+		"title": "Kontakt podaci",
+		"text": "Da li podnosite prijavu za sebe ili za nekog dugog?"
+	},
+	"checkbox": [
+		{
+			"text": "Za sebe",
+			"srOnly": "Za sebe, checkboks",
+			"name": "check1"
+		},
+		{
+			"text": "Za nekog drugog",
+			"srOnly": "Za sebe, checkboks",
+			"name": "check2"
+		}
+	]
+
+}
