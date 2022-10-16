@@ -1,0 +1,15 @@
+// ---------- heading-block
+// ------------------------------------------------------------------------------
+
+.heading-block {
+	width: 100%;
+	padding: 40px 0;
+}
+.heading-block__date {
+	color: $grey-light;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	display: block;
+	text-align: right;
+}
