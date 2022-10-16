@@ -18,21 +18,24 @@
 			"socialLink": {
 				"href": "javascript:;",
 				"target": "_blank",
-				"icon": "facebook"
+				"icon": "facebook",
+				"srOnlyText": "facebook"
 			}
 		},
 		{
 			"socialLink": {
 				"href": "javascript:;",
 				"target": "_blank",
-				"icon": "twitter"
+				"icon": "twitter",
+				"srOnlyText": "twitter"
 			}
 		},
 		{
 			"socialLink": {
 				"href": "javascript:;",
 				"target": "_blank",
-				"icon": "facebook"
+				"icon": "facebook",
+				"srOnlyText": "facebook"
 			}
 		}
 	],

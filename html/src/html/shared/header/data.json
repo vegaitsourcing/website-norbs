@@ -9,21 +9,24 @@
 			"link": {
 				"href": "javascript:;",
 				"target": "_blank",
-				"svg": "facebook"
+				"svg": "facebook",
+				"srOnlyText": "facebook"
 			}
 		},
 		{
 			"link": {
 				"href": "javascript:;",
 				"target": "_blank",
-				"svg": "twitter"
+				"svg": "twitter",
+				"srOnlyText": "twitter"
 			}
 		},
 		{
 			"link": {
 				"href": "javascript:;",
 				"target": "_blank",
-				"svg": "facebook"
+				"svg": "facebook",
+				"srOnlyText": "facebook"
 			}
 		}
 	],
