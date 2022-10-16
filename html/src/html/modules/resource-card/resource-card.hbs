@@ -1,0 +1,24 @@
+<div class="resource-card">
+	{{#if iframe}}
+	<div class="resource-card__iframe-block">
+		<iframe class="resource-card__iframe" src="{{iframe}}" frameborder="0" allowfullscreen></iframe>
+	</div>
+	{{/if}}
+	{{#if img}}
+	<div class="resource-card__img-block">
+		<img src="{{img.img}}" alt="{{img.alt}}" class="resource-card__img">
+	</div>
+	{{/if}}
+	{{#if title}}
+	<h3 class="resource-card__title h3">{{title}}</h3>
+	{{/if}}
+	{{#if link}}
+	<a href="{{link.href}}" class="resource-card__link link link-small"
+	{{#ifEquals this.link.target "_blank"}}
+	target="_blank" rel="noopener noreferrer"{{/ifEquals}}
+	{{#if this.link.download}}
+	download
+	{{/if}}
+	>{{link.text}}</a>
+	{{/if}}
+</div>

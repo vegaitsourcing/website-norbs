@@ -1,0 +1,186 @@
+{
+	"template": "resources",
+	"data": {
+		">>": "shared/master/data.json",
+		"header": {
+			">>": "shared/header/data.json"
+		},
+		"footer": {
+			">>": "shared/footer/data.json"
+		},
+		"sections": [
+			{
+				"moduleAlias": "page-intro",
+				"title": "Resurs centar",
+				"bgImg": "assets/images/page-intro-bg.png",
+				"bgColor": "orange"
+			},
+			{
+				"moduleAlias": "tabs-block",
+				"item": [
+					{
+						"btn": "svi resursi",
+						"active": true
+					},
+					{
+						"btn": "video materijal"
+					},
+					{
+						"btn": "publikacije"
+					},
+					{
+						"btn": "ako postoji još neka kategorija"
+					}
+				],
+				"title": "svi resursi",
+				"cards": [
+					{
+						"resource-card": {
+							"iframe": "https://www.youtube.com/embed/d9TvFF0YEio",
+							"title": "Naslov videa lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "pogledaj video",
+								"target": "_blank"
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"img": {
+								"img": "assets/images/resources-img.jpg",
+								"alt": "alt text"
+							},
+							"title": "Naslov publikacije lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "sačuvaj",
+								"target": "_blank",
+								"download": true
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"img": {
+								"img": "assets/images/resources-img.jpg",
+								"alt": "alt text"
+							},
+							"title": "Naslov publikacije lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "sačuvaj",
+								"target": "_blank",
+								"download": true
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"img": {
+								"img": "assets/images/resources-img.jpg",
+								"alt": "alt text"
+							},
+							"title": "Naslov publikacije lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "sačuvaj",
+								"target": "_blank",
+								"download": true
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"iframe": "https://www.youtube.com/embed/d9TvFF0YEio",
+							"title": "Naslov videa lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "pogledaj video",
+								"target": "_blank"
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"img": {
+								"img": "assets/images/resources-img.jpg",
+								"alt": "alt text"
+							},
+							"title": "Naslov publikacije lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "sačuvaj",
+								"target": "_blank",
+								"download": true
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"iframe": "https://www.youtube.com/embed/d9TvFF0YEio",
+							"title": "Naslov videa lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "pogledaj video",
+								"target": "_blank"
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"iframe": "https://www.youtube.com/embed/d9TvFF0YEio",
+							"title": "Naslov videa lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "pogledaj video",
+								"target": "_blank"
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"iframe": "https://www.youtube.com/embed/d9TvFF0YEio",
+							"title": "Naslov videa lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "pogledaj video",
+								"target": "_blank"
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"img": {
+								"img": "assets/images/resources-img.jpg",
+								"alt": "alt text"
+							},
+							"title": "Naslov publikacije lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "sačuvaj",
+								"target": "_blank",
+								"download": true
+							}
+						}
+					},
+					{
+						"resource-card": {
+							"img": {
+								"img": "assets/images/resources-img.jpg",
+								"alt": "alt text"
+							},
+							"title": "Naslov publikacije lorem ipsum dolor sit amet, consectetuer ",
+							"link": {
+								"href": "javascript:;",
+								"text": "sačuvaj",
+								"target": "_blank",
+								"download": true
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}
