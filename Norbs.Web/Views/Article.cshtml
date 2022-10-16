@@ -1,6 +1,6 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ArticleViewModel>
 @using ContentModels = Norbs.Models.Generated;
-@{
-	Layout = null;
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
 }
-Artikal

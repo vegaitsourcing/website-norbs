@@ -50,7 +50,7 @@ namespace Norbs.Models.Generated
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("modules")]
-		public IEnumerable<ArticleBodyModule> Modules => this.Value<IEnumerable<ArticleBodyModule>>("modules");
+		public IEnumerable<IPublishedElement> Modules => this.Value<IEnumerable<IPublishedElement>>("modules");
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).

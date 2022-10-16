@@ -416,6 +416,7 @@
     <Compile Include="Generated\ArticleBodyModule.generated.cs" />
     <Compile Include="Generated\File.cs" />
     <Compile Include="Generated\FindMoreModule.generated.cs" />
+    <Compile Include="Generated\FooterLinksBlock.generated.cs" />
     <Compile Include="Generated\HelpLineModule.generated.cs" />
     <Compile Include="Generated\Home.cs" />
     <Compile Include="Generated\HomeBannerModule.generated.cs" />
@@ -426,8 +427,10 @@
     <Compile Include="Generated\NeedHelpModule.generated.cs" />
     <Compile Include="Generated\NeedMoreLinkModule.generated.cs" />
     <Compile Include="Generated\OurActivitiesModule.generated.cs" />
+    <Compile Include="Generated\PageIntroModule.generated.cs" />
     <Compile Include="Generated\ReadMoreModule.generated.cs" />
     <Compile Include="Generated\ShareStoryModule.generated.cs" />
+    <Compile Include="Generated\TitleBox.generated.cs" />
     <Compile Include="Generated\UmbracoMediaArticle.generated.cs" />
     <Compile Include="Generated\UmbracoMediaAudio.generated.cs" />
     <Compile Include="Generated\UmbracoMediaVectorGraphics.generated.cs" />
