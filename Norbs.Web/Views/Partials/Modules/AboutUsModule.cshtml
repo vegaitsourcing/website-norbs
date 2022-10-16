@@ -1,6 +1,39 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.AboutUsModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
+<main class="main">
+    <div class="page-intro bg-orange" style="background-image: url(assets/images/page-intro-bg.png);">
+        <div class="wrap">
+            @if (!string.IsNullOrWhiteSpace(Model.PageTitle))
+            {
+                <h1 class="page-intro__title h1">@Model.PageTitle</h1>
+            }
+        </div>
+    </div>
+    <div class="text-content">
+        @if (!string.IsNullOrWhiteSpace(Model.ContentTitle))
+        {
+            <h2 class="page-outro__title h2">@Model.ContentTitle</h2>
+
+        }
+        @if (Model.Body != null)
+        {
+            @Model.Body
+        }
+    </div>
+    <div class="page-outro">
+        <div class="wrap wrap--inner">
+            <div class="page-outro__container">
+                       
+                <ul class="page-outro__list">
+                    @foreach (var link in Model.RelatedLink)
+                    {
+                        <li class="page-outro__item">
+                            <a href="@link.Url" class="page-outro__link link link-main">@link.Name</a>
+                        </li>
+                    }
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</main>

@@ -50,6 +50,7 @@ namespace Norbs.Models.Generated
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("color")]
+
 		public Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor Color => this.Value<Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor>("color");
 
 		///<summary>

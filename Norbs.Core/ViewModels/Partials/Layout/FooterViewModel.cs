@@ -9,7 +9,7 @@ namespace Norbs.Core.ViewModels.Partials.Layout
 		{
 			if (footer == null) throw new ArgumentNullException(nameof(footer));
 
-			CopyrightText = footer.CopyrightText;
+			//TODO
 		}
 
 		public string CopyrightText { get; }
