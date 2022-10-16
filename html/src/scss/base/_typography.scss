@@ -45,6 +45,7 @@
 	font-family: $font-default;
 	margin-bottom: 38px;
 	font-weight: 600;
+	color: $grey;
 
 
 	@include media-breakpoint-up(lg) {
@@ -68,6 +69,7 @@
 	font-weight: 600;
 	font-family: $font-default;
 	margin-bottom: 38px;
+	color: $grey;
 
 	@include media-breakpoint-up(lg) {
 		font-size: 24px;
@@ -102,11 +104,17 @@
 .rte h5,
 .h5 {
 	font-size: 20px;
+	color: $grey;
 }
 
 .rte h6,
 .h6 {
 	font-size: 16px;
+	color: $grey;
+}
+
+p {
+	color: $grey;
 }
 
 .text {

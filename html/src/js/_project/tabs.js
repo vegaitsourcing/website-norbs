@@ -18,7 +18,7 @@ const tabs = {
 				this.tabTitle.innerHTML = tabText;
 			});
 		});
-		document.querySelector('.js-tab').click();
+		document.querySelector('.js-tab')?.click();
 	},
 };
 
