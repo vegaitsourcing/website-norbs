@@ -1,51 +1,58 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ArticlesViewModel>
 
 <main class="main">
+        @foreach (var module in Model.Modules)
+        {
+            Html.RenderPartial("Modules/" + module.GetType().Name, module);
+        }
     <div class="tabs-block">
-    	<div class="wrap wrap--inner">
-    		<div class="tabs-block__container">
-    			<ul class="tabs-block__list tab-list">
-    				<li class="tabs-block__item tab-item">
-    					<button type="button" class="tabs-block__btn js-tab tab tab--active">Blog</button>
-    				</li>
-    			</ul>
-    			<div class="tabs-block__holder js-tab-holder">
-    				{{#if title}}
-    				<h3 class="tabs-block__title h3 js-tab-title"></h3>
-    				{{/if}}
-    				{{#if cards}}
-    				<div class="tabs-block__holder-cards">
-    					{{#each cards}}
-    						{{#if resource-card}}
-    						{{> resource-card resource-card}}
-    						{{/if}}
-    							{{> news-card news-card}}
-    					{{/each}}
-    				</div>
-    				{{/if}}
-    				{{#if links}}
-    				<ul class="tabs-block__holder-links">
-    					{{#each links}}
-    					{{/each}}
-    				</ul>
-    				{{/if}}
-    			</div>
-    		</div>
-    	</div>
+        <div class="wrap wrap--inner">
+            <div class="tabs-block__container">
+                @{
+                    bool firstActiveTag = true;
+                	var tabSelection = Umbraco.Content(Guid.Parse("87d5b7bc-bb8b-468e-9c5d-ca508194fbaa"))
+                    .ChildrenOfType("tag")
+                    .Where(x => x.IsVisible());
+                }
+                <ul class="tabs-block__list tab-list">
+            	@foreach (var item in tabSelection)
+            	{
+            	    string activeClass = firstActiveTag ? "tab--active" : "";
+            	    if(firstActiveTag) {
+            	        firstActiveTag = false;
+            	    }
+                    <li class="tabs-block__item tab-item">
+                        <button type="button" class="tabs-block__btn js-tab tab @activeClass">@item.Name</button>
+                    </li>
+            	}
+                </ul>
+                
+                @{
+                    var articleSelection = Umbraco.Content(Guid.Parse("97cf61da-61e5-4023-a5f3-d3b450cb311d"))
+                    .ChildrenOfType("article")
+                    .Where(x => x.IsVisible());
+                }
+                <div class="tabs-block__holder js-tab-holder">
+                    <h3 class="tabs-block__title h3 js-tab-title"></h3>
+                    @foreach(var article in Model.Articles)
+                    {
+                        <div class="tabs-block__holder-cards">
+                            <a href="@article.Url" class="news-card">
+                            	<div class="news-card__wrap">
+                            		<div class="news-card__img">
+                            			<img src="@article.PreviewImageUrl" alt="Preview image" class="news-card__img-item">
+                            		</div>
+                            		<div class="news-card__content">
+                            				<h3 class="h3 news-card__title">@article.Title</h3>
+                            				<span class="link link-small news-card__readmore">@Model.ReadMoreText</span>
+                            		</div>
+                            	</div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
     </div>
 </main>
-
-@{
-    var selection = Umbraco.Content(Guid.Parse("97cf61da-61e5-4023-a5f3-d3b450cb311d"))
-    .ChildrenOfType("article")
-    .Where(x => x.IsVisible());
-}
-<ul>
-    @foreach (var item in selection)
-    {
-        <li>
-            <a href="@item.Url">@item.Name</a>
-        </li>
-    }
-</ul>
 

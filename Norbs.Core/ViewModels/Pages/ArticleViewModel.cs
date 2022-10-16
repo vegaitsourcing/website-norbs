@@ -10,8 +10,14 @@ namespace Norbs.Core.ViewModels.Pages
 		public ArticleViewModel(IPageContext<Article> context) : base(context)
 		{
 			Modules = context.Page.Modules.OfType<IINestedContent>();
+			Url = context.Page.Url;
+			PreviewImageUrl = context.Page.PreviewImage.Url;
+			Title = context.Page.PageTitle;
 		}
 
 		public IEnumerable<IINestedContent> Modules { get; }
+		public string Url { get; }
+		public string PreviewImageUrl { get; }
+		public string Title { get; }	
 	}
 }
