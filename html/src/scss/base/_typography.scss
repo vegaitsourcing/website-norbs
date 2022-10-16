@@ -190,16 +190,25 @@ p {
 	ul li {
 		margin-bottom: 5px;
 	}
-	img {
-		width: 100%;
-		height: auto;
-	}
+
 	.bold {
 		font-weight: 600;
 	}
-	.img--small {
+	.rte-img {
+		width: 100%;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.rte-img--small {
 		margin: 70px auto;
 		width: 77%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
