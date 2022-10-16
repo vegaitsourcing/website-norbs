@@ -416,7 +416,10 @@
     <Compile Include="Generated\ArticleBodyModule.generated.cs" />
     <Compile Include="Generated\File.cs" />
     <Compile Include="Generated\FindMoreModule.generated.cs" />
+    <Compile Include="Generated\FooterImagesBlock.generated.cs" />
     <Compile Include="Generated\FooterLinksBlock.generated.cs" />
+    <Compile Include="Generated\HealthProtection.generated.cs" />
+    <Compile Include="Generated\HealthProtectionModule.generated.cs" />
     <Compile Include="Generated\HelpLineModule.generated.cs" />
     <Compile Include="Generated\Home.cs" />
     <Compile Include="Generated\HomeBannerModule.generated.cs" />
@@ -424,8 +427,6 @@
     <Compile Include="Generated\INestedContent.generated.cs" />
     <Compile Include="Generated\IPage.cs" />
     <Compile Include="Generated\Member.generated.cs" />
-    <Compile Include="Generated\NeedHelpModule.generated.cs" />
-    <Compile Include="Generated\NeedMoreLinkModule.generated.cs" />
     <Compile Include="Generated\OurActivitiesModule.generated.cs" />
     <Compile Include="Generated\PageIntroModule.generated.cs" />
     <Compile Include="Generated\ReadMoreModule.generated.cs" />
