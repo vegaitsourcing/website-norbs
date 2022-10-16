@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>Page Intro Module</summary>
 	[PublishedModel("pageIntroModule")]
-	public partial class PageIntroModule : PublishedElementModel
+	public partial class PageIntroModule : PublishedElementModel, IINestedContent
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -50,14 +50,13 @@ namespace Norbs.Models.Generated
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("color")]
-
 		public Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor Color => this.Value<Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor>("color");
 
 		///<summary>
-		/// Text
+		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("text")]
-		public string Text => this.Value<string>("text");
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
 	}
 }
