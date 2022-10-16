@@ -50,7 +50,7 @@
                 @if (Model.Logo != null && !string.IsNullOrWhiteSpace(Model.Logo?.Url))
                 {
                     <a href="/" class="header__logo">
-                        <img height="80" src="@Model.Logo.Url" alt="@Model.Logo.AlternateText" class="header__logo-img">
+                        <img src="@Model.Logo.Url" alt="@Model.Logo.AlternateText" class="header__logo-img">
                     </a>
                 }
                 @if (Model.NavigationItems != null && Model.NavigationItems.Count > 0)
