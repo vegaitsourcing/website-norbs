@@ -1,2 +1,27 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.FindMoreModule>
 
+<div class="mix-block">
+    <div class="wrap">
+        <div class="mix-block__wrap">
+            <div class="mix-block__text">
+                @if (!string.IsNullOrWhiteSpace(Model.Title)) {
+                <h2 class="h2 mb40 mix-block__heading">@Model.Title</h2>
+                }
+                @if (!string.IsNullOrWhiteSpace(Model.Description)) {
+                <p class="text mix-block__desc mb40">@Model.Description</p>
+                }
+                @if (Model.Button != null)
+                {
+                <a href="@Model.Button.Url" class="btn mix-block__link">@Model.Button.Name</a>
+                }
+            </div>
+
+            @if (Model.Image != null && !string.IsNullOrWhiteSpace(Model.Image.Url()))
+            {
+            <div class="mix-block__img">
+                <img src="@Model.Image.Url()" alt="Slika" class="mix-block__img-item">
+            </div>
+            }
+        </div>
+    </div>
+</div>

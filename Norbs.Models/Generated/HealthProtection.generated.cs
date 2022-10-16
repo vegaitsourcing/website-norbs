@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>Health Protection</summary>
 	[PublishedModel("healthProtection")]
-	public partial class HealthProtection : PublishedContentModel, IFooter, IHeader, IPage, IPageIntro, ISiteSettings
+	public partial class HealthProtection : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -53,11 +53,60 @@ namespace Norbs.Models.Generated
 		public IEnumerable<HealthProtectionModule> Module => this.Value<IEnumerable<HealthProtectionModule>>("module");
 
 		///<summary>
-		/// Copyright Text: The site copyright text.
+		/// Footer Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("copyrightText")]
-		public string CopyrightText => Footer.GetCopyrightText(this);
+		[ImplementPropertyType("footerDescription")]
+		public string FooterDescription => Footer.GetFooterDescription(this);
+
+		///<summary>
+		/// Footer Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerLogo")]
+		public IPublishedContent FooterLogo => Footer.GetFooterLogo(this);
+
+		///<summary>
+		/// Footer Phone Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerPhoneNumber")]
+		public string FooterPhoneNumber => Footer.GetFooterPhoneNumber(this);
+
+		///<summary>
+		/// Footer Phone Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerPhoneText")]
+		public string FooterPhoneText => Footer.GetFooterPhoneText(this);
+
+		///<summary>
+		/// Footer Social Links
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerSocialLinks")]
+		public IEnumerable<Umbraco.Web.Models.Link> FooterSocialLinks => Footer.GetFooterSocialLinks(this);
+
+		///<summary>
+		/// Footer Social Links Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerSocialLinksText")]
+		public string FooterSocialLinksText => Footer.GetFooterSocialLinksText(this);
+
+		///<summary>
+		/// Images Block
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("imagesBlock")]
+		public IEnumerable<FooterImagesBlock> ImagesBlock => Footer.GetImagesBlock(this);
+
+		///<summary>
+		/// Links Block
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("linksBlock")]
+		public IEnumerable<FooterLinksBlock> LinksBlock => Footer.GetLinksBlock(this);
 
 		///<summary>
 		/// FacebookUrl
@@ -240,20 +289,6 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("umbracoUrlName")]
 		public string UmbracoUrlName => Page.GetUmbracoUrlName(this);
-
-		///<summary>
-		/// Color
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("color")]
-		public string Color => PageIntro.GetColor(this);
-
-		///<summary>
-		/// Text
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("text")]
-		public string Text => PageIntro.GetText(this);
 
 		///<summary>
 		/// Canonical Domain: The site canonical domain.
