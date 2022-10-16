@@ -1,0 +1,9 @@
+@inherits UmbracoViewPage<Norbs.Models.Generated.HealthProtectionModule>
+
+@if (!string.IsNullOrWhiteSpace(Model.Title))
+{
+    @Model.Title
+}
+
+<img src="@Model.Image.MediaUrl()"/>
+@Model.Text
