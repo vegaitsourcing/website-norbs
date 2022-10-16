@@ -414,12 +414,12 @@
     <Compile Include="Generated\AboutUsModule.generated.cs" />
     <Compile Include="Generated\Article.generated.cs" />
     <Compile Include="Generated\ArticleBodyModule.generated.cs" />
+    <Compile Include="Generated\Articles.generated.cs" />
     <Compile Include="Generated\File.cs" />
     <Compile Include="Generated\FindMoreModule.generated.cs" />
     <Compile Include="Generated\FooterImagesBlock.generated.cs" />
     <Compile Include="Generated\FooterLinksBlock.generated.cs" />
     <Compile Include="Generated\HealthProtection.generated.cs" />
-    <Compile Include="Generated\HealthProtectionModule.generated.cs" />
     <Compile Include="Generated\HelpLineModule.generated.cs" />
     <Compile Include="Generated\Home.cs" />
     <Compile Include="Generated\HomeBannerModule.generated.cs" />
