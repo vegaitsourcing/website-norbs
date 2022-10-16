@@ -20,57 +20,50 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>About Us Module</summary>
-	[PublishedModel("aboutUsModule")]
-	public partial class AboutUsModule : PublishedElementModel, IINestedContent
+	/// <summary>Health Protection Module</summary>
+	[PublishedModel("healthProtectionModule")]
+	public partial class HealthProtectionModule : PublishedElementModel, IINestedContent
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "aboutUsModule";
+		public new const string ModelTypeAlias = "healthProtectionModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<AboutUsModule, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HealthProtectionModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public AboutUsModule(IPublishedElement content)
+		public HealthProtectionModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Body
+		/// Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("body")]
-		public IHtmlString Body => this.Value<IHtmlString>("body");
+		[ImplementPropertyType("image")]
+		public IPublishedContent Image => this.Value<IPublishedContent>("image");
 
 		///<summary>
-		/// Content Title
+		/// Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("contentTitle")]
-		public string ContentTitle => this.Value<string>("contentTitle");
+		[ImplementPropertyType("text")]
+		public IHtmlString Text => this.Value<IHtmlString>("text");
 
 		///<summary>
-		/// Page Title
+		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("pageTitle")]
-		public string PageTitle => this.Value<string>("pageTitle");
-
-		///<summary>
-		/// Related Link
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("relatedLink")]
-		public IEnumerable<Umbraco.Web.Models.Link> RelatedLink => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("relatedLink");
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
 	}
 }

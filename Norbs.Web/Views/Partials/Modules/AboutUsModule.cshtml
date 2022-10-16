@@ -1,13 +1,35 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.AboutUsModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
 
-@if (!string.IsNullOrWhiteSpace(Model.Subtitle))
-{
-    @Model.Subtitle
-}
 
-@Model.Text
+<main class="main">
+    <div class="page-intro bg-orange" style="background-image: url(assets/images/page-intro-bg.png);">
+        <div class="wrap">
+            @if (!string.IsNullOrWhiteSpace(Model.PageTitle))
+            {
+                <h1 class="page-intro__title h1">@Model.Title</h1>
+            }
+        </div>
+    </div>
+    <div class="page-outro">
+        <div class="wrap wrap--inner">
+            <div class="page-outro__container">
+                <h2 class="page-outro__title h2">@Model.ContentTitle</h2>
+                <ul class="page-outro__list">
+                    <li class="page-outro__item">
+                        <a href="javascript:;" class="page-outro__link link link-main">Linkovi</a>
+                    </li>
+                    <li class="page-outro__item">
+                        <a href="javascript:;" class="page-outro__link link link-main">NORBS u medijima</a>
+                    </li>
+                    <li class="page-outro__item">
+                        <a href="javascript:;" class="page-outro__link link link-main">Postanite član</a>
+                    </li>
+                    <li class="page-outro__item">
+                        <a href="javascript:;" class="page-outro__link link link-main">RareConnect u Srbiji</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
