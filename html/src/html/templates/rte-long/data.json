@@ -1,0 +1,26 @@
+{
+	"template": "rte-long",
+	"data": {
+		">>": "shared/master/data.json",
+		"header": {
+			">>": "shared/header/data.json"
+		},
+		"footer": {
+			">>": "shared/footer/data.json"
+		},
+		"sections": [
+			{
+				"moduleAlias": "page-intro",
+				">>" : "modules/page-intro/data.json"
+			},
+			{
+				"moduleAlias": "text-content",
+				">>" : "modules/text-content/data.json"
+			},
+			{
+				"moduleAlias": "page-outro",
+				">>" : "modules/page-outro/data.json"
+			}
+		]
+	}
+}

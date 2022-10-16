@@ -15,3 +15,6 @@ helpers.init();
 
 import header from './_project/header';
 header.init();
+
+import tabs from './_project/tabs';
+tabs.init();
