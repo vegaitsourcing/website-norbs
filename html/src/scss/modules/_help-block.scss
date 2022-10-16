@@ -57,6 +57,15 @@
 		margin-right: 0;
 	}
 
+
+	@include hover {
+		transform: translateY(10px);
+	}
+
+	@include animation {
+		transition: transform $transition;
+	}
+
 	@include media-breakpoint-down(md) {
 		width: 47%;
 		max-width: 300px;
@@ -96,6 +105,7 @@
 	padding-bottom: 25px;
 	position: relative;
 	z-index: 3;
+
 
 	@include media-breakpoint-down(lg) {
 		font-size: 20px;

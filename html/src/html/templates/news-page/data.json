@@ -1,0 +1,89 @@
+{
+	"template": "news-page",
+	"data": {
+		">>": "shared/master/data.json",
+		"header": {
+			">>": "shared/header/data.json"
+		},
+		"footer": {
+			">>": "shared/footer/data.json"
+		},
+		"sections": [
+			{
+				"moduleAlias" : "page-intro", 
+				"title": "Vesti",
+				"bgImg": "assets/images/page-intro-bg.png",
+				"bgColor": "orange"
+			},
+			{
+				"moduleAlias": "tabs-block",
+				"item": [
+					{
+						"btn": "vesti",
+						"active": true
+					},
+					{
+						"btn": "podeli svoju priču"
+					},
+					{
+						"btn": "eNewsletter"
+					},
+					{
+						"btn": "Blog"
+					}
+				],
+				"title": "Blog",
+				"cards" : [
+					{	
+						"news-card": {
+							"newsCard" :{
+								"href" : "javascript:;",
+								"img": {
+									"src" : "assets/images/card-img.jpg"
+								},
+								"title": "Rare2030 – Izgradnja bolje budućnosti za obolele od retkih bolesti: #30millionreasons (3/3)",
+								"readMore": "pročitaj više"
+							}
+						}
+					},
+					{	
+						"news-card": {
+							"newsCard" :{
+								"href" : "javascript:;",
+								"img": {
+									"src" : "assets/images/card-img.jpg"
+								},
+								"title": "Rare2030 – Izgradnja bolje budućnosti za obolele od retkih bolesti: #30millionreasons (3/3)",
+								"readMore": "pročitaj više"
+							}
+						}
+					},
+					{	
+						"news-card": {
+							"newsCard" :{
+								"href" : "javascript:;",
+								"img": {
+									"src" : "assets/images/card-img.jpg"
+								},
+								"title": "Rare2030 – Izgradnja bolje budućnosti za obolele od retkih bolesti: #30millionreasons (3/3)",
+								"readMore": "pročitaj više"
+							}
+						}
+					},
+					{	
+						"news-card": {
+							"newsCard" :{
+								"href" : "javascript:;",
+								"img": {
+									"src" : "assets/images/card-img.jpg"
+								},
+								"title": "Rare2030 – Izgradnja bolje budućnosti za obolele od retkih bolesti: #30millionreasons (3/3)",
+								"readMore": "pročitaj više"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

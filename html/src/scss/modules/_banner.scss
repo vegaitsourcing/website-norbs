@@ -67,12 +67,12 @@
 
 .banner__button {
 
-	&:first-child {
+	&:not(:last-child) {
 		margin-right: 9.9%;
 	}
 
 	@include media-breakpoint-down(sm) {
-		&:first-child {
+		&:not(:last-child) {
 			margin-right: 0;
 			margin-bottom: 30px;
 		}
