@@ -9,6 +9,9 @@ namespace Norbs.Core.ViewModels.Pages
 	{
 		public ArticlesViewModel(IPageContext<Articles> context) : base(context)
 		{
+			Modules = context.Page.Modules.OfType<IINestedContent>();
 		}
+
+		public IEnumerable<IINestedContent> Modules { get; }
 	}
 }
