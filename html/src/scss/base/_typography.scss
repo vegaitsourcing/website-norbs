@@ -23,6 +23,7 @@
 	font-weight: 600;
 	font-family: $font-default;
 
+
 	@include media-breakpoint-up(lg) {
 		font-size: 64px;
 		line-height: 72px;
@@ -42,8 +43,10 @@
 .rte h2,
 .h2 {
 	font-family: $font-default;
-	// color: $grey;
+	margin-bottom: 38px;
 	font-weight: 600;
+	color: $grey;
+
 
 	@include media-breakpoint-up(lg) {
 		font-size: 48px;
@@ -65,7 +68,8 @@
 .h3 {
 	font-weight: 600;
 	font-family: $font-default;
-	// color: $grey;
+	margin-bottom: 38px;
+	color: $grey;
 
 	@include media-breakpoint-up(lg) {
 		font-size: 24px;
@@ -89,6 +93,7 @@
 	line-height: 24px;
 	font-weight: 600;
 	font-family: $font-default;
+	color: $grey;
 
 	@include media-breakpoint-only(md) {
 		font-size: 16px;
@@ -99,11 +104,17 @@
 .rte h5,
 .h5 {
 	font-size: 20px;
+	color: $grey;
 }
 
 .rte h6,
 .h6 {
 	font-size: 16px;
+	color: $grey;
+}
+
+p {
+	color: $grey;
 }
 
 .text {
@@ -117,15 +128,32 @@
 }
 
 .rte {
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: $grey;
+		font-family: $font-default;
+	}
 	p {
 		font-size: 18px;
 		line-height: 32px;
-		color: $grey2;
-		font-family: $font-secondary;
+		color: $grey;
+		font-family: $font-default;
+		margin-bottom: 30px;
 		a {
 			@include hover {
 				text-decoration: underline;
 			}
+			&:is(.btn) {
+				margin: 0 auto 30px;
+			}
+			font-size: 18px;
+			line-height: 32px;
+			font-weight: 600;
+			color: $orange;
+			text-decoration: none;
+			font-family: $font-secondary;
 		}
 	}
 	blockquote {
@@ -146,24 +174,32 @@
 		color: $black;
 	}
 	a {
-		font-size: 18px;
-		line-height: 32px;
-		font-weight: 600;
-		color: $black;
-		text-decoration: none;
 		@include hover {
 			opacity: 0.7;
 		}
 	}
+	iframe {
+		border: none;
+		width: 100%;
+		margin: 0 auto 35px;
+		aspect-ratio: 16/9;
+	}
+	ul {
+		padding-left: 20px;
+	}
+	ul li {
+		margin-bottom: 5px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
 	.bold {
 		font-weight: 600;
 	}
-	.indent {
-		text-indent: 65px;
-		display: inline-block;
-		@include media-breakpoint-down(md) {
-			text-indent: 0;
-		}
+	.img--small {
+		margin: 70px auto;
+		width: 77%;
 	}
 }
 

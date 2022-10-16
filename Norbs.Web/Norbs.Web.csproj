@@ -511,7 +511,12 @@
     <Content Include="Views\Partials\Modules\ArticleBodyModule.cshtml" />
     <Content Include="Views\HealthProtection.cshtml" />
     <Content Include="Views\Partials\Modules\HealthProtectionModule.cshtml" />
+    <Content Include="Views\Partials\Modules\SocialProtectionModule.cshtml" />
     <Content Include="Views\Articles.cshtml" />
+    <Content Include="Views\LegalHelp.cshtml" />
+    <Content Include="Views\Partials\Modules\LegalHelpModule.cshtml" />
+    <Content Include="Views\PsychologicalHelp.cshtml" />
+    <Content Include="Views\Partials\Modules\PsychologicalHelpModule.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

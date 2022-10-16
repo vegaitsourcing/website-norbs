@@ -1,0 +1,19 @@
+{{#if newsCard}}
+<a href="{{newsCard.href}}" class="news-card">
+	<div class="news-card__wrap">
+		{{#if newsCard.img}}
+			<div class="news-card__img">
+				<img src="{{newsCard.img.src}}" alt="{{newsCard.img.alt}}" class="news-card__img-item">
+			</div>
+		{{/if}}
+		<div class="news-card__content">
+			{{#if newsCard.title}}
+				<h3 class="h3 news-card__title">{{newsCard.title}}</h3>
+			{{/if}}
+			{{#if newsCard.readMore}}
+				<span class="link link-small news-card__readmore">{{newsCard.readMore}}</span>
+			{{/if}}
+		</div>
+	</div>
+</a>
+{{/if}}

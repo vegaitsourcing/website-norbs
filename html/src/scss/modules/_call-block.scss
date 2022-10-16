@@ -16,6 +16,10 @@
 	text-align: center;
 }
 
+.call-block__heading {
+	color: $white;
+}
+
 .call-block__number {
 	display: block;
 	font-size: 120px;
@@ -46,6 +50,7 @@
 
 .call-block__paragraph {
 	margin-bottom: 20px;
+	color: $white;
 }
 
 .call-block__cta {

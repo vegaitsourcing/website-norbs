@@ -1,0 +1,68 @@
+// ---------- resource-card
+// ------------------------------------------------------------------------------
+
+.resource-card {
+	width: calc(100% / 3 - 2%);
+	margin-right: 3%;
+	margin-bottom: 50px;
+	@include media-breakpoint-up(md) {
+		&:nth-of-type(3n) {
+			margin-right: 0;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		width: calc(100% / 2 - 2%);
+		margin-right: 4%;
+		&:nth-of-type(2n) {
+			margin-right: 0;
+		}
+	}
+	@include media-breakpoint-down(xs) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.resource-card__iframe-block {
+	width: 100%;
+	height: 168px;
+	margin-bottom: 10px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 6px;
+	}
+}
+
+.resource-card__iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.resource-card__img-block {
+	width: 100%;
+	height: 168px;
+	margin-bottom: 10px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 6px;
+	}
+}
+
+.resource-card__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.resource-card__title {
+	line-height: 30px;
+	margin-bottom: 25px;
+	color: $grey;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 15px;
+	}
+}
+
+.resource-card__link {
+	display: block;
+	text-align: right;
+	text-transform: uppercase;
+}

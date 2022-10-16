@@ -426,13 +426,16 @@
     <Compile Include="Generated\Image.cs" />
     <Compile Include="Generated\INestedContent.generated.cs" />
     <Compile Include="Generated\IPage.cs" />
+    <Compile Include="Generated\LegalHelp.generated.cs" />
     <Compile Include="Generated\Member.generated.cs" />
     <Compile Include="Generated\NeedHelpModule.generated.cs" />
     <Compile Include="Generated\NeedMoreLinkModule.generated.cs" />
     <Compile Include="Generated\OurActivitiesModule.generated.cs" />
     <Compile Include="Generated\PageIntroModule.generated.cs" />
+    <Compile Include="Generated\PsychologicalHelp.generated.cs" />
     <Compile Include="Generated\ReadMoreModule.generated.cs" />
     <Compile Include="Generated\ShareStoryModule.generated.cs" />
+    <Compile Include="Generated\SocialProtection.generated.cs" />
     <Compile Include="Generated\Tag.generated.cs" />
     <Compile Include="Generated\Tags.generated.cs" />
     <Compile Include="Generated\TitleBox.generated.cs" />

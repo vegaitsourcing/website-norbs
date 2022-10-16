@@ -1,0 +1,26 @@
+{
+	"template": "page-date",
+	"data": {
+		">>": "shared/master/data.json",
+		"header": {
+			">>": "shared/header/data.json"
+		},
+		"footer": {
+			">>": "shared/footer/data.json"
+		},
+		"sections": [
+			{
+				"moduleAlias": "page-intro",
+				">>" : "modules/page-intro/data.json"
+			},
+			{
+				"moduleAlias": "heading-block",
+				">>": "modules/heading-block/data.json"
+			},
+			{
+				"moduleAlias": "page-outro",
+				">>" : "modules/page-outro/data.json"
+			}
+		]
+	}
+}
