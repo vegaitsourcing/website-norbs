@@ -46,24 +46,31 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
-		/// Subtitle
+		/// Body
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("subtitle")]
-		public string Subtitle => this.Value<string>("subtitle");
+		[ImplementPropertyType("body")]
+		public IHtmlString Body => this.Value<IHtmlString>("body");
 
 		///<summary>
-		/// Text
+		/// Content Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("text")]
-		public IHtmlString Text => this.Value<IHtmlString>("text");
+		[ImplementPropertyType("contentTitle")]
+		public string ContentTitle => this.Value<string>("contentTitle");
 
 		///<summary>
-		/// Title
+		/// Page Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("title")]
-		public string Title => this.Value<string>("title");
+		[ImplementPropertyType("pageTitle")]
+		public string PageTitle => this.Value<string>("pageTitle");
+
+		///<summary>
+		/// Related Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("relatedLink")]
+		public IEnumerable<Umbraco.Web.Models.Link> RelatedLink => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("relatedLink");
 	}
 }
