@@ -6,7 +6,7 @@ namespace Norbs.Core.Controllers.RenderMvc
 {
     public class SocialProtectionController : BasePageController<SocialProtection>
     {
-        public ActionResult Index(HealthProtection model)
-            => CurrentTemplate(new HealthProtectionViewModel(CreatePageContext(model)));
+        public ActionResult Index(SocialProtection model)
+            => CurrentTemplate(new SocialProtectionViewModel(CreatePageContext(model)));
     }
 }

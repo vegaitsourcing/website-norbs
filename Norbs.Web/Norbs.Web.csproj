@@ -513,6 +513,8 @@
     <Content Include="Views\Partials\Modules\HealthProtectionModule.cshtml" />
     <Content Include="Views\Partials\Modules\SocialProtectionModule.cshtml" />
     <Content Include="Views\Articles.cshtml" />
+    <Content Include="Views\LegalHelp.cshtml" />
+    <Content Include="Views\Partials\Modules\LegalHelpModule.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

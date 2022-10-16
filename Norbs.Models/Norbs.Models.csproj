@@ -426,6 +426,7 @@
     <Compile Include="Generated\Image.cs" />
     <Compile Include="Generated\INestedContent.generated.cs" />
     <Compile Include="Generated\IPage.cs" />
+    <Compile Include="Generated\LegalHelp.generated.cs" />
     <Compile Include="Generated\Member.generated.cs" />
     <Compile Include="Generated\NeedHelpModule.generated.cs" />
     <Compile Include="Generated\NeedMoreLinkModule.generated.cs" />

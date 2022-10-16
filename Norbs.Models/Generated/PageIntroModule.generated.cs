@@ -53,6 +53,13 @@ namespace Norbs.Models.Generated
 		public Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor Color => this.Value<Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor>("color");
 
 		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("image")]
+		public IPublishedContent Image => this.Value<IPublishedContent>("image");
+
+		///<summary>
 		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
