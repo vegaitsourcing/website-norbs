@@ -58,5 +58,6 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("title")]
 		public string Title => this.Value<string>("title");
+
 	}
 }
