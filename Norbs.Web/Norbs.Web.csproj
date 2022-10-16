@@ -507,6 +507,8 @@
     <Content Include="Views\Partials\Modules\ShareStoryModule.cshtml" />
     <Content Include="Views\Partials\Modules\FindMoreModule.cshtml" />
     <Content Include="Views\Article.cshtml" />
+    <Content Include="Views\Partials\Modules\PageIntroModule.cshtml" />
+    <Content Include="Views\Partials\Modules\ArticleBodyModule.cshtml" />
     <Content Include="Views\HealthProtection.cshtml" />
     <Content Include="Views\Partials\Modules\HealthProtectionModule.cshtml" />
     <None Include="Web.Debug.config">

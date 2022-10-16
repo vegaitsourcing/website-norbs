@@ -28,6 +28,10 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		string FooterDescription { get; }
 
+		/// <summary>Footer Facebook Link</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		Umbraco.Web.Models.Link FooterFacebookLink { get; }
+
 		/// <summary>Footer Logo</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		IPublishedContent FooterLogo { get; }
@@ -40,13 +44,17 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		string FooterPhoneText { get; }
 
-		/// <summary>Footer Social Links</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		IEnumerable<Umbraco.Web.Models.Link> FooterSocialLinks { get; }
-
 		/// <summary>Footer Social Links Text</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		string FooterSocialLinksText { get; }
+
+		/// <summary>Footer Twitter Link</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		Umbraco.Web.Models.Link FooterTwitterLink { get; }
+
+		/// <summary>Footer Youtube Link</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		Umbraco.Web.Models.Link FooterYoutubeLink { get; }
 
 		/// <summary>Images Block</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -94,6 +102,17 @@ namespace Norbs.Models.Generated
 		public static string GetFooterDescription(IFooter that) => that.Value<string>("footerDescription");
 
 		///<summary>
+		/// Footer Facebook Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerFacebookLink")]
+		public Umbraco.Web.Models.Link FooterFacebookLink => GetFooterFacebookLink(this);
+
+		/// <summary>Static getter for Footer Facebook Link</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static Umbraco.Web.Models.Link GetFooterFacebookLink(IFooter that) => that.Value<Umbraco.Web.Models.Link>("footerFacebookLink");
+
+		///<summary>
 		/// Footer Logo
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -127,17 +146,6 @@ namespace Norbs.Models.Generated
 		public static string GetFooterPhoneText(IFooter that) => that.Value<string>("footerPhoneText");
 
 		///<summary>
-		/// Footer Social Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("footerSocialLinks")]
-		public IEnumerable<Umbraco.Web.Models.Link> FooterSocialLinks => GetFooterSocialLinks(this);
-
-		/// <summary>Static getter for Footer Social Links</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IEnumerable<Umbraco.Web.Models.Link> GetFooterSocialLinks(IFooter that) => that.Value<IEnumerable<Umbraco.Web.Models.Link>>("footerSocialLinks");
-
-		///<summary>
 		/// Footer Social Links Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
@@ -147,6 +155,28 @@ namespace Norbs.Models.Generated
 		/// <summary>Static getter for Footer Social Links Text</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public static string GetFooterSocialLinksText(IFooter that) => that.Value<string>("footerSocialLinksText");
+
+		///<summary>
+		/// Footer Twitter Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerTwitterLink")]
+		public Umbraco.Web.Models.Link FooterTwitterLink => GetFooterTwitterLink(this);
+
+		/// <summary>Static getter for Footer Twitter Link</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static Umbraco.Web.Models.Link GetFooterTwitterLink(IFooter that) => that.Value<Umbraco.Web.Models.Link>("footerTwitterLink");
+
+		///<summary>
+		/// Footer Youtube Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerYoutubeLink")]
+		public Umbraco.Web.Models.Link FooterYoutubeLink => GetFooterYoutubeLink(this);
+
+		/// <summary>Static getter for Footer Youtube Link</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		public static Umbraco.Web.Models.Link GetFooterYoutubeLink(IFooter that) => that.Value<Umbraco.Web.Models.Link>("footerYoutubeLink");
 
 		///<summary>
 		/// Images Block
