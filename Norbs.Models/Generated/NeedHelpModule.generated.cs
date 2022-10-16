@@ -46,11 +46,60 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
-		/// Links
+		/// Image1
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("links")]
-		public IEnumerable<NeedMoreLinkModule> Links => this.Value<IEnumerable<NeedMoreLinkModule>>("links");
+		[ImplementPropertyType("image1")]
+		public IPublishedContent Image1 => this.Value<IPublishedContent>("image1");
+
+		///<summary>
+		/// Image2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("image2")]
+		public IPublishedContent Image2 => this.Value<IPublishedContent>("image2");
+
+		///<summary>
+		/// Image3
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("image3")]
+		public IPublishedContent Image3 => this.Value<IPublishedContent>("image3");
+
+		///<summary>
+		/// Image4
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("image4")]
+		public IPublishedContent Image4 => this.Value<IPublishedContent>("image4");
+
+		///<summary>
+		/// Link1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("link1")]
+		public Umbraco.Web.Models.Link Link1 => this.Value<Umbraco.Web.Models.Link>("link1");
+
+		///<summary>
+		/// Link2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("link2")]
+		public Umbraco.Web.Models.Link Link2 => this.Value<Umbraco.Web.Models.Link>("link2");
+
+		///<summary>
+		/// Link3
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("link3")]
+		public Umbraco.Web.Models.Link Link3 => this.Value<Umbraco.Web.Models.Link>("link3");
+
+		///<summary>
+		/// Link4
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("link4")]
+		public Umbraco.Web.Models.Link Link4 => this.Value<Umbraco.Web.Models.Link>("link4");
 
 		///<summary>
 		/// Pretext

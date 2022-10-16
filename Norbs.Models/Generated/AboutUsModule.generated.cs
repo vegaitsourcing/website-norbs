@@ -53,6 +53,13 @@ namespace Norbs.Models.Generated
 		public string Subtitle => this.Value<string>("subtitle");
 
 		///<summary>
+		/// Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("text")]
+		public IHtmlString Text => this.Value<IHtmlString>("text");
+
+		///<summary>
 		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
