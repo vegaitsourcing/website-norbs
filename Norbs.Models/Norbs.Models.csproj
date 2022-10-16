@@ -410,6 +410,7 @@
     <Compile Include="Extensions\PublishedContentPropertyExtensions.cs" />
     <Compile Include="Extensions\PublishedElementPropertyExtensions.cs" />
     <Compile Include="Extensions\SeoExtensions.cs" />
+    <Compile Include="Generated\AboutRareDeseases.generated.cs" />
     <Compile Include="Generated\AboutUs.generated.cs" />
     <Compile Include="Generated\AboutUsModule.generated.cs" />
     <Compile Include="Generated\Article.generated.cs" />
