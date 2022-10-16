@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace Norbs.Core.ViewModels.Pages
 {
-	public class ArticleViewModel : PageViewModel
+	public class HealthProtectionViewModel : PageViewModel
 	{
-		public ArticleViewModel(IPageContext<Article> context) : base(context)
+		public HealthProtectionViewModel(IPageContext<HealthProtection> context) : base(context)
 		{
-			Modules = context.Page.Modules.OfType<IINestedContent>();
+			Modules = context.Page.Module.OfType<IINestedContent>();
 		}
 
 		public IEnumerable<IINestedContent> Modules { get; }
