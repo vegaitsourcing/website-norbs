@@ -433,6 +433,8 @@
     <Compile Include="Generated\PageIntroModule.generated.cs" />
     <Compile Include="Generated\ReadMoreModule.generated.cs" />
     <Compile Include="Generated\ShareStoryModule.generated.cs" />
+    <Compile Include="Generated\Tag.generated.cs" />
+    <Compile Include="Generated\Tags.generated.cs" />
     <Compile Include="Generated\TitleBox.generated.cs" />
     <Compile Include="Generated\UmbracoMediaArticle.generated.cs" />
     <Compile Include="Generated\UmbracoMediaAudio.generated.cs" />
