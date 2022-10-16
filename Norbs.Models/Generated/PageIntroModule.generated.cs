@@ -20,57 +20,43 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>About Us Module</summary>
-	[PublishedModel("aboutUsModule")]
-	public partial class AboutUsModule : PublishedElementModel, IINestedContent
+	/// <summary>Page Intro Module</summary>
+	[PublishedModel("pageIntroModule")]
+	public partial class PageIntroModule : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "aboutUsModule";
+		public new const string ModelTypeAlias = "pageIntroModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<AboutUsModule, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<PageIntroModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public AboutUsModule(IPublishedElement content)
+		public PageIntroModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Body
+		/// Color
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("body")]
-		public IHtmlString Body => this.Value<IHtmlString>("body");
+		[ImplementPropertyType("color")]
+		public Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor Color => this.Value<Umbraco.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter.PickedColor>("color");
 
 		///<summary>
-		/// Content Title
+		/// Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("contentTitle")]
-		public string ContentTitle => this.Value<string>("contentTitle");
-
-		///<summary>
-		/// Page Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("pageTitle")]
-		public string PageTitle => this.Value<string>("pageTitle");
-
-		///<summary>
-		/// Related Link
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("relatedLink")]
-		public IEnumerable<Umbraco.Web.Models.Link> RelatedLink => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("relatedLink");
+		[ImplementPropertyType("text")]
+		public string Text => this.Value<string>("text");
 	}
 }
