@@ -4,3 +4,10 @@
 {
     @Model.Title
 }
+
+@if (!string.IsNullOrWhiteSpace(Model.Subtitle))
+{
+    @Model.Subtitle
+}
+
+@Model.Text
