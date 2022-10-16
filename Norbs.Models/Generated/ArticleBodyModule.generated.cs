@@ -20,7 +20,7 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Article Body Module</summary>
+	/// <summary>RTE Module</summary>
 	[PublishedModel("articleBodyModule")]
 	public partial class ArticleBodyModule : PublishedElementModel, IINestedContent
 	{
@@ -46,10 +46,10 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
-		/// Article Body
+		/// RTE
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("articleBody")]
-		public IHtmlString ArticleBody => this.Value<IHtmlString>("articleBody");
+		[ImplementPropertyType("rte")]
+		public IHtmlString Rte => this.Value<IHtmlString>("rte");
 	}
 }
