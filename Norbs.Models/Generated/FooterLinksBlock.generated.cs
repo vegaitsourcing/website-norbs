@@ -20,64 +20,43 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	// Mixin Content Type with alias "pageIntro"
-	/// <summary>Page Intro</summary>
-	public partial interface IPageIntro : IPublishedElement
-	{
-		/// <summary>Color</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string Color { get; }
-
-		/// <summary>Text</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		string Text { get; }
-	}
-
-	/// <summary>Page Intro</summary>
-	[PublishedModel("pageIntro")]
-	public partial class PageIntro : PublishedElementModel, IPageIntro
+	/// <summary>Footer Links Block</summary>
+	[PublishedModel("footerLinksBlock")]
+	public partial class FooterLinksBlock : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "pageIntro";
+		public new const string ModelTypeAlias = "footerLinksBlock";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<PageIntro, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<FooterLinksBlock, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public PageIntro(IPublishedElement content)
+		public FooterLinksBlock(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Color
+		/// Block Links
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("color")]
-		public string Color => GetColor(this);
-
-		/// <summary>Static getter for Color</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetColor(IPageIntro that) => that.Value<string>("color");
+		[ImplementPropertyType("blockLinks")]
+		public IEnumerable<Umbraco.Web.Models.Link> BlockLinks => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("blockLinks");
 
 		///<summary>
-		/// Text
+		/// Block Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("text")]
-		public string Text => GetText(this);
-
-		/// <summary>Static getter for Text</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static string GetText(IPageIntro that) => that.Value<string>("text");
+		[ImplementPropertyType("blockTitle")]
+		public string BlockTitle => this.Value<string>("blockTitle");
 	}
 }
