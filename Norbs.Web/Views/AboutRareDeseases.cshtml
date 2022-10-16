@@ -1,0 +1,6 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<AboutRareDeseasesViewModel>
+
+    @foreach (var module in Model.Modules)
+    {
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}

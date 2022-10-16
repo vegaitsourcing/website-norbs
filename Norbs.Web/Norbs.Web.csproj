@@ -517,6 +517,9 @@
     <Content Include="Views\Partials\Modules\LegalHelpModule.cshtml" />
     <Content Include="Views\PsychologicalHelp.cshtml" />
     <Content Include="Views\Partials\Modules\PsychologicalHelpModule.cshtml" />
+    <Content Include="Views\Article - Copy.cshtml" />
+    <Content Include="Views\Partials\Modules\AboutRareDeseasesModule.cshtml" />
+    <Content Include="Views\AboutRareDeseases.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
