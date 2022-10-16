@@ -427,8 +427,9 @@
     <Compile Include="Generated\INestedContent.generated.cs" />
     <Compile Include="Generated\IPage.cs" />
     <Compile Include="Generated\Member.generated.cs" />
+    <Compile Include="Generated\NeedHelpModule.generated.cs" />
+    <Compile Include="Generated\NeedMoreLinkModule.generated.cs" />
     <Compile Include="Generated\OurActivitiesModule.generated.cs" />
-    <Compile Include="Generated\PageIntro.generated.cs" />
     <Compile Include="Generated\PageIntroModule.generated.cs" />
     <Compile Include="Generated\ReadMoreModule.generated.cs" />
     <Compile Include="Generated\ShareStoryModule.generated.cs" />
