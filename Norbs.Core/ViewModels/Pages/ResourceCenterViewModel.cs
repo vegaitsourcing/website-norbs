@@ -11,6 +11,7 @@ namespace Norbs.Core.ViewModels.Pages
     {
         public ResourceCenterViewModel(IPageContext<ResourceCenter> context) : base(context)
         {
+            this.Title = context.Page.PageTitle;
             this.Children = new List<BaseResource>();
             foreach (var node in context.Page.Children)
             {
@@ -27,5 +28,7 @@ namespace Norbs.Core.ViewModels.Pages
         }
 
         public List<BaseResource> Children { get; set; }
+
+        public string Title { get; set; }
     }
 }

@@ -302,6 +302,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Attributes\ExternalRedirectAttribute.cs" />
     <Compile Include="Components\ApplicationConfigurationComponent.cs" />
+    <Compile Include="Composers\MapHttpRoutesComposer.cs" />
     <Compile Include="Composers\SearchComposer.cs" />
     <Compile Include="Contexts\IPageContext.cs" />
     <Compile Include="Contexts\ISeoContext.cs" />
@@ -321,11 +322,13 @@
     <Compile Include="Controllers\RenderMvc\PsychologicalHelpController.cs" />
     <Compile Include="Controllers\RenderMvc\ResourceCenterController.cs" />
     <Compile Include="Controllers\RenderMvc\SearchResultsController.cs" />
+    <Compile Include="Controllers\RenderMvc\ShareStoryController.cs" />
     <Compile Include="Controllers\RenderMvc\SocialProtectionController.cs" />
     <Compile Include="Controllers\RenderMvc\XMLSitemapController.cs" />
     <Compile Include="Controllers\Surface\BaseSurfaceController.cs" />
     <Compile Include="Controllers\Surface\Partials\LayoutController.cs" />
     <Compile Include="Controllers\Surface\Partials\SearchListingController.cs" />
+    <Compile Include="Controllers\UmbracoApi\FormsController.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="Extensions\HttpRequestBaseExtensions.cs" />
@@ -338,6 +341,7 @@
     <Compile Include="Handlers\DomainRootRouteHandler.cs" />
     <Compile Include="Handlers\Error404RouteHandler.cs" />
     <Compile Include="HttpHandlers\RobotsHandler.cs" />
+    <Compile Include="Models\Api\ShareStoryDTO.cs" />
     <Compile Include="Models\BaseResource.cs" />
     <Compile Include="Models\IPagination.cs" />
     <Compile Include="Models\IReadOnlyPagedCollection.cs" />
@@ -347,6 +351,7 @@
     <Compile Include="Models\ReadOnlyPagedCollection.cs" />
     <Compile Include="Models\VideoResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmailService.cs" />
     <Compile Include="UmbracoDictionary.cs" />
     <Compile Include="ViewEngines\PartialViewEngine.cs" />
     <Compile Include="ViewModels\Pages\AboutRareDeseasesViewModel.cs" />
@@ -361,6 +366,7 @@
     <Compile Include="ViewModels\Pages\PsychologicalHelp.cs" />
     <Compile Include="ViewModels\Pages\ResourceCenterViewModel.cs" />
     <Compile Include="ViewModels\Pages\SearchResultsViewModel.cs" />
+    <Compile Include="ViewModels\Pages\ShareStoryViewModel.cs" />
     <Compile Include="ViewModels\Pages\SocialProtectionViewModel.cs" />
     <Compile Include="ViewModels\Pages\XMLSitemapViewModel.cs" />
     <Compile Include="ViewModels\Partials\Layout\FooterViewModel.cs" />
