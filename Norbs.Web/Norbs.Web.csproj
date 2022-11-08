@@ -522,6 +522,7 @@
     <Content Include="Views\AboutRareDeseases.cshtml" />
     <Content Include="Views\ResourceCenter.cshtml" />
     <Content Include="Views\ShareStory.cshtml" />
+    <Content Include="Views\ContactPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

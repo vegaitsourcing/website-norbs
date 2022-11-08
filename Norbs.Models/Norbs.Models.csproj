@@ -416,6 +416,7 @@
     <Compile Include="Generated\Article.generated.cs" />
     <Compile Include="Generated\ArticleBodyModule.generated.cs" />
     <Compile Include="Generated\Articles.generated.cs" />
+    <Compile Include="Generated\ContactPage.generated.cs" />
     <Compile Include="Generated\File.cs" />
     <Compile Include="Generated\FindMoreModule.generated.cs" />
     <Compile Include="Generated\FooterImagesBlock.generated.cs" />

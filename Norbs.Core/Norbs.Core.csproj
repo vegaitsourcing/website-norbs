@@ -313,6 +313,7 @@
     <Compile Include="Controllers\RenderMvc\AboutRareDeseasesController.cs" />
     <Compile Include="Controllers\RenderMvc\ArticlesController.cs" />
     <Compile Include="Controllers\RenderMvc\BasePageController.cs" />
+    <Compile Include="Controllers\RenderMvc\ContactPageController.cs" />
     <Compile Include="Controllers\RenderMvc\Error404Controller.cs" />
     <Compile Include="Controllers\RenderMvc\ArticleController.cs" />
     <Compile Include="Controllers\RenderMvc\AboutUsController.cs" />
@@ -356,6 +357,7 @@
     <Compile Include="ViewEngines\PartialViewEngine.cs" />
     <Compile Include="ViewModels\Pages\AboutRareDeseasesViewModel.cs" />
     <Compile Include="ViewModels\Pages\ArticlesViewModel.cs" />
+    <Compile Include="ViewModels\Pages\ContactPageViewModel.cs" />
     <Compile Include="ViewModels\Pages\HealthProtectionViewModel.cs" />
     <Compile Include="ViewModels\Pages\Error404ViewModel.cs" />
     <Compile Include="ViewModels\Pages\ArticleViewModel.cs" />
