@@ -1,0 +1,42 @@
+﻿@using Norbs.Core.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ShareStoryViewModel>
+
+<div class="form-short">
+    <div class="wrap wrap--inner">
+        <h2 class="form-short__title h2">@Model.Title</h2>
+        <span class="form-short__subtitle h3">Kontakt podaci</span>
+        <form action="javascript:void(0);" class="form-short__form">
+            <div class="form-short__form-inner-container">
+                <div class="form-short__input-container">
+                    <label class="form-short__input-label" for="name">
+                        Ime <span class="sr-only">Ime</span>
+                    </label>
+                    <input class="form-short__input" type="text" id="name" name="name">
+                </div>
+                <div class="form-short__input-container">
+                    <label class="form-short__input-label" for="prename">
+                        Prezime <span class="sr-only">Prezime</span>
+                    </label>
+                    <input class="form-short__input" type="text" id="prename" name="prename">
+                </div>
+                <div class="form-short__input-container">
+                    <label class="form-short__input-label" for="telephone">
+                        Broj telefona <span class="sr-only">Broj telefona</span>
+                    </label>
+                    <input class="form-short__input" type="tel" id="telephone" name="telephone">
+                </div>
+                <div class="form-short__input-container">
+                    <label class="form-short__input-label asterix" for="email">
+                        Email adresa <span class="sr-only">Broj telefona</span>
+                    </label>
+                    <input class="form-short__input" type="email" id="email" name="email">
+                </div>
+            </div>
+            <label class="form-short__textarea-label" for="textarea">
+                Vaša priča <span class="sr-only">Vaša priča</span>
+            </label>
+            <textarea class="form-short__textarea mb-lg" name="textarea" id="textarea"></textarea>
+            <button class="form-short__btn btn" type="submit">Pošalji</button>
+        </form>
+    </div>
+</div>
