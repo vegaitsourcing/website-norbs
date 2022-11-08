@@ -319,6 +319,7 @@
     <Compile Include="Controllers\RenderMvc\HomeController.cs" />
     <Compile Include="Controllers\RenderMvc\LegalHelpController.cs" />
     <Compile Include="Controllers\RenderMvc\PsychologicalHelpController.cs" />
+    <Compile Include="Controllers\RenderMvc\ResourceCenterController.cs" />
     <Compile Include="Controllers\RenderMvc\SearchResultsController.cs" />
     <Compile Include="Controllers\RenderMvc\SocialProtectionController.cs" />
     <Compile Include="Controllers\RenderMvc\XMLSitemapController.cs" />
@@ -337,11 +338,14 @@
     <Compile Include="Handlers\DomainRootRouteHandler.cs" />
     <Compile Include="Handlers\Error404RouteHandler.cs" />
     <Compile Include="HttpHandlers\RobotsHandler.cs" />
+    <Compile Include="Models\BaseResource.cs" />
     <Compile Include="Models\IPagination.cs" />
     <Compile Include="Models\IReadOnlyPagedCollection.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\Pagination.cs" />
+    <Compile Include="Models\PublicationResource.cs" />
     <Compile Include="Models\ReadOnlyPagedCollection.cs" />
+    <Compile Include="Models\VideoResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UmbracoDictionary.cs" />
     <Compile Include="ViewEngines\PartialViewEngine.cs" />
@@ -355,6 +359,7 @@
     <Compile Include="ViewModels\Pages\LegalHelpViewModel.cs" />
     <Compile Include="ViewModels\Pages\PageViewModel.cs" />
     <Compile Include="ViewModels\Pages\PsychologicalHelp.cs" />
+    <Compile Include="ViewModels\Pages\ResourceCenterViewModel.cs" />
     <Compile Include="ViewModels\Pages\SearchResultsViewModel.cs" />
     <Compile Include="ViewModels\Pages\SocialProtectionViewModel.cs" />
     <Compile Include="ViewModels\Pages\XMLSitemapViewModel.cs" />
