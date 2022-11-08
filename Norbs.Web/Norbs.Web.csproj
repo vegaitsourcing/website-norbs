@@ -520,6 +520,7 @@
     <Content Include="Views\Article - Copy.cshtml" />
     <Content Include="Views\Partials\Modules\AboutRareDeseasesModule.cshtml" />
     <Content Include="Views\AboutRareDeseases.cshtml" />
+    <Content Include="Views\ResourceCenter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
