@@ -9,7 +9,7 @@ namespace Norbs.Core.ViewModels.Pages
 	{
 		public AboutUsViewModel(IPageContext<AboutUs> context) : base(context)
 		{
-			Modules = context.Page.Modules.OfType<IINestedContent>();
+			Modules = context.Page.Module.OfType<IINestedContent>();
 		}
 
 		public IEnumerable<IINestedContent> Modules { get; }

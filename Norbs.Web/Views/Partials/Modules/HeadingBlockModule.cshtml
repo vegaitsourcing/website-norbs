@@ -1,0 +1,13 @@
+@inherits UmbracoViewPage<Norbs.Models.Generated.HeadingBlockModule>
+<div class="heading-block">
+    <div class="wrap wrap--inner">
+        @if (!string.IsNullOrWhiteSpace(Model.Title))
+        {
+            <h2 class="h2">@Model.Title</h2>
+        }
+        @if (!string.IsNullOrWhiteSpace(Model.Date))
+        {
+            <span class="heading-block__date">@Model.Date</span>
+        }
+    </div>
+</div>
