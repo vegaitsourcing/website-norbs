@@ -5,7 +5,6 @@ using Norbs.Core.ViewModels.Shared;
 using Norbs.Models.Generated;
 using System.Linq;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace Norbs.Core.ViewModels.Partials.Layout
 {
