@@ -20,37 +20,30 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Social Protection</summary>
-	[PublishedModel("socialProtection")]
-	public partial class SocialProtection : PublishedContentModel, IPage
+	/// <summary>Nav - About Rare Diseases</summary>
+	[PublishedModel("navAboutRareDiseases")]
+	public partial class NavAboutRareDiseases : PublishedContentModel, IPage
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "socialProtection";
+		public new const string ModelTypeAlias = "navAboutRareDiseases";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SocialProtection, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NavAboutRareDiseases, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public SocialProtection(IPublishedContent content)
+		public NavAboutRareDiseases(IPublishedContent content)
 			: base(content)
 		{ }
 
 		// properties
-
-		///<summary>
-		/// Module
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("module")]
-		public IEnumerable<ArticleBodyModule> Module => this.Value<IEnumerable<ArticleBodyModule>>("module");
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).

@@ -6,7 +6,7 @@ namespace Norbs.Core.Controllers.RenderMvc
 {
 	public class AboutUsController : BasePageController<AboutUs>
 	{
-		public ActionResult Index(AboutUs model) 
+		public ActionResult Index(AboutUs model)
 			=> CurrentTemplate(new AboutUsViewModel(CreatePageContext(model)));
 	}
 }

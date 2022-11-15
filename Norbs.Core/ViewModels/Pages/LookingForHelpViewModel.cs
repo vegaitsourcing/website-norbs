@@ -1,16 +1,13 @@
 ﻿using Norbs.Core.Contexts;
 using Norbs.Models.Generated;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Norbs.Core.ViewModels.Pages
 {
-    public class LegalHelpViewModel : PageViewModel
+    public class LookingForHelpV2ViewModel : PageViewModel
     {
-        public LegalHelpViewModel(IPageContext<LegalHelp> context) : base(context)
+        public LookingForHelpV2ViewModel(IPageContext<LookingForHelpV2> context) : base(context)
         {
             Modules = context.Page.Module.OfType<IINestedContent>();
         }

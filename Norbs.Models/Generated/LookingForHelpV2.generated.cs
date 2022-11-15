@@ -20,26 +20,26 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Health Protection</summary>
-	[PublishedModel("healthProtection")]
-	public partial class HealthProtection : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
+	/// <summary>Looking For Help</summary>
+	[PublishedModel("lookingForHelpV2")]
+	public partial class LookingForHelpV2 : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "healthProtection";
+		public new const string ModelTypeAlias = "lookingForHelpV2";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HealthProtection, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<LookingForHelpV2, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public HealthProtection(IPublishedContent content)
+		public LookingForHelpV2(IPublishedContent content)
 			: base(content)
 		{ }
 

@@ -20,7 +20,7 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>About us</summary>
+	/// <summary>About Us</summary>
 	[PublishedModel("aboutUs")]
 	public partial class AboutUs : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
 	{
@@ -46,11 +46,11 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
-		/// Modules
+		/// Module
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("modules")]
-		public IEnumerable<IPublishedElement> Modules => this.Value<IEnumerable<IPublishedElement>>("modules");
+		[ImplementPropertyType("module")]
+		public IEnumerable<IPublishedElement> Module => this.Value<IEnumerable<IPublishedElement>>("module");
 
 		///<summary>
 		/// Footer Description
