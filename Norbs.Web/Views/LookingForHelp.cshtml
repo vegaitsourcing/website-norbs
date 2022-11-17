@@ -1,0 +1,6 @@
+﻿@inherits UmbracoViewPage<LookingForHelpV2ViewModel>
+
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}

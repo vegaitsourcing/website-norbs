@@ -4,7 +4,7 @@
 			<ul class="tabs-block__list tab-list">
 				{{#each item}}
 				<li class="tabs-block__item tab-item">
-					<button type="button" class="tabs-block__btn js-tab tab{{#if this.active}} tab--active{{/if}}">{{this.btn}}</button>
+					<button type="button" class="tabs-block__btn js-tab tab{{#if this.active}} tab--active{{/if}}" {{#if this.tag}} data-tag="{{this.tag}}" {{/if}}>{{this.btn}}</button>
 				</li>
 				{{/each}}
 			</ul>

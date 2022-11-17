@@ -1,0 +1,18 @@
+﻿@using Norbs.Core.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContactPageViewModel>
+
+<div class="contact-info">
+    <div class="wrap wrap--inner">
+        <div class="contact-info__inner-container">
+            <div class="rte">
+                <h2 class="mb40 ">@Model.Title</h2>
+                @Html.Raw(Model.ContactDetails)
+            </div>
+        </div>
+    </div>
+    <div class="iframe-form">
+        <div class="iframe-form__container">
+            <iframe class="iframe-form__form" src="https://norbs.civicatalyst.org/linija_pomoci" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>

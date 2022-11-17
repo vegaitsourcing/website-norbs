@@ -18,3 +18,6 @@ header.init();
 
 import tabs from './_project/tabs';
 tabs.init();
+
+import formShort from './_project/form-short';
+formShort.init();

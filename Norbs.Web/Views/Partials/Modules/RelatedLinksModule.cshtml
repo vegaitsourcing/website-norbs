@@ -1,0 +1,21 @@
+﻿@inherits UmbracoViewPage<Norbs.Models.Generated.RelatedLinksModule>
+<div class="page-outro">
+    <div class="wrap wrap--inner">
+        <div class="page-outro__container">
+          @if (!string.IsNullOrWhiteSpace(Model.Title))
+            {
+                <h2 class="page-outro__title h2">@Model.Title</h2>
+            }
+        <ul class="page-outro__list">
+            @foreach (var link in Model.RelatedLinks)
+            {
+        <li class="page-outro__item">
+            @if (link != null) { 
+                <a href=@link.Url class="page-outro__link link link-main">@link.Name</a>
+            }
+        </li>
+            }
+        </ul>
+        </div>
+    </div>
+</div>
