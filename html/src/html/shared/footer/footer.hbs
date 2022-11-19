@@ -31,6 +31,7 @@
 								{{#ifEquals this.socialLink.target "_blank"}}
 								target="_blank" rel="noopener noreferrer"{{/ifEquals}}>
 								<span class="footer__socials-icon socials-icon font-ico-{{this.socialLink.icon}}"></span>
+								<span class="sr-only">{{this.socialLink.srOnlyText}}</span>
 								</a>
 								{{/if}}
 							</li>

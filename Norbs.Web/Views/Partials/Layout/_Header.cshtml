@@ -50,7 +50,7 @@
                 @if (Model.Logo != null && !string.IsNullOrWhiteSpace(Model.Logo?.Url))
                 {
                     <a href="/" class="header__logo">
-                        <img height="80" src="@Model.Logo.Url" alt="@Model.Logo.AlternateText" class="header__logo-img">
+                        <img src="@Model.Logo.Url" alt="@Model.Logo.AlternateText" class="header__logo-img">
                     </a>
                 }
                 @if (Model.NavigationItems != null && Model.NavigationItems.Count > 0)
@@ -60,15 +60,17 @@
                             @foreach (var navigationItem in Model.NavigationItems)
                             {
                                 <li class="header__item js-dropdown-item">
-                                    <a href="@navigationItem.Url" class="header__btn js-dropdown-btn">
-                                        @navigationItem.Title
-                                        @if (navigationItem.Children != null && navigationItem.Children.Any())
-                                        {
-                                            <span class="header__btn-icon font-ico-chevron-down"></span>
-                                        }
-                                    </a>
+
+
                                     @if (navigationItem.Children != null && navigationItem.Children.Any())
                                     {
+                                        <a href="javascript:;" class="header__btn js-dropdown-btn">
+                                            @navigationItem.Title
+                                            @if (navigationItem.Children != null && navigationItem.Children.Any())
+                                            {
+                                                <span class="header__btn-icon font-ico-chevron-down"></span>
+                                            }
+                                        </a>
                                         <div class="header__dropdown js-dropdown">
                                             <ul class="header__dropdown-list js-dropdown-list">
                                                 @foreach (var childItem in navigationItem.Children)
@@ -79,6 +81,16 @@
                                                 }
                                             </ul>
                                         </div>
+                                    }
+                                    else
+                                    {
+                                        <a href="@navigationItem.Url" class="header__btn js-dropdown-btn">
+                                            @navigationItem.Title
+                                            @if (navigationItem.Children != null && navigationItem.Children.Any())
+                                            {
+                                                <span class="header__btn-icon font-ico-chevron-down"></span>
+                                            }
+                                        </a>
                                     }
                                 </li>
                             }

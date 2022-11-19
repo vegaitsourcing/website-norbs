@@ -1,6 +1,10 @@
-﻿@inherits UmbracoViewPage<Norbs.Models.Generated.AboutUsModule>
+﻿@inherits UmbracoViewPage<Norbs.Models.Generated.ArticleBodyModule>
 
-@if (!string.IsNullOrWhiteSpace(Model.Title))
-{
-    @Model.Title
-}
+<main class="main">
+    <div class="rte">
+        @if (Model.Rte != null)
+        {
+            @Html.Raw(Model.Rte)
+        }
+    </div>
+</main>

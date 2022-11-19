@@ -1,1 +1,123 @@
-﻿
+﻿@model Norbs.Core.ViewModels.Partials.Layout.FooterViewModel
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="wrap">
+            <div class="footer__top-container">
+                <div class="footer__holder">
+                    @if (Model.FooterLogo != null && !string.IsNullOrWhiteSpace(Model.FooterLogo?.Url))
+                    {
+                        <a href="/" class="footer__logo">
+                            <img src="@Model.FooterLogo.Url" alt="@Model.FooterLogo.AlternateText" class="footer__logo-img">
+                        </a>
+                    }
+
+                    @if (!string.IsNullOrWhiteSpace(Model.FooterDescription))
+                    {
+                        <p class="footer__text">@Model.FooterDescription</p>
+                    }
+
+
+                    @if (!string.IsNullOrWhiteSpace(Model.FooterPhoneText))
+                    {
+                        <span class="footer__numbers-text">@Model.FooterPhoneText</span>
+                    }
+
+                    @if (!string.IsNullOrWhiteSpace(Model.FooterPhoneNumber))
+                    {
+                        <a href="tel:@Model.FooterPhoneNumber" class="footer__numbers numbers-big">@Model.FooterPhoneNumber</a>
+                    }
+
+                    <div class="footer__socials">
+                        @if (!string.IsNullOrWhiteSpace(Model.FooterSocialLinksText))
+                        {
+                            <span class="footer__socials-text">@Model.FooterSocialLinksText</span>
+                        }
+
+                        <ul class="footer__socials-list">
+                            @if (!string.IsNullOrWhiteSpace(Model.FooterFacebookLink.Url))
+                            {
+                                <li class="footer__socials-item">
+
+                                    <a href="@Model.FooterFacebookLink.Url" class="footer__socials-link socials-link" target="_blank" rel="noopener noreferrer">
+                                        <span class="footer__socials-icon socials-icon font-ico-facebook"></span>
+                                    </a>
+                                </li>
+                            }
+                            @if (!string.IsNullOrWhiteSpace(Model.FooterTwitterLink.Url))
+                            {
+                                <li class="footer__socials-item">
+
+                                    <a href="@Model.FooterTwitterLink.Url" class="footer__socials-link socials-link" target="_blank" rel="noopener noreferrer">
+                                        <span class="footer__socials-icon socials-icon font-ico-twitter"></span>
+                                    </a>
+                                </li>
+                            }
+                            @if (!string.IsNullOrWhiteSpace(Model.FooterYoutubeLink.Url))
+                            {
+                                <li class="footer__socials-item">
+
+                                    <a href="@Model.FooterYoutubeLink.Url" class="footer__socials-link socials-link" target="_blank" rel="noopener noreferrer">
+                                        <span class="footer__socials-icon socials-icon font-ico-youtube"></span>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__list-container">
+
+                    @foreach (var linksBlock in Model.FooterLinksBlocks)
+                    {
+                        <div class="footer__list-holder">
+                            @if (!string.IsNullOrWhiteSpace(linksBlock.BlockTitle))
+                            {
+                                <h3 class="footer__list-title">@linksBlock.BlockTitle</h3>
+                            }
+
+                            @if (linksBlock.BlockLinks != null && linksBlock.BlockLinks.Any())
+                            {
+                                <ul class="footer__list">
+
+                                    @foreach (var link in linksBlock.BlockLinks)
+                                    {
+                                        <li class="footer__item">
+                                            <a href="@link.Url" class="footer__link">@link.Name</a>
+                                        </li>
+                                    }
+
+
+                                </ul>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer__bottom">
+        <div class="wrap">
+            <div class="footer__bottom-container">
+
+                @foreach (var imageBlock in Model.FooterImagesBlocks)
+                {
+                    <div class="footer__bottom-holder">
+                        @if (!string.IsNullOrWhiteSpace(imageBlock.ImageTitle))
+                        {
+                            <h4 class="footer__bottom-title">@imageBlock.ImageTitle</h4>
+                        }
+
+                        @if (imageBlock.Image != null && !string.IsNullOrWhiteSpace(imageBlock.Image?.Url))
+                        {
+                            <img src="@imageBlock.Image.Url" alt="imageBlock.Image.AlternateText" class="footer__bottom-img">
+                        }
+
+                    </div>
+                        }
+                    </div>
+        </div>
+    </div>
+</footer>

@@ -25,7 +25,6 @@ namespace Norbs.Core.ViewModels.Partials.Layout
 			.Where(x => !x.UmbracoNaviHide)
 			.Select(x => new NavigationPageViewModel(x))
 			.ToList();
-
 		}
 
 		public ImageViewModel Logo { get; }
@@ -44,7 +43,7 @@ namespace Norbs.Core.ViewModels.Partials.Layout
 		{
 			this.Title = x.Name;
 			this.Url = x.Url();
-			this.IsActive = true; //TODO: CHECK INDIAN TUTORIAL;
+			this.IsActive = true;
 			this.Children = x.Children
 				.OfType<IPage>()
 				.ToList();

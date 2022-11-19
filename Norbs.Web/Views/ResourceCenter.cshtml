@@ -1,0 +1,57 @@
+﻿@using Norbs.Core.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ResourceCenterViewModel>
+
+<div class="page-intro bg-orange" style="background-image: url(/assets/images/page-intro-bg.png);">
+    <div class="wrap">
+        <h1 class="page-intro__title h1">@Model.Title</h1>
+    </div>
+</div>
+<div class="tabs-block">
+    <div class="wrap wrap--inner">
+        <div class="tabs-block__container">
+            <ul class="tabs-block__list tab-list">
+                <li class="tabs-block__item tab-item">
+                    <button type="button" class="tabs-block__btn js-tab tab tab--active" data-tag="">Svi resursi</button>
+                </li>
+                <li class="tabs-block__item tab-item">
+                    <button type="button" class="tabs-block__btn js-tab tab" data-tag="video">Video materijal</button>
+                </li>
+                <li class="tabs-block__item tab-item">
+                    <button type="button" class="tabs-block__btn js-tab tab" data-tag="publikacija">Publikacije</button>
+                </li>
+            </ul>
+            <div class="tabs-block__holder js-tab-holder">
+                <h3 class="tabs-block__title h3 js-tab-title"></h3>
+                <div class="tabs-block__holder-cards">
+                    @foreach (var resource in Model.Children)
+                    {
+                        if (resource is VideoResource)
+                        {
+                            var videoResource = (VideoResource) resource;
+                            <div class="resource-card" data-tag="video">
+                                <div class="resource-card__iframe-block">
+                                    <iframe class="resource-card__iframe" src="@videoResource.EmbedUrl" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h3 class="resource-card__title h3">@videoResource.Title</h3>
+                                <a href="@videoResource.VideoUrl" class="resource-card__link link link-small" target="_blank" rel="noopener noreferrer">pogledaj video</a>
+                            </div>
+                        }
+
+                        if (resource is PublicationResource)
+                        {
+                            var publicationResource = (PublicationResource) resource;
+                            <div class="resource-card" data-tag="publikacija">
+                                <div class="resource-card__img-block">
+                                    <img src="@publicationResource.ThumbnailUrl" alt="alt text" class="resource-card__img">
+                                </div>
+                                <h3 class="resource-card__title h3">@publicationResource.Title</h3>
+                                <a href="@publicationResource.PublicationUrl" class="resource-card__link link link-small" target="_blank" rel="noopener noreferrer" download>sačuvaj</a>
+                            </div>
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

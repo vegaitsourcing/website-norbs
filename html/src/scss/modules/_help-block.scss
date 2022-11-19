@@ -22,7 +22,7 @@
 .help-block__title {
 	margin-bottom: 70px;
 	font-weight: 400;
-	color: $black;
+	color: $grey;
 
 	@include media-breakpoint-down(sm) {
 		margin-bottom: 40px;
@@ -55,6 +55,15 @@
 
 	&:last-child {
 		margin-right: 0;
+	}
+
+
+	@include hover {
+		transform: translateY(10px);
+	}
+
+	@include animation {
+		transition: transform $transition;
 	}
 
 	@include media-breakpoint-down(md) {
@@ -96,6 +105,7 @@
 	padding-bottom: 25px;
 	position: relative;
 	z-index: 3;
+
 
 	@include media-breakpoint-down(lg) {
 		font-size: 20px;

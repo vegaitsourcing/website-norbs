@@ -1,0 +1,13 @@
+﻿@inherits UmbracoViewPage<Norbs.Models.Generated.PageIntroModule>
+@{ 
+    string bgColor = !string.IsNullOrEmpty(Model.Color.Label) ? Model.Color.Label : "orange";
+    string bgImage = (Model.Image != null && !string.IsNullOrEmpty(Model.Image.Url())) ? Model.Image.Url() : "";
+}
+<div class="page-intro bg-@bgColor" style="background-image: url(@bgImage);">
+    <div class="wrap">
+        @if (!string.IsNullOrEmpty(Model.Title))
+        {
+            <h1 class="page-intro__title h1">@Model.Title</h1>
+        }
+    </div>
+</div>

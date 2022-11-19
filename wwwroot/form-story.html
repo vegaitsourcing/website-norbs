@@ -10,10 +10,8 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link rel="canonical" href="http://umbraco9-test.local/">
-	<link rel="preconnect" href="https://www.googletagmanager.com">
-	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
-	<meta name="robots" content="index, follow">
-	<meta name="googlebot" content="index, follow">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://umbraco9-test.local/">
 	<meta property="og:locale" content="en-US">
@@ -26,26 +24,9 @@
 	<meta property="og:image:height" content="700">
 	<meta property="og:image:alt" content="">
 	<!-- main css file -->
-	<link rel="stylesheet" href="css/style.min.css?v=1665860389809">
-	<!-- Google Tag Manager -->
-	<script>
-		(function(w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({
-				'gtm.start': new Date().getTime(),
-				event: 'gtm.js'
-			});
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'XXX-XXXXXX');
-	</script>
-	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="css/style.min.css">
 	<!-- global js file -->
-	<script defer src="js/global.min.js?v=1665860389809"></script>
+	<script defer src="js/global.min.js"></script>
 	<script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
 	<script>
 		let optionalCookies = [{
@@ -175,11 +156,6 @@
 </head>
 
 <body class="">
-	<!-- Google Tag Manager -->
-	<noscript>
-		<iframe src="//www.googletagmanager.com/ns.html?id=XXX-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<!-- End Google Tag Manager -->
 	<header class="header">
 		<div class="header__top">
 			<div class="wrap">
@@ -189,16 +165,19 @@
 					<ul class="header__socials">
 						<li class="header__socials-item">
 							<a href="javascript:;" class="header__socials-link socials-link" target="_blank" rel="noopener noreferrer">
+								<span class="sr-only">facebook</span>
 								<span class="header__socials-icon socials-icon font-ico-facebook"></span>
 							</a>
 						</li>
 						<li class="header__socials-item">
 							<a href="javascript:;" class="header__socials-link socials-link" target="_blank" rel="noopener noreferrer">
+								<span class="sr-only">twitter</span>
 								<span class="header__socials-icon socials-icon font-ico-twitter"></span>
 							</a>
 						</li>
 						<li class="header__socials-item">
 							<a href="javascript:;" class="header__socials-link socials-link" target="_blank" rel="noopener noreferrer">
+								<span class="sr-only">facebook</span>
 								<span class="header__socials-icon socials-icon font-ico-facebook"></span>
 							</a>
 						</li>
@@ -294,7 +273,7 @@
 			<div class="wrap wrap--inner">
 				<h2 class="form-short__title h2">Podeli svoju priču</h2>
 				<span class="form-short__subtitle h3">Kontakt podaci</span>
-				<form action="javascript:void(0);" class="form-short__form">
+				<form class="form-short__form">
 					<div class="form-short__form-inner-container">
 						<div class="form-short__input-container">
 							<label class="form-short__input-label" for="name">Ime <span class="sr-only">Ime</span>
@@ -342,16 +321,19 @@
 								<li class="footer__socials-item">
 									<a href="javascript:;" class="footer__socials-link socials-link" target="_blank" rel="noopener noreferrer">
 										<span class="footer__socials-icon socials-icon font-ico-facebook"></span>
+										<span class="sr-only">facebook</span>
 									</a>
 								</li>
 								<li class="footer__socials-item">
 									<a href="javascript:;" class="footer__socials-link socials-link" target="_blank" rel="noopener noreferrer">
 										<span class="footer__socials-icon socials-icon font-ico-twitter"></span>
+										<span class="sr-only">twitter</span>
 									</a>
 								</li>
 								<li class="footer__socials-item">
 									<a href="javascript:;" class="footer__socials-link socials-link" target="_blank" rel="noopener noreferrer">
 										<span class="footer__socials-icon socials-icon font-ico-facebook"></span>
+										<span class="sr-only">facebook</span>
 									</a>
 								</li>
 							</ul>

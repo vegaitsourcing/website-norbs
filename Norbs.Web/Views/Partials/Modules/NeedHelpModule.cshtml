@@ -16,32 +16,51 @@
             {
                 <h3 class="h3 help-block__title">@Model.Subtitle</h3>
             }
-            <ul class="help-block__list">
+        <ul class="help-block__list">
+            @if (Model.Image1 != null && !string.IsNullOrWhiteSpace(Model.Image1.Url()) && Model.Link1 != null && !string.IsNullOrWhiteSpace(Model.Link1.Url) && !string.IsNullOrWhiteSpace(Model.Link1.Name))
+            {
                 <li class="help-block__item bg-orange">
-                    <img src="assets/images/flower-white.png" alt="Zdravstvena zaštita" class="help-block__img">
-                    <a href="javascript:;" class="help-block__link">
-                        <span class="help-block__link-text">Zdravstvena<br>zaštita</span>
+                    <img src="@Model.Image1.Url()" alt="Zdravstvena zaštita" class="help-block__img">
+                    <a href="@Model.Link1.Url" class="help-block__link">
+                        <span class="help-block__link-text">@Model.Link1.Name</span>
                     </a>
+
                 </li>
+            }
+
+            @if (Model.Image2 != null && !string.IsNullOrWhiteSpace(Model.Image2.Url()) && Model.Link2 != null && !string.IsNullOrWhiteSpace(Model.Link2.Url) && !string.IsNullOrWhiteSpace(Model.Link2.Name))
+            {
                 <li class="help-block__item bg-green">
-                    <img src="assets/images/flower-white.png" alt="Socijalna zaštita" class="help-block__img">
-                    <a href="javascript:;" class="help-block__link">
-                        <span class="help-block__link-text">Socijalna<br>zaštita</span>
+                    <img src="@Model.Image2.Url()" alt="Zdravstvena zaštita" class="help-block__img">
+                    <a href="@Model.Link2.Url" class="help-block__link">
+                        <span class="help-block__link-text">@Model.Link2.Name</span>
                     </a>
+
                 </li>
+            }
+
+            @if (Model.Image3 != null && !string.IsNullOrWhiteSpace(Model.Image3.Url()) && Model.Link3 != null && !string.IsNullOrWhiteSpace(Model.Link3.Url) && !string.IsNullOrWhiteSpace(Model.Link3.Name))
+            {
                 <li class="help-block__item bg-blue">
-                    <img src="assets/images/flower-white.png" alt="Pravna Pomoć" class="help-block__img">
-                    <a href="javascript:;" class="help-block__link">
-                        <span class="help-block__link-text">Pravna<br>Pomoć</span>
+                    <img src="@Model.Image3.Url()" alt="Zdravstvena zaštita" class="help-block__img">
+                    <a href="@Model.Link3.Url" class="help-block__link">
+                        <span class="help-block__link-text">@Model.Link3.Name</span>
                     </a>
+
                 </li>
+            }
+
+            @if (Model.Image4 != null && !string.IsNullOrWhiteSpace(Model.Image4.Url()) && Model.Link4 != null && !string.IsNullOrWhiteSpace(Model.Link4.Url) && !string.IsNullOrWhiteSpace(Model.Link4.Name))
+            {
                 <li class="help-block__item bg-pink">
-                    <img src="assets/images/flower-white.png" alt="Psihološka podrška" class="help-block__img">
-                    <a href="javascript:;" class="help-block__link">
-                        <span class="help-block__link-text">Psihološka<br>podrška</span>
+                    <img src="@Model.Image4.Url()" alt="Zdravstvena zaštita" class="help-block__img">
+                    <a href="@Model.Link4.Url" class="help-block__link">
+                        <span class="help-block__link-text">@Model.Link4.Name</span>
                     </a>
+
                 </li>
-            </ul>
+            }
+        </ul>
         </div>
     </div>
 </div>

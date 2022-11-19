@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Our.Umbraco.UmbNav.Web.2.0.2\build\Our.Umbraco.UmbNav.Web.props" Condition="Exists('..\packages\Our.Umbraco.UmbNav.Web.2.0.2\build\Our.Umbraco.UmbNav.Web.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\UmbracoCms.8.18.5\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.8.18.5\build\UmbracoCms.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -44,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AaronSadler.MegaNavV8.Api, Version=8.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AaronSadler.MegaNavV8.Api.8.2.2\lib\net472\AaronSadler.MegaNavV8.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="AaronSadler.MegaNavV8.Core, Version=8.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AaronSadler.MegaNavV8.Core.8.2.3\lib\net472\AaronSadler.MegaNavV8.Core.dll</HintPath>
+    </Reference>
     <Reference Include="ClientDependency.Core, Version=1.9.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ClientDependency.1.9.10\lib\net45\ClientDependency.Core.dll</HintPath>
     </Reference>
@@ -424,6 +431,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\MeganavV8\Css\editor.css" />
+    <Content Include="App_Plugins\MeganavV8\Js\angular-ui-tree.js" />
+    <Content Include="App_Plugins\MeganavV8\Js\meganavv8.controller.js" />
+    <Content Include="App_Plugins\MeganavV8\Js\meganavv8.resource.js" />
+    <Content Include="App_Plugins\MeganavV8\Views\editor.html" />
+    <Content Include="App_Plugins\MeganavV8\Views\settings.html" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.html" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
@@ -452,6 +465,7 @@
     <Content Include="CustomError400.aspx" />
     <Content Include="CustomError500.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="js\articles.js" />
     <Content Include="Views\Partials\Modules\HelpLineModule.cshtml" />
     <Content Include="Views\Partials\Modules\NeedHelpModule.cshtml" />
     <Content Include="Web.config">
@@ -489,6 +503,7 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
     <Content Include="connections.config" />
+    <Content Include="App_Plugins\MeganavV8\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -507,6 +522,19 @@
     <Content Include="Views\Partials\Modules\ShareStoryModule.cshtml" />
     <Content Include="Views\Partials\Modules\FindMoreModule.cshtml" />
     <Content Include="Views\Article.cshtml" />
+    <Content Include="Views\Partials\Modules\PageIntroModule.cshtml" />
+    <Content Include="Views\Partials\Modules\ArticleBodyModule.cshtml" />
+    <Content Include="Views\Articles.cshtml" />
+    <Content Include="Views\Article - Copy.cshtml" />
+    <Content Include="Views\Partials\Modules\AboutRareDeseasesModule.cshtml" />
+    <Content Include="Views\AboutRareDeseases.cshtml" />
+    <Content Include="Views\ResourceCenter.cshtml" />
+    <Content Include="Views\ShareStory.cshtml" />
+    <Content Include="Views\ContactPage.cshtml" />
+    <Content Include="Views\Partials\Modules\RelatedLinksModule.cshtml" />
+    <Content Include="Views\Partials\Modules\HeadingBlockModule.cshtml" />
+    <Content Include="Views\Partials\Modules\LookingForHelpModule.cshtml" />
+    <Content Include="Views\LookingForHelp.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -528,6 +556,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -545,6 +576,9 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:52103/" workingDir="" />
+          </servers>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
@@ -558,6 +592,7 @@
     <Error Condition="!Exists('..\packages\UmbracoCms.8.18.5\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.18.5\build\UmbracoCms.props'))" />
     <Error Condition="!Exists('..\packages\UmbracoCms.8.18.5\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.18.5\build\UmbracoCms.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Our.Umbraco.UmbNav.Web.2.0.2\build\Our.Umbraco.UmbNav.Web.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Our.Umbraco.UmbNav.Web.2.0.2\build\Our.Umbraco.UmbNav.Web.props'))" />
   </Target>
   <Import Project="..\packages\UmbracoCms.8.18.5\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.18.5\build\UmbracoCms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

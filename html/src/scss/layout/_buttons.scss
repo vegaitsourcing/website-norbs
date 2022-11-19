@@ -17,7 +17,7 @@ button {
 	outline: none;
 
 	&:focus {
-		outline: 1px dashed rgba($orange, 0.2);
+		outline: 4px dashed rgba($orange, 1);
 	}
 }
 
@@ -50,8 +50,6 @@ button {
 		border-radius: 50%;
 		top: 100%;
 		left: 100%;
-		transition: 0.7s ease;
-		transition-property: top, left, border-color, color;
 	}
 
 	@include hover {
@@ -60,6 +58,16 @@ button {
 		&::before {
 			top: -50px;
 			left: -50px;
+		}
+	}
+
+	@include animation {
+		transition: 0.7s ease;
+		transition-property: color, border-color;
+
+		&::before {
+			transition: 0.7s ease;
+			transition-property: top, left;
 		}
 	}
 }
@@ -73,12 +81,21 @@ button {
 	@include hover {
 		color: $grey;
 	}
+	@include media-breakpoint-down(sm) {
+		line-height: 24px;
+	}
 }
 
 .link-main {
 	font-size: 24px;
+	@include media-breakpoint-down(sm) {
+		font-size: 20px;
+	}
 }
 
 .link-small {
 	font-size: 18px;
+	@include media-breakpoint-down(sm) {
+		font-size: 16px;
+	}
 }
