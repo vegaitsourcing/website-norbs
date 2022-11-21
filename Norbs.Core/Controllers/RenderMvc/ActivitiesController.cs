@@ -3,7 +3,6 @@ using System.Linq;
 using System.Web.Mvc;
 using Norbs.Core.ViewModels.Pages;
 using Norbs.Core.ViewModels.Partials.Listing;
-using Norbs.Core.ViewModels.Shared;
 using Norbs.Models.Generated;
 using Umbraco.Web;
 
@@ -13,16 +12,19 @@ namespace Norbs.Core.Controllers.RenderMvc
     {
         public ActionResult Index(Activities model)
         {
-            var tags = UmbracoContext.Content.GetAtRoot("Home").FirstOrDefault()
-                .Children.DescendantsOrSelfOfType(Activities.ModelTypeAlias).FirstOrDefault()
-                .Children.DescendantsOrSelfOfType(Tags.ModelTypeAlias).FirstOrDefault()
-                .Children.DescendantsOrSelfOfType(Tag.ModelTypeAlias);
+            var tags = model?.Children.DescendantsOrSelfOfType(Tags.ModelTypeAlias)
+                .FirstOrDefault()?.Children.DescendantsOrSelfOfType(Tag.ModelTypeAlias);
 
-            var activities = tags.FirstOrDefault().Children;
+            var activities = tags?.FirstOrDefault().Children;
 
-            var listViewModel = new ViewModels.Partials.Listing.ActivitiesListViewModel()
+            if (activities == null)
             {
-                Items = activities.Select(activity => new ViewModels.Partials.Listing.ActivityItem()
+                return null;
+            }
+
+            var listViewModel = new ActivitiesListViewModel()
+            {
+                Items = activities.Select(activity => new ActivityItem()
                 {
                     Title = activity.Name,
                     Url = activity.Url()
