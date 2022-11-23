@@ -20,13 +20,10 @@ namespace Norbs.Core.Controllers.UmbracoApi
 
         [HttpGet]
         [Route("articles/getForTag")]
-        public HttpResponseMessage GetArticlesForTag([System.Web.Http.FromUri] string tagName)
+        public HttpResponseMessage GetArticlesForTag([FromUri] string tagName)
         {
-            IEnumerable<Article> RelatedArticles = UmbracoContext.Content.GetAtRoot("Home").FirstOrDefault()
-                ?.Children<Articles>().FirstOrDefault()
-                ?.Children<Tags>().FirstOrDefault()
-                ?.Children<Tag>().Where(tag => tag.Name.Equals(tagName)).FirstOrDefault()
-                ?.Children<Article>();
+            IEnumerable<Article> RelatedArticles = UmbracoContext.Content.GetAtRoot().DescendantsOrSelf<Articles>()
+                .DescendantsOrSelf<Tag>().FirstOrDefault(t => t.Name.Equals(tagName))?.Children<Article>();
 
             if(RelatedArticles == null)
             {
