@@ -503,6 +503,7 @@
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
     <Content Include="connections.config" />
     <Content Include="App_Plugins\MeganavV8\package.manifest" />
+    <Content Include="js\activities.js" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -534,6 +535,9 @@
     <Content Include="Views\Partials\Modules\HeadingBlockModule.cshtml" />
     <Content Include="Views\Partials\Modules\LookingForHelpModule.cshtml" />
     <Content Include="Views\LookingForHelp.cshtml" />
+    <Content Include="Views\Activities.cshtml" />
+    <Content Include="Views\Activity.cshtml" />
+    <Content Include="Views\Partials\Modules\ActivitiesListModule.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -22,7 +22,7 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>Article</summary>
 	[PublishedModel("article")]
-	public partial class Article : PublishedContentModel, IPage
+	public partial class Article : PublishedContentModel, IFooter, IHeader, IPage, ISiteSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -72,6 +72,118 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("tag")]
 		public IEnumerable<IPublishedContent> Tag => this.Value<IEnumerable<IPublishedContent>>("tag");
+
+		///<summary>
+		/// Footer Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerDescription")]
+		public string FooterDescription => Footer.GetFooterDescription(this);
+
+		///<summary>
+		/// Footer Facebook Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerFacebookLink")]
+		public Umbraco.Web.Models.Link FooterFacebookLink => Footer.GetFooterFacebookLink(this);
+
+		///<summary>
+		/// Footer Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerLogo")]
+		public IPublishedContent FooterLogo => Footer.GetFooterLogo(this);
+
+		///<summary>
+		/// Footer Phone Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerPhoneNumber")]
+		public string FooterPhoneNumber => Footer.GetFooterPhoneNumber(this);
+
+		///<summary>
+		/// Footer Phone Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerPhoneText")]
+		public string FooterPhoneText => Footer.GetFooterPhoneText(this);
+
+		///<summary>
+		/// Footer Social Links Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerSocialLinksText")]
+		public string FooterSocialLinksText => Footer.GetFooterSocialLinksText(this);
+
+		///<summary>
+		/// Footer Twitter Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerTwitterLink")]
+		public Umbraco.Web.Models.Link FooterTwitterLink => Footer.GetFooterTwitterLink(this);
+
+		///<summary>
+		/// Footer Youtube Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("footerYoutubeLink")]
+		public Umbraco.Web.Models.Link FooterYoutubeLink => Footer.GetFooterYoutubeLink(this);
+
+		///<summary>
+		/// Images Block
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("imagesBlock")]
+		public IEnumerable<FooterImagesBlock> ImagesBlock => Footer.GetImagesBlock(this);
+
+		///<summary>
+		/// Links Block
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("linksBlock")]
+		public IEnumerable<FooterLinksBlock> LinksBlock => Footer.GetLinksBlock(this);
+
+		///<summary>
+		/// FacebookUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("facebookUrl")]
+		public string FacebookUrl => Header.GetFacebookUrl(this);
+
+		///<summary>
+		/// Header Phone Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("headerPhoneNumber")]
+		public string HeaderPhoneNumber => Header.GetHeaderPhoneNumber(this);
+
+		///<summary>
+		/// Header Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("headerTitle")]
+		public string HeaderTitle => Header.GetHeaderTitle(this);
+
+		///<summary>
+		/// Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("logo")]
+		public Image Logo => Header.GetLogo(this);
+
+		///<summary>
+		/// TwitterUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("twitterUrl")]
+		public string TwitterUrl => Header.GetTwitterUrl(this);
+
+		///<summary>
+		/// YoutubeUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("youtubeUrl")]
+		public string YoutubeUrl => Header.GetYoutubeUrl(this);
 
 		///<summary>
 		/// Alternate Languages: Language codes (en-US, en-GB etc).
@@ -212,5 +324,61 @@ namespace Norbs.Models.Generated
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		[ImplementPropertyType("umbracoUrlName")]
 		public string UmbracoUrlName => Page.GetUmbracoUrlName(this);
+
+		///<summary>
+		/// Canonical Domain: The site canonical domain.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("canonicalDomain")]
+		public string CanonicalDomain => SiteSettings.GetCanonicalDomain(this);
+
+		///<summary>
+		/// Cookie Script
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("cookieScript")]
+		public string CookieScript => SiteSettings.GetCookieScript(this);
+
+		///<summary>
+		/// Google Analytics Script Code
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("googleAnalyticsScriptCode")]
+		public string GoogleAnalyticsScriptCode => SiteSettings.GetGoogleAnalyticsScriptCode(this);
+
+		///<summary>
+		/// Google Tag Manager Non-Script Code
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("googleTagManagerNonScriptCode")]
+		public string GoogleTagManagerNonScriptCode => SiteSettings.GetGoogleTagManagerNonScriptCode(this);
+
+		///<summary>
+		/// Google Tag Manager Script Code
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("googleTagManagerScriptCode")]
+		public string GoogleTagManagerScriptCode => SiteSettings.GetGoogleTagManagerScriptCode(this);
+
+		///<summary>
+		/// Hide All Pages From Search Engines: This will create robots meta tag with "noindex,nofollow" value. Note: this should be unchecked on the live site.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("hideAllPagesFromSearchEngines")]
+		public bool HideAllPagesFromSearchEngines => SiteSettings.GetHideAllPagesFromSearchEngines(this);
+
+		///<summary>
+		/// Robots: Content that will be served when Robots.txt is requested.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("robots")]
+		public string Robots => SiteSettings.GetRobots(this);
+
+		///<summary>
+		/// Site Name: The site name.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("siteName")]
+		public string SiteName => SiteSettings.GetSiteName(this);
 	}
 }
