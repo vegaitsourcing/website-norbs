@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ActivitiesViewModel>
+
+<script defer src="~/js/activities.js"></script>
+
+
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}
+
+<div id="activitiesList">
+    @{Html.RenderPartial("Modules/ActivitiesListModule", Model.ActivitiesListViewModel);}
+</div>
+
+

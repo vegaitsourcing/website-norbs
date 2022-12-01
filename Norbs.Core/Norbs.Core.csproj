@@ -311,6 +311,8 @@
     <Compile Include="Contexts\SeoContext.cs" />
     <Compile Include="Contexts\SiteContext.cs" />
     <Compile Include="Controllers\RenderMvc\AboutRareDeseasesController.cs" />
+    <Compile Include="Controllers\RenderMvc\ActivitiesController.cs" />
+    <Compile Include="Controllers\RenderMvc\ActivityController.cs" />
     <Compile Include="Controllers\RenderMvc\LookingForHelpController.cs" />
     <Compile Include="Controllers\RenderMvc\ArticlesController.cs" />
     <Compile Include="Controllers\RenderMvc\BasePageController.cs" />
@@ -324,6 +326,7 @@
     <Compile Include="Controllers\RenderMvc\ShareStoryController.cs" />
     <Compile Include="Controllers\RenderMvc\XMLSitemapController.cs" />
     <Compile Include="Controllers\Surface\BaseSurfaceController.cs" />
+    <Compile Include="Controllers\Surface\Partials\ActivitiesListController.cs" />
     <Compile Include="Controllers\Surface\Partials\LayoutController.cs" />
     <Compile Include="Controllers\Surface\Partials\SearchListingController.cs" />
     <Compile Include="Controllers\UmbracoApi\ArticlesApiController.cs" />
@@ -354,6 +357,8 @@
     <Compile Include="UmbracoDictionary.cs" />
     <Compile Include="ViewEngines\PartialViewEngine.cs" />
     <Compile Include="ViewModels\Pages\AboutRareDeseasesViewModel.cs" />
+    <Compile Include="ViewModels\Pages\ActivitiesViewModel.cs" />
+    <Compile Include="ViewModels\Pages\ActivityViewModel.cs" />
     <Compile Include="ViewModels\Pages\NavAboutUsViewModel.cs" />
     <Compile Include="ViewModels\Pages\NavAboutRareDiseasesViewModel.cs" />
     <Compile Include="ViewModels\Pages\LookingForHelpViewModel.cs" />
@@ -372,6 +377,7 @@
     <Compile Include="ViewModels\Partials\Layout\HeaderViewModel.cs" />
     <Compile Include="ViewModels\Partials\Layout\MetaTagsViewModel.cs" />
     <Compile Include="ViewModels\Partials\Layout\OpenGraphViewModel.cs" />
+    <Compile Include="ViewModels\Partials\Listing\ActivitiesListViewModel.cs" />
     <Compile Include="ViewModels\Partials\Listing\ListingViewModel.cs" />
     <Compile Include="ViewModels\Partials\Listing\PaginationViewModel.cs" />
     <Compile Include="ViewModels\Partials\Listing\SearchResultsItemViewModel.cs" />

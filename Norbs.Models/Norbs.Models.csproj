@@ -412,6 +412,9 @@
     <Compile Include="Extensions\SeoExtensions.cs" />
     <Compile Include="Generated\AboutRareDeseases.generated.cs" />
     <Compile Include="Generated\AboutUs.generated.cs" />
+    <Compile Include="Generated\Activities.generated.cs" />
+    <Compile Include="Generated\Activity.generated.cs" />
+    <Compile Include="Generated\ActivityModule.generated.cs" />
     <Compile Include="Generated\Article.generated.cs" />
     <Compile Include="Generated\ArticleBodyModule.generated.cs" />
     <Compile Include="Generated\Articles.generated.cs" />
