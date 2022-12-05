@@ -329,6 +329,7 @@
     <Compile Include="Controllers\Surface\Partials\ActivitiesListController.cs" />
     <Compile Include="Controllers\Surface\Partials\LayoutController.cs" />
     <Compile Include="Controllers\Surface\Partials\SearchListingController.cs" />
+    <Compile Include="Controllers\UmbracoApi\ArticlesApiController.cs" />
     <Compile Include="Controllers\UmbracoApi\FormsController.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\HttpContextExtensions.cs" />

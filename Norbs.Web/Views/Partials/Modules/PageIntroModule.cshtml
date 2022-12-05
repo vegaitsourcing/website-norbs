@@ -1,5 +1,5 @@
 ﻿@inherits UmbracoViewPage<Norbs.Models.Generated.PageIntroModule>
-@{ 
+@{  
     string bgColor = !string.IsNullOrEmpty(Model.Color?.Label) ? Model.Color.Label : "orange";
     string bgImage = !string.IsNullOrEmpty(Model.Image?.Url()) ? Model.Image.Url() : "";
 }

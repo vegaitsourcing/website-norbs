@@ -1,51 +1,27 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ArticlesViewModel>
 
-<main class="main">
-    <div class="tabs-block">
-    	<div class="wrap wrap--inner">
-    		<div class="tabs-block__container">
-    			<ul class="tabs-block__list tab-list">
-    				<li class="tabs-block__item tab-item">
-    					<button type="button" class="tabs-block__btn js-tab tab tab--active">Blog</button>
-    				</li>
-    			</ul>
-    			<div class="tabs-block__holder js-tab-holder">
-    				{{#if title}}
-    				<h3 class="tabs-block__title h3 js-tab-title"></h3>
-    				{{/if}}
-    				{{#if cards}}
-    				<div class="tabs-block__holder-cards">
-    					{{#each cards}}
-    						{{#if resource-card}}
-    						{{> resource-card resource-card}}
-    						{{/if}}
-    							{{> news-card news-card}}
-    					{{/each}}
-    				</div>
-    				{{/if}}
-    				{{#if links}}
-    				<ul class="tabs-block__holder-links">
-    					{{#each links}}
-    					{{/each}}
-    				</ul>
-    				{{/if}}
-    			</div>
-    		</div>
-    	</div>
-    </div>
-</main>
-
-@{
-    var selection = Umbraco.Content(Guid.Parse("97cf61da-61e5-4023-a5f3-d3b450cb311d"))
-    .ChildrenOfType("article")
-    .Where(x => x.IsVisible());
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
 }
-<ul>
-    @foreach (var item in selection)
-    {
-        <li>
-            <a href="@item.Url">@item.Name</a>
-        </li>
-    }
-</ul>
+<script defer src="~/js/articles.js"></script>
+<div class="tabs-block">
+    <div class="wrap wrap--inner">
+        <div class="tabs-block__container">
+            <ul class="tabs-block__list tab-list">
+                @foreach (var item in Model.Tabs)
+                {
+                    <li class="tabs-block__item tab-item">
+                        <button type="button" class="tabs-block__btn js-tab tab">@item</button>
+                    </li>
+                }
+            </ul>
 
+            <div class="tabs-block__holder js-tab-holder">
+                <h3 class="tabs-block__title h3 js-tab-title"></h3>
+                    <div class="tabs-block__holder-cards">
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

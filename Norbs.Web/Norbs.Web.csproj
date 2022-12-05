@@ -465,6 +465,7 @@
     <Content Include="CustomError400.aspx" />
     <Content Include="CustomError500.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="js\articles.js" />
     <Content Include="Views\Partials\Modules\HelpLineModule.cshtml" />
     <Content Include="Views\Partials\Modules\NeedHelpModule.cshtml" />
     <Content Include="Web.config">

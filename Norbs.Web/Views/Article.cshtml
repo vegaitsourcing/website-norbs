@@ -1,7 +1,5 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ArticleViewModel>
-<main class="main">
-    @foreach (var module in Model.Modules)
-    {
-        Html.RenderPartial("Modules/" + module.GetType().Name, module);
-    }
-</main>
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}
