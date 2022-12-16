@@ -460,6 +460,7 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="css\rte-styles.css" />
     <Content Include="css\style.min.css" />
     <Content Include="CustomError.aspx" />
     <Content Include="CustomError400.aspx" />
@@ -534,11 +535,12 @@
     <Content Include="Views\ContactPage.cshtml" />
     <Content Include="Views\Partials\Modules\RelatedLinksModule.cshtml" />
     <Content Include="Views\Partials\Modules\HeadingBlockModule.cshtml" />
-    <Content Include="Views\Partials\Modules\LookingForHelpModule.cshtml" />
+    <Content Include="Views\Partials\Modules\MediaPickerModule.cshtml" />
     <Content Include="Views\LookingForHelp.cshtml" />
     <Content Include="Views\Activities.cshtml" />
     <Content Include="Views\Activity.cshtml" />
     <Content Include="Views\Partials\Modules\ActivitiesListModule.cshtml" />
+    <Content Include="Views\Partials\Modules\LookingForHelpModule - Copy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
