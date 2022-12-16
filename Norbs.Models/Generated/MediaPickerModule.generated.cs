@@ -20,64 +20,36 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Norbs.Models.Generated
 {
-	/// <summary>Help Line Module</summary>
-	[PublishedModel("helpLineModule")]
-	public partial class HelpLineModule : PublishedElementModel, IINestedContent
-	{
+	/// <summary>MediaPicker Module</summary>
+	[PublishedModel("mediaPickerModule")]
+	public partial class MediaPickerModule : PublishedElementModel, IINestedContent, IPublishedElement
+    {
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public new const string ModelTypeAlias = "helpLineModule";
+		public new const string ModelTypeAlias = "mediaPickerModule";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HelpLineModule, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<MediaPickerModule, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public HelpLineModule(IPublishedElement content)
+		public MediaPickerModule(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Background image
+		/// mediaPicker
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("backgroundImage")]
-		public IPublishedContent BackgroundImage => this.Value<IPublishedContent>("backgroundImage");
-
-		///<summary>
-		/// Freetext
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("freetext")]
-		public IHtmlString Freetext => this.Value<IHtmlString>("freetext");
-
-		///<summary>
-		/// Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("links")]
-		public IEnumerable<Umbraco.Web.Models.Link> Links => this.Value<IEnumerable<Umbraco.Web.Models.Link>>("links");
-
-		///<summary>
-		/// Phone number
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("phoneNumber")]
-		public string PhoneNumber => this.Value<string>("phoneNumber");
-
-		///<summary>
-		/// Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
-		[ImplementPropertyType("title")]
-		public string Title => this.Value<string>("title");
+		[ImplementPropertyType("mediaPicker")]
+		public IPublishedContent MediaPicker => this.Value<IPublishedContent>("mediaPicker");
 	}
 }

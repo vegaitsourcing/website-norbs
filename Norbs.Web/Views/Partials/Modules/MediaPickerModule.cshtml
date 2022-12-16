@@ -1,0 +1,15 @@
+@inherits UmbracoViewPage<Norbs.Models.Generated.MediaPickerModule>
+
+<main class="main">
+    <div class="rte">
+        @if (Model.MediaPicker != null)
+        {
+            var pdf = Model.Value<IPublishedContent>("mediaPicker");
+
+            <a href="@pdf.Url">@pdf.Name</a>
+        } else
+            {
+                <p>hi</p>
+            }
+    </div>
+</main>
