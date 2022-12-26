@@ -22,8 +22,8 @@ namespace Norbs.Models.Generated
 {
 	/// <summary>MediaPicker Module</summary>
 	[PublishedModel("mediaPickerModule")]
-	public partial class MediaPickerModule : PublishedElementModel, IINestedContent, IPublishedElement
-    {
+	public partial class MediaPickerModule : PublishedElementModel
+	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]

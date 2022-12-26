@@ -1,6 +1,11 @@
 ﻿@using Norbs.Core.Models
 @inherits Umbraco.Web.Mvc.UmbracoViewPage<ShareStoryViewModel>
 
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}
+
 <div class="form-short">
     <div class="wrap wrap--inner">
         <h2 class="form-short__title h2">@Model.Title</h2>

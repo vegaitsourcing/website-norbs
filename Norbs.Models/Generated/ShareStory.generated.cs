@@ -46,6 +46,13 @@ namespace Norbs.Models.Generated
 		// properties
 
 		///<summary>
+		/// Module
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("nCShareStory")]
+		public IEnumerable<PageIntroModule> NCshareStory => this.Value<IEnumerable<PageIntroModule>>("nCShareStory");
+
+		///<summary>
 		/// Footer Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
