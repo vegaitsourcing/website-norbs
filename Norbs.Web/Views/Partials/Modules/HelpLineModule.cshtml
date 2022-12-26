@@ -13,10 +13,10 @@
             {
                 <span class="call-block__number">@Model.PhoneNumber</span>
             }
-            @if (!string.IsNullOrWhiteSpace(Model.Text))
+            @if (Model.Freetext != null)
             {
                 <div class="call-block__paragraphs mb40">
-                    <p class="text call-block__paragraph">@Model.Text</p>
+                    <p class="text call-block__paragraph">@Html.Raw(Model.Freetext)</p>
                 </div>
             }
             @if (Model.Links != null && Model.Links.Any())

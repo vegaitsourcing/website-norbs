@@ -10,12 +10,13 @@ namespace Norbs.Core.ViewModels.Pages
 		public ArticlesViewModel(IPageContext<Articles> context) : base(context)
 		{
 			Modules = context.Page.Modules.OfType<IINestedContent>();
-			Articles = context.Page.Children.OfType<ArticleViewModel>();
-			ReadMoreText = !string.IsNullOrEmpty(context.Page.ReadMoreText) ? context.Page.ReadMoreText : "";
+			Tabs = context.Page.Children.OfType<Tags>().FirstOrDefault()
+				.Children.OfType<Tag>()
+				.Select(t => t.Name);
 		}
 
 		public IEnumerable<IINestedContent> Modules { get; }
-		public IEnumerable<ArticleViewModel> Articles { get;  }
-		public string ReadMoreText { get; }	
+		public IEnumerable<string> Tabs { get; }
 	}
+
 }

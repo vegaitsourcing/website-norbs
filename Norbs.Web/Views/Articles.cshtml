@@ -1,55 +1,27 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ArticlesViewModel>
 
-        @foreach (var module in Model.Modules)
-        {
-            Html.RenderPartial("Modules/" + module.GetType().Name, module);
-        }
-    <div class="tabs-block">
-        <div class="wrap wrap--inner">
-            <div class="tabs-block__container">
-                @{
-                    bool firstActiveTag = true;
-                	var tabSelection = Umbraco.Content(Guid.Parse("87d5b7bc-bb8b-468e-9c5d-ca508194fbaa"))
-                    .ChildrenOfType("tag")
-                    .Where(x => x.IsVisible());
-                }
-                <ul class="tabs-block__list tab-list">
-            	@foreach (var item in tabSelection)
-            	{
-            	    string activeClass = firstActiveTag ? "tab--active" : "";
-            	    if(firstActiveTag) {
-            	        firstActiveTag = false;
-            	    }
+@foreach (var module in Model.Modules)
+{
+    Html.RenderPartial("Modules/" + module.GetType().Name, module);
+}
+<script defer src="~/js/articles.js"></script>
+<div class="tabs-block">
+    <div class="wrap wrap--inner">
+        <div class="tabs-block__container">
+            <ul class="tabs-block__list tab-list">
+                @foreach (var item in Model.Tabs)
+                {
                     <li class="tabs-block__item tab-item">
-                        <button type="button" class="tabs-block__btn js-tab tab @activeClass">@item.Name</button>
+                        <button type="button" class="tabs-block__btn js-tab tab">@item</button>
                     </li>
-            	}
-                </ul>
-                
-                @{
-                    var articleSelection = Umbraco.Content(Guid.Parse("97cf61da-61e5-4023-a5f3-d3b450cb311d"))
-                    .ChildrenOfType("article")
-                    .Where(x => x.IsVisible());
                 }
-                <div class="tabs-block__holder js-tab-holder">
-                    <h3 class="tabs-block__title h3 js-tab-title"></h3>
-                    @foreach(var article in Model.Articles)
-                    {
-                        <div class="tabs-block__holder-cards">
-                            <a href="@article.Url" class="news-card">
-                            	<div class="news-card__wrap">
-                            		<div class="news-card__img">
-                            			<img src="@article.PreviewImageUrl" alt="Preview image" class="news-card__img-item">
-                            		</div>
-                            		<div class="news-card__content">
-                            				<h3 class="h3 news-card__title">@article.Title</h3>
-                            				<span class="link link-small news-card__readmore">@Model.ReadMoreText</span>
-                            		</div>
-                            	</div>
-                            </a>
-                        </div>
-                    }
+            </ul>
+
+            <div class="tabs-block__holder js-tab-holder">
+                <h3 class="tabs-block__title h3 js-tab-title"></h3>
+                    <div class="tabs-block__holder-cards">
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
+</div>

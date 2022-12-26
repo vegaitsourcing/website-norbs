@@ -150,7 +150,7 @@ p {
 			}
 			font-size: 18px;
 			line-height: 32px;
-			font-weight: 600;
+			font-weight: 400;
 			color: $orange;
 			text-decoration: none;
 			font-family: $font-secondary;
@@ -291,4 +291,22 @@ img {
 .tab--active {
 	color: $white;
 	background-color: $orange;
+}
+
+.list-circle {
+	li {
+		list-style-type: circle;
+	}
+}
+
+.list-disc {
+	li {
+		list-style-type: disc;
+	}
+}
+
+.list-square {
+	li {
+		list-style-type: square;
+	}
 }
