@@ -20,7 +20,7 @@
                 <h3 class="tabs-block__title h3 js-tab-title">@( Model.Categories?.FirstOrDefault(cat => cat.IsActive)?.Name )</h3>
                 @{ foreach (var activity in Model.Items)
                     {
-                        <a href="@activity.Url">@activity.Title</a>
+                        <a class="link" href="@activity.Url">@activity.Title</a>
                     }
                 }
             </div>
